@@ -12,7 +12,7 @@ get_header(  ); ?>
 		<div class="wrapper">
 			<div class="half" id="car-finder-mobile">
 				<div class="car-finder" id="car-finder-mobile">
-					<h2>USED CARS</h2>
+					<h2>FAST USED CARS</h2>
 					<form action="<?php bloginfo('home'); ?>/search/cars" class="car-search" method="post">
 						<label for="show">Show</label>
 						<select name="type">
