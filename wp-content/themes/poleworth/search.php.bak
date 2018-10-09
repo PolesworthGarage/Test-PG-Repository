@@ -1,0 +1,46 @@
+<?php
+if( $_SERVER['REQUEST_METHOD'] != 'POST' && !isset( $_SESSION['wp_current_search'] ) ) {
+	header( 'Location: /used-cars', true, 303 );
+}
+if( isset( $_POST['post_type'] ) ) {
+	if( $_POST['type'] == 'caravan' ) {
+		header( 'Location: /caravans-motorhomes', true, 303 );
+	} elseif( $_POST['type'] == 'bike' ) {
+		header( 'Location: /motorbikes', true, 303 );
+	} elseif( $_POST['type'] == 'car' && $_POST['make'] == 'all' && $_POST['model'] == 'all' && $_POST['min'] == 0 && $_POST['max'] == 100000 ) {
+		header( 'Location: /used-cars', true, 303 );
+	} elseif ( $_POST['type'] == 'van' && $_POST['make'] == 'all' && $_POST['model'] == 'all' && $_POST['min'] == 0 && $_POST['max'] == 100000 ){
+		header( 'Location: /used-vans', true, 303 );
+	} elseif ( $_POST['type'] == 'van' && $_POST['make'] == 'NISSAN' && $_POST['model'] == 'all' && $_POST['min'] == 0 && $_POST['max'] == 100000 ){
+		header( 'Location: /used-vans/nissan', true, 303 );
+	} else {
+		$_SESSION['wp_current_search'] = $_POST;
+		header( 'Location: /search/cars', true, 303 );
+	}
+}
+	get_header();
+	$search_refer = get_query_var( 's' );
+	$search_refer = explode( '/', $search_refer );
+	$current_page = 1;
+	if( isset( $search_refer[1] ) ) {
+		$current_page = $search_refer[1];
+	}
+	
+	$search_query = $search_refer[0];
+
+	if ( $search_query == 'cars' ) { 
+		
+?>
+
+<section class="main">
+	<div class="wrapper">
+		<?php include 'filter.php'; ?>
+			<div id="results" name="results">
+				<?php include_once 'ajax-results.php'; ?>
+			</div>
+		</div>
+	</section>
+<?php
+	}
+	get_footer(  );
+?>

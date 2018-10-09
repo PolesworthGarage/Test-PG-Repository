@@ -1,0 +1,1165 @@
+<?php
+require_once 'includes/shortcodes.php';
+require_once 'includes/posttypes.php';
+add_image_size( 'gallery-thumb', 300, 300, true );
+add_theme_support( 'custom-header' );
+/**
+*	Function: add_rewrite_rules(  );
+*	Rewrite Car Pages
+**/
+function get_include_contents($filename) {
+    if ( is_file( $filename ) ) {
+        $contents = include $filename;
+        return $contents;
+    }
+    return false;
+}
+
+if( !function_exists( 'add_rewrite_rules' ) ) {
+	function add_rewrite_rules($aRules) {
+		$aNewRules = array(
+			'^used\-cars/([^/]*)/([^/]*)/?$' => 'index.php?make=$matches[1]&car=$matches[2]',
+			'^car\-hire/([^/]*)/?$' => 'index.php?hire=$matches[1]',
+			'^galleries/([^/]*)/?$' => 'index.php?gallery=$matches[1]'
+		);
+		$aRules = $aNewRules + $aRules;
+		return $aRules;
+		flush_rewrite_rules( true );
+	}
+	add_filter('rewrite_rules_array', 'add_rewrite_rules');
+}
+
+/**
+*	Function: remove_head_links(  );
+*	Removes unnecessary items WordPress adds to the head of its documents.
+**/
+if ( !function_exists( 'remove_head_links' ) ) {
+	function remove_head_links(  ) {
+		remove_action( 'wp_head', 'rsd_link' );
+		remove_action( 'wp_head', 'wlwmanifest_link' );
+		remove_action( 'wp_head', 'wp_generator' );
+		remove_action( 'wp_head', 'feed_links_extra', 3 );
+		remove_action( 'wp_head', 'feed_links', 2 );
+		remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head' );
+	}
+	add_action( 'init', 'remove_head_links' );
+}
+
+if( !function_exists( 'my_start_session' ) ) {
+	function my_start_session(  ) {
+		if( !session_id(  ) ) {
+			session_start(  );
+		}
+	}
+	add_action( 'init', 'my_start_session', 1 );
+}
+
+if( !function_exists( 'my_end_session' ) ) {
+	function my_end_session(  ) {
+		session_destroy(  );
+
+	}
+	add_action( 'wp_logout', 'my_end_session' );
+	add_action( 'wp_login', 'my_end_session' );
+}
+
+
+/**
+*	Function: register_custom_menu(  );
+*	Registers the custom menus for use within the WordPress Admin Panel.
+**/
+if ( !function_exists( 'register_custom_menu' ) ) {
+	function register_custom_menu(  ) {
+		register_nav_menus( 
+			array( 
+				'Main_Navigation' => __( 'Main Navigation Bar' ),
+				'Sub_Navigation' => __( 'Top Navigation Bar' ),
+				'Foot_Navigation' => __( 'Footer Navigation Bar' ),
+			) 
+		);
+	}
+	add_action( 'init', 'register_custom_menu' );
+}
+
+/**
+*	Function: register_widget_areas(  );
+*	Registers the necessary Widgets Areas so they can be customised in the WordPress Admin.
+**/
+if( !function_exists( 'register_widget_areas' ) ) {
+	function register_widget_areas(  ) {
+		register_sidebar( 
+			array(
+				'name'          => __( 'Footer Widget Area' ),
+				'id'            => 'footer-widget-area',
+				'description'   => __( 'Widgets in this area appear in the page footer across the whole site.' ),
+				'before_widget' => '<div class="third widget">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h3>',
+				'after_title'   => '</h3>',
+			)
+		);
+		register_sidebar( 
+			array(
+				'name'          => __( 'Sidebar Widget Area' ),
+				'id'            => 'sidebar-widget-area',
+				'description'   => __( 'Widgets in this area appear in the page sidebar, on pages that include the sidebar.' ),
+				'before_widget' => '<div class="widget">',
+				'after_widget'  => '</div>',
+				'before_title'  => '<h3>',
+				'after_title'   => '</h3>',
+			)
+		);
+		register_sidebar( 
+			array(
+				'name'          => __( 'Homepage Top Row' ),
+				'id'            => 'homepage-first-row',
+				'description'   => __( 'Widgets in this area appear in on the top homepage row.' ),
+				'before_widget' => '<li class="widget">',
+				'after_widget'  => '</li>',
+				'before_title'  => '<h3>',
+				'after_title'   => '</h3>',
+			)
+		);
+		register_sidebar( 
+			array(
+				'name'          => __( 'Homepage Bottom Row' ),
+				'id'            => 'homepage-second-row',
+				'description'   => __( 'Widgets in this area appear in on the top homepage row.' ),
+				'before_widget' => '<li class="third widget">',
+				'after_widget'  => '</li>',
+				'before_title'  => '<h3>',
+				'after_title'   => '</h3>',
+			)
+		);
+		add_filter( 'widget_text', 'do_shortcode' );
+	}
+	add_action( 'widgets_init', 'register_widget_areas' );
+}
+
+/**
+*	Function: navigation_main(  );
+*	Renders the default navigation menu.
+**/
+if( !function_exists( 'navigation_main' ) ) {
+	function navigation_main(  ) {
+		$return = wp_page_menu( 
+			array( 
+				'echo'     	 => false,
+				'show_home'	 => true 
+			)
+		);
+		$return = str_replace( 
+			array( 
+				'<div class="menu">', 
+				'</div>' 
+			),
+			array( 
+				'',
+				''
+			),
+			$return 
+		);
+		echo $return;
+	}
+}
+if( !function_exists( 'array_find' ) ) {
+	function array_find($needle, $haystack) {
+		if(!is_array($haystack)) return false;
+		foreach ($haystack as $key=>$item) {
+			if (strpos($item, $needle) !== false) return $key;
+		}
+		return false;
+	}
+}
+if( !function_exists( 'the_result' ) ) {
+	function the_result( $id ) {
+		global $post;
+		$fields = get_post_custom( $id );
+		$pictures = explode( ',', $fields['PictureRefs'][0] );
+		$options = explode( ',', $fields['Options'][0]);
+		if (strlen(the_title('','',FALSE)) > 28) { //Character length
+			$title_short = substr(the_title('','',FALSE), 0, 28); // Character length
+			preg_match('/^(.*)\s/s', $title_short, $matches);
+			if ($matches[1]) $title_short = $matches[1];
+			$title_short = $title_short.' ...'; // Ellipsis
+		} else {
+			$title_short = the_title('','',FALSE);
+		} 
+		echo '<li data-price="' . strtolower( $fields['Price'][0] ) . '" data-year="' . $fields['Year'][0] . '" data-doors="' . strtolower( $fields['Doors'][0] ) . '" data-body="' . strtolower(  $fields['Bodytype'][0] ) . '" data-fuel="' . strtolower(  $fields['FuelType'][0] ) . '" data-size="' . $fields['EngineSize'][0] . '">';
+			echo '<a href="' . get_bloginfo( 'wpurl' ) . '/used-cars/' . strtolower( str_replace( ' ', '-', $fields['Make'][0] ) ) . '/' . $post->post_name . '">';
+			
+			$three_days = strtotime( '-3 days' );
+
+			$post_timestamp = get_post_time('U', true);
+
+			if( $post_timestamp >= $three_days ) {
+
+				echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) .'/images/new-arrival.png" style="position:absolute; width: 75px; height: 75px; border: none" />';
+
+			}
+
+			if( !empty( $pictures ) && empty( $images ) ) {			
+			if( $pictures[0] ) {
+				echo '<img src="' . $pictures[0] .'" alt="' . get_the_title(  ) . '" />';
+			} else {
+				echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) .'/images/placeholder.png" alt="' . get_the_title(  ) . '" />';
+			}
+		} else {
+
+				echo '<img src="' . $images[0]['url'] .'" alt="' . $images[0]['alt'] . '"  alt="' . $images[0]['title'] . '"/>';
+
+			}	
+
+			if( !empty( $fields['Reduced'] ) && $fields['Reduced'] != false && $fields['Reduced'][0] != false ) {
+
+				echo '<div class="reduced-container">';
+
+					echo '<div class="reduced-triangle"></div>';
+
+					echo '<div class="reduced-text">Reduced &pound;' . $fields['Reduced'][0] . '</div>';
+
+				echo '</div>';
+
+			}	
+			echo '</a>';
+			echo '<div class="price-box">';
+				if( $fields['Price'][0] == '' ) {
+					echo '<p class="price">N/A</p>';
+				} else {
+					echo '<p class="price">£' . number_format( $fields['Price'][0], '0', '.', ',' ) .'</p>';
+				}
+				
+					$registrations = get_option( 'pg_finance_registrations', array(  ) );
+
+					if( in_array( $fields['FullRegistration'][0], $registrations ) ) {
+
+						echo '<p class="finance-quote">£' . number_format( ($fields['Price'][0]/60), '2', '.', ',' ) . ' month</p>';
+
+					} else {
+
+						if( !empty( $fields['_finance_quote'][0] ) && $fields['_finance_quote'][0] != '0' && $fields['_finance_quote'][0] != '0.00' ) {
+
+							echo '<p class="finance-quote">£' . $fields['_finance_quote'][0] . ' month</p>';
+
+						}
+
+					}				
+					echo '<a href="' . get_bloginfo( 'wpurl' ) . '/used-cars/' . strtolower( str_replace( ' ', '-', $fields['Make'][0] ) ) . '/' . $post->post_name . '" class="button enquire-button">More Details</a>';
+				echo '</div>';
+						echo '<a href="' . get_bloginfo( 'wpurl' ) . '/used-cars/' . strtolower( str_replace( ' ', '-', $fields['Make'][0] ) ) . '/' . $post->post_name . '">';
+							echo '<h3>' . $title_short . '</h3>';
+						echo '</a>';
+						echo '<ul class="main-details alignleft">';
+							if( $fields['Bodytype'][0] != '' ):
+								echo '<li>' . $fields['Bodytype'][0] . ',</li>';
+							endif;
+							if( $fields['Year'][0] != '' ):
+								echo '<li>' . $fields['Year'][0] . ',</li>';
+							endif;
+							if( $fields['Mileage'][0] != '' ):
+								echo '<li>' . $fields['Mileage'][0] . ' Miles,</li>';
+							endif;
+							if( $fields['FuelType'][0] != '' ):
+							echo '<li> ' . $fields['FuelType'][0] . ',</li>';
+							endif;
+							if( $fields['Transmission'][0] != '' ):
+								echo '<li>' . $fields['Transmission'][0] . '</li>';
+							endif;
+						echo '</ul>';
+						echo '<div class="options-box">';
+							if( !empty( $options[0] ) ) :
+								echo $options[0] . ', ';
+							endif;
+							if( !empty( $options[1] ) ) :
+								echo $options[1] . ', ';
+							endif; 
+							if( !empty( $options[2] ) ) :
+								echo $options[2] . ', ';
+							endif; 
+							if( !empty( $options[3] ) ) :
+								echo $options[3] . ', ';
+							endif; 
+							if( !empty( $options[4] ) ) :
+								echo $options[4] . ', ';
+							endif; 
+							if( !empty( $options[5] ) ) :
+								echo $options[5] . ', ';
+							endif;
+							if( !empty( $options[6] ) ) :
+								echo $options[6] . ', ';
+							endif;
+							if( !empty( $options[7] ) ) :
+								echo $options[7] . ', ';
+							endif;
+							if( !empty( $options[8] ) ) :
+								echo $options[8];
+							endif; 
+						echo '</div>';
+			
+		echo '</li>';
+	}
+}
+
+if( !function_exists( 'attach_pages' ) ) {
+	function attach_car_table(  ) {
+		add_menu_page( 'Super Six', 'Super Six', 'manage_options', 'pg_super_six', 'pg_super_six', 'dashicons-admin-tools', '58.4' );
+		add_menu_page( 'Guaranteed Finance', 'Guaranteed Finance', 'manage_options', 'pg_guaranteed_finance', 'pg_guaranteed_finance', 'dashicons-admin-tools', '58.5' );		
+		add_menu_page( 'Emails', 'Emails', 'manage_options', 'custom_email_table', 'custom_email_table', 'div' );
+		add_submenu_page( 'custom_email_table', 'Add Email Subscription', 'Add Email Subscription', 'manage_options', 'email_subscribe', 'email_subscribe' );
+		add_submenu_page( 'custom_email_table', 'Trade Mailshot', 'Send Trade Mailshot', 'manage_options', 'email_trade', 'email_trade' );
+		add_submenu_page( 'edit.php?post_type=car', 'Cars in Stock', 'Cars in Stock', 'manage_options', 'car_table', 'car_table' );
+		add_submenu_page( 'edit.php', 'Upload Tamworth Herald Ads', 'Upload Tamworth Herald Ads', 'manage_options', 'tamworth_herald', 'tamworth_herald' );
+		add_submenu_page( 'options-general.php', 'Edit Sitemap', 'Edit Sitemap', 'manage_options', 'edit_sitemap', 'edit_sitemap' );
+		add_menu_page( 'Ebay', 'Ebay', 'manage_options', 'ebay', 'ebay', 'div' );
+		add_submenu_page( 'ebay', 'Add Car to Ebay', 'Add Car to Ebay', 'manage_options', 'ebay_add', 'ebay_add' );
+		add_menu_page( '3 Years Finance', '3 Years Finance', 'manage_options', 'pg_finance', 'pg_finance', 'dashicons-admin-tools', '58.6' ); 		
+	}
+	add_action( 'admin_menu', 'attach_car_table' );
+}
+
+if( !function_exists( 'pg_super_six' ) ) {
+
+	function pg_super_six(  ) {
+
+		$ss_registrations = get_option( 'pg_super_six_registrations', array(  ) );
+
+		if( strtoupper( $_SERVER['REQUEST_METHOD'] ) === 'POST' ):
+
+			if( $_POST['action'] == 'finance' ):
+
+				$ss_registrations[] = $_POST['reg'];
+
+				update_option( 'pg_super_six_registrations', $ss_registrations );
+
+			endif;
+
+		endif;
+
+
+
+		if( isset( $_GET['delete'] ) ) {
+
+			if(($key = array_search($_GET['delete'], $ss_registrations)) !== false) {
+
+			    unset($ss_registrations[$key]);
+
+			    update_option( 'pg_super_six_registrations', $ss_registrations );
+
+			}
+
+		}
+
+		?>
+
+		<div class="wrap">
+
+			<h2>Super Six Admin Menu</h2>
+
+			<table class="widefat">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Car Registration</th>
+
+                        <th>Delete?</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                	<?php foreach( $ss_registrations as $key => $reg ): ?>
+
+                		<tr>
+
+                			<td><hr /><?php echo $reg; ?></td>
+
+                			<td><hr /><a href="admin.php?page=pg_super_six&amp;delete=<?php echo $reg; ?>">x</a></td>
+
+                		</tr>
+
+                	<?php endforeach; ?>
+
+                </tbody>
+
+            </table>
+
+            <form method="post" action="admin.php?page=pg_super_six">
+
+            <table class="form-table">
+
+                <tr>
+
+                    <td><label for="reg">Registration:</label></td>
+
+                    <td><input type="text" name="reg" /></td>
+
+                    <td> <input type="hidden" name="action" value="finance" /> - <input type="submit" class="button-primary" value="Add Car" /></td>
+
+                </tr>
+
+            </table>
+
+            </form>
+
+		</div>
+
+		<?php
+
+	}
+
+}
+
+
+
+if( !function_exists( 'pg_guaranteed_finance' ) ) {
+
+	function pg_guaranteed_finance(  ) {
+
+		$gcf_registrations = get_option( 'pg_guaranteed_finance_registrations', array(  ) );
+
+		if( strtoupper( $_SERVER['REQUEST_METHOD'] ) === 'POST' ):
+
+			if( $_POST['action'] == 'finance' ):
+
+				$gcf_registrations[] = $_POST['gcf_reg'];
+
+				update_option( 'pg_guaranteed_finance_registrations', $gcf_registrations );
+
+			endif;
+
+		endif;
+
+
+
+		if( isset( $_GET['delete'] ) ) {
+
+			if(($key = array_search($_GET['delete'], $gcf_registrations)) !== false) {
+
+			    unset($gcf_registrations[$key]);
+
+			    update_option( 'pg_guaranteed_finance_registrations', $gcf_registrations );
+
+			}
+
+		}
+
+		?>
+
+		<div class="wrap">
+
+			<h2>Guaranteed Finance Admin Menu</h2>
+
+			<table class="widefat">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Car Registration</th>
+
+                        <th>Delete?</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                	<?php foreach( $gcf_registrations as $key => $gcf_reg ): ?>
+
+                		<tr>
+
+                			<td><hr /><?php echo $gcf_reg; ?></td>
+
+                			<td><hr /><a href="admin.php?page=pg_guaranteed_finance&amp;delete=<?php echo $gcf_reg; ?>">x</a></td>
+
+                		</tr>
+
+                	<?php endforeach; ?>
+
+                </tbody>
+
+            </table>
+
+            <form method="post" action="admin.php?page=pg_guaranteed_finance">
+
+            <table class="form-table">
+
+                <tr>
+
+                    <td><label for="gcf_reg">Registration:</label></td>
+
+                    <td><input type="text" name="reg" /></td>
+
+                    <td> <input type="hidden" name="action" value="finance" /> - <input type="submit" class="button-primary" value="Add Car" /></td>
+
+                </tr>
+
+            </table>
+
+            </form>
+
+		</div>
+
+		<?php
+
+	}
+
+}
+
+
+
+if( !function_exists( 'pg_finance' ) ) {
+
+	function pg_finance(  ) {
+
+		$registrations = get_option( 'pg_finance_registrations', array(  ) );
+
+		if( strtoupper( $_SERVER['REQUEST_METHOD'] ) === 'POST' ):
+
+			if( $_POST['action'] == 'finance' ):
+
+				$registrations[] = $_POST['reg'];
+
+				update_option( 'pg_finance_registrations', $registrations );
+
+			endif;
+
+		endif;
+
+
+
+		if( isset( $_GET['delete'] ) ) {
+
+			if(($key = array_search($_GET['delete'], $registrations)) !== false) {
+
+			    unset($registrations[$key]);
+
+			    update_option( 'pg_finance_registrations', $registrations );
+
+			}
+
+		}
+
+		?>
+
+		<div class="wrap">
+
+			<h2>3 Years Finance 0% Interest</h2>
+
+			<table class="widefat">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Car Registration</th>
+
+                        <th>Delete?</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                	<?php foreach( $registrations as $key => $reg ): ?>
+
+                		<tr>
+
+                			<td><hr /><?php echo $reg; ?></td>
+
+                			<td><hr /><a href="admin.php?page=pg_finance&amp;delete=<?php echo $reg; ?>">x</a></td>
+
+                		</tr>
+
+                	<?php endforeach; ?>
+
+                </tbody>
+
+            </table>
+
+            <form method="post" action="admin.php?page=pg_finance">
+
+            <table class="form-table">
+
+                <tr>
+
+                    <td><label for="reg">Registration:</label></td>
+
+                    <td><input type="text" name="reg" /></td>
+
+                    <td> <input type="hidden" name="action" value="finance" /> - <input type="submit" class="button-primary" value="Add Car" /></td>
+
+                </tr>
+
+            </table>
+
+            </form>
+
+		</div>
+
+		<?php
+
+	}
+
+}
+
+if( !function_exists( 'ebay' ) ) {
+	function ebay(  ) {
+		global $wpdb;
+		if( $_GET['delete'] ) :
+			$wpdb->query( "DELETE FROM `wp_ebay` WHERE `ID` = '" . $_GET['delete'] . "'" );
+		endif;
+		$query = $wpdb->get_results( 'SELECT * FROM `wp_ebay`' );
+		$arr = array(  );
+		foreach( $query as $single ) :
+			$arr[] = $single->ID;
+		endforeach;
+		if( !empty( $query ) ) :
+			$args = array( 'post_type' => 'car', 'post__in' => $arr, 'numberposts' => -1 );
+			$cars = get_posts( $args );
+		else :
+			$cars = false;
+		endif;
+		include 'includes/templates/ebay-list.php';
+	}
+}
+
+if( !function_exists( 'ebay_add' ) ) {
+	function ebay_add(  ) {
+		global $wpdb;
+		if( isset( $_POST['submit'] ) ) {
+			$registration = str_replace( ' ', '', $_POST['registration'] );
+			$search_args = array(
+				'numberposts' => 1,
+				'post_type' => 'car',
+			);
+			$search_args['meta_query'] = array(  );
+			$search_args['meta_query'][] = array( 
+				'key' => 'FullRegistration',
+				'value' => $registration,
+				'compare' => 'LIKE'
+			);
+			$insert = get_posts( $search_args );
+			foreach( $insert as $i ):
+				$wpdb->query( "INSERT INTO `wp_ebay` VALUES ( '" . $i->ID . "', '" . $i->post_title . "' )" );
+			endforeach;
+			$query = $wpdb->get_results( 'SELECT `ID` FROM `wp_ebay`');
+			$arr = array(  );
+			foreach( $query as $single ) :
+				$arr[] = $single->ID;
+			endforeach;
+			$args = array( 'post_type' => 'car', 'post__in' => $arr, 'numberposts' => -1 );
+			$cars = get_posts( $args );
+			ob_start(  );
+			include( 'includes/templates/ebay-complete.php' );
+			$xml = ob_get_contents(  );
+			ob_end_clean(  );
+			$xml = trim( $xml );
+			$user = 'websiteupload';
+			$pass = 'eq1863xp1o7j8383XJ7h';
+			$file = ABSPATH . 'temp/ebay.zip';
+			$remote_file = 'ebay.zip';
+
+			if( file_exists( $file ) ) :
+				unlink( $file );
+				unlink( ABSPATH . 'temp/ebay.xml' );
+			endif;
+
+			file_put_contents( ABSPATH . 'temp/ebay.xml', $xml );
+
+			$zip = new ZipArchive();
+			if ( $zip->open( $file, ZIPARCHIVE::CREATE ) != TRUE ) {
+				die ( "Could not open archive" );
+			}
+
+			$zip->addFile( ABSPATH . 'temp/ebay.xml', 'ebay.xml' );
+			$zip->close(  );
+
+			$conn_id = ftp_connect( 'ftp.ebaymotorspro.co.uk' );
+			$login_result = ftp_login( $conn_id, $user, $pass );
+			if ( ftp_put( $conn_id, $remote_file, $file, FTP_ASCII ) ) {
+				$submit = 'Successfully added car';
+			} else {
+				$submit = 'Error!';
+			}
+
+			ftp_close( $conn_id );
+		}
+		include 'includes/templates/ebay-form.php';
+	}
+}
+
+if( !function_exists( 'edit_sitemap' ) ) {
+	function edit_sitemap(  ) {
+		global $wpdb;
+		if( isset( $_POST['submit'] ) ) {
+			update_option( 'news_select', $_POST['news_select'] );
+			update_option( 'news_priority', $_POST['news_priority'] );
+			update_option( 'single_select', $_POST['single_select'] );
+			update_option( 'single_priority', $_POST['single_priority'] );
+			update_option( 'gallery_select', $_POST['gallery_select'] );
+			update_option( 'gallery_priority', $_POST['gallery_priority'] );
+			unset( $_POST['submit'], $_POST['news_select'], $_POST['news_priority'], $_POST['single_select'], $_POST['single_priority'], $_POST['gallery_select'], $_POST['gallery_priority'] );
+			foreach( $_POST as $key => $val ) :
+				$data = explode( '_', $key );
+				update_post_meta( $data[0], $data[1], $val );
+			endforeach;
+			$submit = "Updated! Sitemap will be updated upon next car import";
+		}
+		$pages = get_pages(  );
+		include 'includes/templates/edit-sitemap.php';
+	}
+	
+}
+
+if( !function_exists( 'email_trade' ) ) {
+	function email_trade(  ) {
+		if( $_POST['submit'] ) {
+			include_once 'includes/MCAPI.php';
+			$api_key = '5cce9682aa702d957b0a934785871a76-us4';
+			$api = new MCAPI( $api_key );
+			$opts = array(  );
+			$type = 'regular';
+ 
+			$opts['list_id'] = '0efb6be545';
+			$opts['subject'] = $_POST['trade-subject'];
+			$opts['from_email'] = 'pg@safeserps.co.uk'; 
+			$opts['from_name'] = 'Polesworth Garage';
+			$opts['tracking'] = array(
+				'opens' => true, 
+				'html_clicks' => true, 
+				'text_clicks' => true
+			);
+ 
+			$opts['authenticate'] = true;
+			$opts['analytics'] = array(
+				'google' => 'UA-41674067-1'
+			);
+			$opts['title'] = $_POST['subject'];
+ 			
+			$email_content = $_POST['trade-content'];
+			
+			$arguments = array(
+				'numberposts' => 50,
+				'orderby' => 'rand',
+				'post_type' => 'car',
+				'meta_query' => array( 
+					array(
+						'key' => 'Price',
+						'value' => array( 0, 2000 ),
+						'compare' => 'BETWEEN',
+						'type' => 'numeric'
+					)
+					
+				)
+			);
+
+			$cars = get_posts( $arguments );
+				
+			ob_start(  );
+			include( 'includes/templates/trade-email.php' );
+			$html = ob_get_contents(  );
+			ob_end_clean(  );
+			$content = array(
+				'html' => $html, 
+			);
+
+			$retval = $api->campaignCreate($type, $opts, $content);
+			$api->campaignSendNow( $retval );
+
+			echo '<div class="updated settings-error">Campaign Sent</div>';
+		}
+
+		include 'includes/templates/trade-form.php';
+		
+	}
+}
+
+if( !function_exists( 'email_subscribe' ) ) {
+	function email_subscribe(  ) {
+		echo '<div class="wrap">';
+		if( isset( $_POST['submit'] ) ) {
+			include_once 'includes/MCAPI.php';
+			$api_key = '5cce9682aa702d957b0a934785871a76-us4';
+			$api = new MCAPI( $api_key );
+			$merge_vars = array(
+				'FNAME' => $_POST['first-name'], 
+				'LNAME' => $_POST['last-name'], 
+			);
+
+			$retval = $api->listSubscribe( $_POST['list'], $_POST['email'], $merge_vars );
+			echo '<div class="updated settings-error">Added to the Mailing List</div>';
+		}
+		include 'includes/templates/email-subscribe.php';
+		
+	}
+}
+if( !function_exists( 'car_table' ) ) {
+	function car_table(  ) {
+		global $wpdb;
+		echo '<div class="wrap">';
+			echo '<div id="icon-edit" class="icon32"></div>';
+			echo '<h2>Cars in Stock</h2>';
+			echo '<table class="wp-list-table widefat fixed posts" cellspacing="0">';
+				echo '<thead>';
+					echo '<tr>';
+						echo '<th scope="col" class="manage-column column-reg" style="">';
+							echo 'Reg';
+						echo '</th>';
+						echo '<th scope="col" class="manage-column column-year" style="">';
+							echo 'Year';
+						echo '</th>';
+						echo '<th scope="col" class="manage-column column-make" style="">';
+							echo 'Make';
+						echo '</th>';
+						echo '<th scope="col" class="manage-column column-model" style="">';
+							echo 'Model';
+						echo '</th>';
+						echo '<th scope="col" class="manage-column column-variant" style="">';
+							echo 'Variant';
+						echo '</th>';
+						echo '<th scope="col" class="manage-column column-colour" style="">';
+							echo 'Colour';
+						echo '</th>';
+						echo '<th scope="col" class="manage-column column-price" style="">';
+							echo 'Price';
+						echo '</th>';
+					echo '</tr>';
+				echo '</thead>';
+				echo '<tfoot>';
+					$query = 'SELECT * FROM ' . $wpdb->posts . " WHERE `post_type` = 'car'";
+					$items = $wpdb->get_results( $query );
+					$i = 1;
+					foreach( $items as $item ) {
+						$custom = get_post_custom( $item->ID );
+						if( $i % 2 ) { 
+							echo '<tr valign="top" class="alternate">';
+						} else {
+							echo '<tr valign="top">';
+						}
+							echo '<td>' . $custom['FullRegistration'][0] . '</td>';
+							echo '<td>' . $custom['Year'][0] . '</td>';
+							echo '<td>' . $custom['Make'][0] . '</td>';
+							echo '<td>' . $custom['Model'][0] . '</td>';
+							echo '<td>' . $custom['Variant'][0] . '</td>';
+							echo '<td>' . $custom['Colour'][0] . '</td>';
+							$price = (float)$custom['Price'][0];
+							echo '<td>£' . number_format( $price, 0, '.', ',') . '</td>';
+						echo '</tr>';
+						$i++;
+					}
+				echo'</tfoot>';
+			echo '</table>';
+		echo '</div>';
+		echo '<script type="text/javascript">';
+	}
+}
+if( !function_exists( 'custom_email_table' ) ) {
+	function custom_email_table(  ) {
+		global $wpdb;
+		if( isset( $_GET['del'] ) ) {
+			$query = 'DELETE FROM `' . $wpdb->prefix . 'emails` WHERE `id` = \'' . $_GET['del'] . '\'';
+			$wpdb->query( $query );
+		}
+		echo '<div class="wrap">';
+			echo '<div id="icon-edit" class="icon32"></div>';
+			echo '<h2>Emails</h2>';
+			echo '<table class="wp-list-table widefat fixed posts" cellspacing="0">';
+				echo '<thead>';
+					echo '<tr>';
+						echo '<th scope="col" class="manage-column column-del" style="">';
+							echo 'Delete';
+						echo '</th>';
+						echo '<th scope="col" class="manage-column column-name" style="">';
+							echo 'Name';
+						echo '</th>';
+						echo '<th scope="col" class="manage-column column-tel" style="">';
+							echo 'Telephone';
+						echo '</th>';
+						echo '<th scope="col" class="manage-column column-email" style="">';
+							echo 'E-Mail';
+						echo '</th>';
+						echo '<th scope="col" class="manage-column column-enquiry" style="">';
+							echo 'Enquiry';
+						echo '</th>';
+						echo '<th scope="col" class="manage-column column-date" style="">';
+							echo 'Date of Enquiry';
+						echo '</th>';
+					echo '</tr>';
+				echo '</thead>';
+				echo '<tfoot>';
+				$query = 'SELECT * FROM `' . $wpdb->prefix . 'emails` ORDER BY `id` DESC';
+				$items = $wpdb->get_results( $query );
+				$i = 1;
+				foreach( $items as $item ) {
+					if( $i % 2 ) { 
+						echo '<tr valign="top" class="alternate">';
+					} else {
+						echo '<tr valign="top">';
+					}
+						echo '<td><a href="?page=custom_email_table&del=' . $item->id . '">Delete</a></td>';
+						echo '<td>' . $item->name .'</td>';
+						echo '<td>' . $item->tel .'</td>';
+						echo '<td>' . $item->sender .'</td>';
+						if ( strpos( $item->message, 'looked at' ) !== false) {
+							preg_match( '/has looked at (.*?)\./', $item->message, $reg );
+							echo '<td>Enquiry (' . $reg[1] .')</td>';//Enquiry
+						} elseif( strpos( $item->message, 'has requested an MOT' ) !== false ) {//mot
+							echo '<td>MOT</td>';
+						} elseif( strpos( $item->message, 'has requested a Service' ) !== false ) { //service
+							echo '<td>Service</td>';
+						} elseif( strpos( $item->message, 'has requested a Nissan Care Service' ) !== false) { //nissan care
+							echo '<td>Nissan Care Service</td>';
+						} elseif( strpos( $item->message, 'has hired a' ) !== false ) { //car hire
+							echo '<td>Car Hire</td>';
+						} elseif( strpos( $item->message, 'would like some financing' ) !== false ) {
+							echo '<td>Financing</td>';
+						} else {
+							echo '<td>Enquiry</td>';
+						}
+						echo '<td>' . date( 'd/m/y', strtotime( $item->time ) ) . '</td>';
+					echo '</tr>';
+					$i++;
+				}
+		echo '</div>';
+	}
+}
+
+if( !function_exists( 'hire_menu' ) ) {
+	function hire_menu( $hire ) {
+		echo '<center>';
+			$links = '';
+			foreach( $hire as $post ):
+				setup_postdata( $post );
+				$links .= '<a href="/car-hire/' . $post->post_name . '" title="Our ' . $post->post_title . ' Hire Cars">' . $post->post_title . '</a> - ';
+			endforeach;
+			wp_reset_postdata();
+			$links = trim( $links, ' -' );
+			echo $links;
+		echo '</center>';
+		echo '<hr />';
+	}
+}
+
+if( !function_exists( 'hire_form' ) ) {
+	function hire_form( $id, $title, $custom ) {
+		include 'includes/templates/hire-form.php';
+	}
+}
+
+if( !function_exists( 'trade_form' ) ) {
+	function trade_form(  ) {
+		if( isset( $_POST['trade-submit'] ) ) {
+			if( empty( $_POST['trade-name'] ) || empty( $_POST['trade-email'] ) ) {
+				echo '<strong>Please fill in all the fields</strong>';
+			} else {
+				include_once 'includes/MCAPI.php';
+				$api_key = '5cce9682aa702d957b0a934785871a76-us4';
+				$trade_list = '0efb6be545';
+				$api = new MCAPI($api_key);
+				$name = explode( ' ', $_POST['trade-name'] );
+				$merge_vars = array(
+					'FNAME' => $name[0], 
+					'LNAME' => $name[1], 
+				);
+
+				$retval = $api->listSubscribe( $trade_list, $_POST['trade-email'], $merge_vars );
+				if ( $api->errorCode ){
+					echo "Error Code: ".$api->errorCode."<br />";
+					echo "Error Message: ".$api->errorMessage."<br />";
+				} else {
+				    echo "<strong>Subscribed</strong> - look for the confirmation email!<br />";
+				}
+			}
+			
+		} 
+			echo '<form method="post">';
+				echo '<label for="trade-name"><strong>Your Name</strong></label><br />';
+				echo '<input type="text" name="trade-name" style="width: 208px; clear: both;" /><br />';
+				echo '<label for="trade-email"><strong>Your E-Mail</strong></label><br />';
+				echo '<input type="text" name="trade-email" style="width: 208px; clear: both;" /><br />';
+				echo '<input type="submit" name="trade-submit" value="Submit" style="width: 208px; margin-top: 10px; clear: both;" />';
+			echo '</form>';
+
+	}
+	add_shortcode( 'trade_form', 'trade_form' );
+}
+
+if( !function_exists( 'general_form' ) ) {
+	function general_form(  ) {
+		if( isset( $_POST['general-submit'] ) ) {
+			include_once 'includes/MCAPI.php';
+			$api_key = '12022340ba889a32c821c6a318ee37d2-us6';
+			$general_list = '33451839ae';
+			$api = new MCAPI($api_key);
+			$name = explode( ' ', $_POST['general-name'] );
+			$merge_vars = array(
+				'FNAME' => $name[0], 
+				'LNAME' => $name[1], 
+			);
+
+			$retval = $api->listSubscribe( $general_list, $_POST['general-email'], $merge_vars );
+			if ( $api->errorCode ){
+				echo "Error Code: ".$api->errorCode."<br />";
+				echo "Error Message: ".$api->errorMessage."<br />";
+			} else {
+			    echo "<strong>Subscribed</strong> - look for the confirmation email!<br />";
+			}
+		} else {
+			echo '<form method="post">';
+				echo '<label for="general-name">Your Name</label>';
+				echo '<input type="text" name="general-name" />';
+				echo '<label for="general-email">Your E-Mail</label>';
+				echo '<input type="text" name="general-email" />';
+				echo '<input type="submit" name="submit" value="Submit" />';
+			echo '</form>';
+		}
+
+	}
+	add_shortcode( 'general_list', 'general_form' );
+}
+
+function check_user_agent( $type = NULL ) {
+	$user_agent = strtolower ( $_SERVER['HTTP_USER_AGENT'] );
+	if ( $type == 'bot' ) {
+	// matches popular bots
+		if ( preg_match ( "/googlebot|adsbot|yahooseeker|yahoobot|msnbot|watchmouse|pingdom\.com|feedfetcher-google/", $user_agent ) ) {
+			return true;
+			// watchmouse|pingdom\.com are "uptime services"
+		}
+	} else if ( $type == 'browser' ) {
+		// matches core browser types
+		if ( preg_match ( "/mozilla\/|opera\//", $user_agent ) ) {
+			return true;
+		}
+	} else if ( $type == 'mobile' ) {
+		if( preg_match ( '#\b(ip(hone|od)|android\b.+\bmobile|'.
+            'opera m(ob|in)i|windows (phone|ce)|blackberry|s(ymbian'.
+            '|eries60|amsung)|p(alm|rofile/midp|laystation portable'.
+            ')|nokia|fennec|htc[\-_]|up\.browser|[1-4][0-9]{2}x[1-4]'.
+            '[0-9]{2})\b#i', $user_agent ) ) {
+			return true;
+		/*} else if ( preg_match ( "/(mobile|pda;|avantgo|eudoraweb|minimo|netfront|brew|teleca|lg;|lge |wap;| wap )/", $user_agent ) ) {
+			// these are less common, and might not be worth checking
+			return true;*/
+		}
+	}
+	return false;
+}
+
+
+if( !class_exists( 'StarBuysWidget' ) ) {
+
+	class StarBuysWidget extends WP_Widget
+	{
+		function StarBuysWidget(){
+			$widget_ops = array(
+				'classname' => 'StarBuysWidget', 
+				'description' => 'Displays the Star Buys' 
+			);
+			$this->WP_Widget( 'StarBuysWidget', 'Star Buys', $widget_ops);
+		}
+		function form($instance) {
+			$instance = wp_parse_args( (array) $instance, array( 'title' => '', 'featured_cars' => '' ) );
+			$title = $instance['title'];
+			$featured_cars = $instance['featured_cars'];
+			$feature_options = get_option( 'featured_cars' );
+			if( $feature_options ) {
+				$featured_cars = $feature_options;
+			}
+	?>
+	  <p><label for="<?php echo $this->get_field_id('title'); ?>">Title: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo attribute_escape($title); ?>" /></label></p>
+	   <p><label for="<?php echo $this->get_field_id('featured_cars'); ?>">Star Car ID: <input class="widefat" id="<?php echo $this->get_field_id('featured_cars'); ?>" name="<?php echo $this->get_field_name('featured_cars'); ?>" type="text" value="<?php echo attribute_escape($featured_cars); ?>" /></label></p>
+	<?php
+		}
+		function update($new_instance, $old_instance) {
+			$instance = $old_instance;
+			$instance['title'] = $new_instance['title'];
+			$instance['featured_cars'] = $new_instance['featured_cars'];
+			update_option( 'featured_cars', $new_instance['featured_cars'] );
+			return $instance;
+		}
+	 
+		function widget($args, $instance) {
+			extract($args, EXTR_SKIP);
+	 
+			echo $before_widget;
+			$title = empty($instance['title']) ? ' ' : apply_filters('widget_title', $instance['title']);
+	 
+			if (!empty($title))
+				echo $before_title . $title . $after_title;
+			echo '<ul class="star-buys">';
+			if( !get_option( 'featured_cars' ) ) {
+				$arguments = array(
+					'numberposts' => 1,
+					'orderby' => 'rand',
+					'post_type' => 'car',
+					'meta_query' => array( 
+						'key' => 'Price',
+						'value' => array( 5000, 10000 ),
+						'compare' => 'BETWEEN' 
+					)
+				);
+				$cars = get_posts( $arguments );
+				$featured_cars = '';
+				foreach( $cars as $car ) {
+					$featured_cars .= $car->ID . ',';
+				}
+				$featured_cars = trim( $featured_cars, ',' );
+			} else {
+				$featured_cars = get_option( 'featured_cars' );
+			}
+			$cars = explode( ',', $featured_cars );
+			foreach( $cars as $car ) {
+				echo '<li>';
+				$data = get_post( $car );
+				$fields = get_post_custom( $data->ID );
+				$pictures = explode( ',', $fields['PictureRefs'][0] );
+				echo '<a href="' . get_bloginfo( 'wpurl' ) . '/used-cars/' . strtolower( str_replace( ' ', '-', $fields['Make'][0] ) ) . '/' . $data->post_name . '">';
+					echo $data->post_title;
+				
+					echo '<img src="' . $pictures[0] . '" alt="' .  $data->post_name . '" />';
+				echo '</a>';
+				echo '</li>';
+			}
+			
+			echo '</ul>';
+	 
+			echo $after_widget;
+		}
+	 
+	}
+	add_action( 'widgets_init', create_function('', 'return register_widget("StarBuysWidget");') );
+}
+
+function tamworth_herald(  ) {
+	if( isset( $_POST['submit'] ) ) {
+
+		if( $_FILES['left-page'] != ( '' || FALSE ) ) {
+			if( $_FILES['left-page']['type'] == 'application/pdf' ) {
+				unlink( ABSPATH . 'tamworth-herald-ad/left-page.pdf' );
+				move_uploaded_file( $_FILES['left-page']['tmp_name'], ABSPATH . 'tamworth-herald-ad/left-page.pdf' );
+			}
+		}
+
+		if( $_FILES['right-page'] != ( '' || FALSE ) ) {
+			if( $_FILES['right-page']['type'] == 'application/pdf' ) {
+				unlink( ABSPATH . 'tamworth-herald-ad/left-page.pdf' );
+				move_uploaded_file( $_FILES['right-page']['tmp_name'], ABSPATH . 'tamworth-herald-ad/right-page.pdf' );
+			}
+		}
+
+		$submit = 'Files Changed';
+
+		include 'includes/templates/tamworth-herald.php';
+
+	} else {
+		include 'includes/templates/tamworth-herald.php';
+	}
+}

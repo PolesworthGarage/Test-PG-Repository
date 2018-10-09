@@ -1,0 +1,350 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Contact Form 7 Dynamic Text Extension"
+msgstr ""
+
+#. Short description.
+msgid "This plugin provides 2 new tag types for the Contact Form 7 Plugin. It allows the dynamic generation of content for a text input box via any shortcode"
+msgstr ""
+
+#. Screenshot description.
+msgid "The new Dynamic Text Field options."
+msgstr ""
+
+#. Found in description header.
+msgid "WHAT DOES IT DO?"
+msgstr ""
+
+#. Found in description header.
+msgid "HOW TO USE IT"
+msgstr ""
+
+#. Found in description header.
+msgid "INCLUDED SHORTCODES"
+msgstr ""
+
+#. Found in description list item.
+msgid "Auto-filling a URL"
+msgstr ""
+
+#. Found in description list item.
+msgid "Auto-filling a Post ID, title, or slug"
+msgstr ""
+
+#. Found in description list item.
+msgid "Pre-populating a Product Number"
+msgstr ""
+
+#. Found in description list item.
+msgid "Referencing other content on the site"
+msgstr ""
+
+#. Found in description list item.
+msgid "Populating with post info "
+msgstr ""
+
+#. Found in description list item.
+msgid "Populating with user info"
+msgstr ""
+
+#. Found in description list item.
+msgid "Populating with custom fields"
+msgstr ""
+
+#. Found in description list item.
+msgid "Any value you can write a shortcode for"
+msgstr ""
+
+#. Found in description list item.
+msgid "The shortcode should NOT include the normal square brackets ([ and ]). So, instead of [CF7_GET key='value'] you would use CF7_GET key='value' ."
+msgstr ""
+
+#. Found in description list item.
+msgid "Any parameters in the shortcode must use single quotes. That is: CF7_GET key='value' and not CF7_GET key=\"value\""
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This Dynamic Text Extension plugin provides a more elegant solution that leaves the Contact Form 7 Plugin intact."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Dynamic Value</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "This field takes a shortcode, with two important provisions:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Uneditable Option</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "As these types of fields should often remain uneditable by the user, there is a checkbox to turn this option on (Not applicable for hidden fields)."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The plugin includes 2 basic shortcodes for use with the Dynamic Text extension. You can write your own as well - any shortcode will work"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>PHP GET Variables</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Enter the following into the \"Dynamic Value\" input"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "CF7_GET key='foo'"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Your Content Form 7 Tag will look something like this:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "[dynamictext dynamicname \"CF7_GET key='foo'\"]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Your form's dynamicname text input will then be pre-populated with the value of foo, in this case, bar"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>PHP POST Variables</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "New in version 1.0.3!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Grab variables from the $_POST array.  The shortcode is much like the GET shortcode:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "CF7_POST key='foo'"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "[dynamictext dynamicname \"CF7_POST key='foo'\"]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Blog Info</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Want to grab some information from your blog like the URL or the sitename? Use the CF7_bloginfo shortcode. For example, to get the site's URL:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "CF7_bloginfo show='url'"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "[dynamictext dynamicname \"CF7_bloginfo show='url'\"]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Your form's dynamicname text input will then be pre-populated with your site's URL"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Post Info</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Retrieve information about the current post/page (that the contact form is displayed on).  The shortcode works as follows:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can also retrieve any parameter from the $post object.  Just set that as the key value, for example 'post_date'"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The Contact Form 7 Tag would look like:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "[dynamictext dynamicname \"CF7_get_post_var key='title'\"]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Current URL</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Retrieve the current URL.  The shortcode takes no parameters:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "CF7_URL"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "So your Contact Form 7 Tag would look like:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "[dynamictext dynamicname \"CF7_URL\"]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Custom Fields</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "New in version 1.0.4!"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Retrieve custom fields from the current post/page.  Just set the custom field as the key in the shortcode."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "The dynamic value input becomes:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "CF7_get_custom_field key='my_custom_field'"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "And the tag looks like this:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "[dynamictext dynamicname \"CF7_get_custom_field key='my_custom_field'\"]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "For the purposes of including an email address, you can obfuscate the custom field value by setting obfuscate='on' in the shortcode."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Current User Info</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "CF7_get_current_user"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "[dynamictext dynamicname \"CF7_get_current_user\"]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>Referrer URL</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Get the referral URL, if it exists.  Note that this is not necessarily reliable as not all browsers send this data."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "[dynamictext dynamicname \"CF7_referrer\"]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Like the Dynamic Text Extension?  Please consider supporting its development by <a href=\"http://bit.ly/bVogDN\">Donating</a>."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Or check out my upcoming premium plugin, <a href=\"http://wpmegamenu.com\">UberMenu - WordPress Mega Menu Plugin</a>"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Download and install the Contact Form 7 Plugin located at http://wordpress.org/extend/plugins/contact-form-7/"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload the plugin folder to the '/wp-content/plugins/' directory"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin through the 'Plugins' menu in WordPress"
+msgstr ""
+
+#. Found in installation list item.
+msgid "You will now have a \"Dynamic Text\" tag option in the Contact Form 7 tag generator"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "This section describes how to install the plugin and get it working."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Hook change to guarantee the plugin only runs when Contact Form 7 is present in the admin (avoids errors if Contact Form 7 is disabled, or if there is a plugin sequencing issue)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Complete rewrite for Compatibility with Contact Form 7 v4"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Compatibility update for Contact Form 7 v3.9"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated to work with Contact Form 7 v3.7.x"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed undefined variable warning"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated for compatibility with Contact Form 7 v3.6"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Referrer shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed a bug that created repeating square brackets around dynamic text values in cases where the form doesn't validate and JavaScript is deactivated."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed trailing whitespace to fix \"Headers already sent\" errors"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Current User Info shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Post Custom Field shortcode (with obfuscation support)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Hidden Field capability"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added $_POST shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added current post/page variable shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added current URL shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed administrative control panel dependency issue"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed dependency issue."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "None.  Yet."
+msgstr ""

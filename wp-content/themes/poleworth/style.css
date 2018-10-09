@@ -1,0 +1,4628 @@
+.hideme { display: none; }
+.showme { display: block;margin-bottom:1%;}
+.topnav {display: none!important;}
+.mobile-contact {display:none;}
+#onlymobile {display:none;}
+.print-button {display:none;}
+#new-leaf-mobile-pcp {display:none;}
+#crossover-event-car {width:50%;float:left;margin-right:2%;}
+body > footer > div > div.copyright > p:nth-child(2) {display:none;}
+.new-mobile-link {display:none;}
+.popup .selector span {padding-left: 0px;}
+.pum-theme-118326 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close {background-color:#C11E1E!important;}
+.fixed-price-servicing-desktop {margin-left:auto;margin-right:auto;}
+.fixed-price-servicing-mobile {display:none;}
+#new-micra-mobile {display:none;}
+#new-micra-desktop {display:block;}
+.promise-div {width:100%;margin-left:auto;margin-right:auto;text-align:center;margin-top:1%;margin-bottom:1%;}
+.promise-div a {font-weight:700!important;font-size:2em!important;}
+.new-mobile img {width:29%;float:left;margin:2%;}
+#new-mobile-link a {color:#000000!important;}
+#new-car-link-div {width:29%;border:1px solid #C0C0C0!important;padding:1%;margin-top:2%;margin-left:1%;margin-right:1%;float:left;}
+#new-mobile-link {background:#C0C0C0;padding:10px;color:#000000!important;text-align:center;margin-left:auto;margin-right:auto;margin-top:5%;margin-bottom:2%;font-size:1.1em;} 
+#new-car-link-a {font-weight:700;color: #808080; font-size:0.9em; padding-top: 0%; margin-top: 0px; margin-bottom: 2%;}
+#new-car-a {font-weight:700;color: #000000; font-size:1.8em; padding-top: 2%; margin-top: 0px; margin-bottom: 2%;}
+#new-car-range {color: #000000; font-size:1.1em; padding-top: 1px; margin-top: 2px; margin-bottom: 2%;}
+#new-car-price {color: #C11E1E; font-size:2.4em; font-weight:700; padding-top: 2%; margin-top: 2px; margin-bottom: 2%;}
+#new-car-arrow {color: #C11E1E;margin-left:4%;}
+#new-car-page-image {width:90%;padding-left:5%;padding-right:5%;margin-top:16%;margin-bottom:8%;}
+#mot > form > div {width:99%;}
+#scrolltriggered #inscroll { -webkit-box-shadow: none!important; -moz-box-shadow: none!important; box-shadow: none!important; font-size: 12px; padding: 20px 20px 10px 20px; }
+#scrolltriggered #inscroll form input {height: 35px!important;}
+#scrolltriggered #inscroll form input[type=submit], #scrolltriggered #inscroll form input.submit {width: 130% !important;height: 34px!important;}
+
+@media (min-device-width: 320px) and (max-device-width: 414px)  {select,textarea,input,input[type="text"]:focus,input[type="text"]:hover,input:focus,input:hover {font-size: 1.3em !important;}}
+
+@media (min-device-width: 320px) and (max-device-width: 414px) {
+
+.promise-div {margin-bottom:10%;}
+.mobilegone {display:none!important;}
+#mobile-menu {display:block!important;margin-top:0%;margin-bottom:0%;}
+.dropdown-container {display: none;background-color: #262626;padding-left: 8px;}
+.mobile-container {max-width: 480px;margin: auto;background-color: #555;height: 500px;color: white;border-radius: 10px;}
+.topnav {display:block!important;overflow: hidden;background-color: #333;position: absolute;z-index:1000;width:100%;margin-top:3%;border-bottom:1px solid #333;}
+.topnav #myLinks {display: none;background:#333;z-index:1000;}
+.topnav a {color: white;padding-top: 56px;padding-bottom: 30px;text-decoration: none;font-size: 50px;display: block;height: 44px;padding-left:2%;text-align: left;}
+.topnav a.icon {background: none;display: block;position: absolute;right: 0;top: 0;padding-left: 37px;padding-top: 42px;padding-bottom: 37px;padding-right: 37px;height: 44px!important;width: 44px!important;}
+.topnav a:hover {background-color: none;color: white;border-bottom: 0px!important;}
+.active {background-color: none;color: white;}
+#header-EMAIL {width:92%;height:100px;margin-top:2%;margin-left:2%;margin-bottom:4%;padding-left:2%;font-size:2.6em!important;}
+#header-embedded-subscribe {width: 92%;margin-left: 2%;height: 100px;margin-bottom: 4%;font-size:40px!important;background:#c11e1e;}
+#header_embed_signup_scroll input[type="email"] {font-size:2em;}
+
+#inscroll {display:none;}
+#car-finance-image {display:none;}
+div.selector {background: #FFFFFF!important;}
+#mot > form > div > span {padding-left:14px;}
+#mot > h4 {font-size:2.8em;line-height:1em;}
+#mot > h3 {font-size:2.2em;line-height:1em;margin-top:2%;margin-bottom:2%;}
+#mot > p {font-size:2.4em;line-height:1em;margin-top:2%;margin-bottom:2%;}
+#mot > form > label {font-size:2.0em;line-height:1em;margin-bottom:1.5%;}
+#mot > form > input {border: 2px solid #C11E1E!important;}
+#mot > form > div {border: 2px solid #C11E1E!important;}
+#mot > form > input[type="submit"] {font-size:2.4em;line-height:1em;width:100%!important;}
+
+#service > form > div > span {padding-left:14px;}
+#service > h4 {font-size:2.8em;line-height:1em;}
+#service > h3 {font-size:2.2em;line-height:1em;margin-top:2%;margin-bottom:2%;}
+#service > p {font-size:2.4em;line-height:1em;margin-top:2%;margin-bottom:2%;}
+#service > form > label {font-size:2.0em;line-height:1em;margin-bottom:1.5%;}
+#service > form > input {border: 2px solid #C11E1E!important;}
+#service > form > div {border: 2px solid #C11E1E!important;}
+#service > form > input[type="submit"] {font-size:2.4em;line-height:1em;width:100%!important;}
+#service > form > div:nth-child(16) {width:99%;height:80px;font-size:1.6em;}
+#service > form > div:nth-child(19) {width:99%;height:80px;font-size:1.6em;}
+#service > form > p:nth-child(14) {font-size:2.4em;line-height:1em;margin-top:2%;margin-bottom:2%;}
+#service > form > p:nth-child(17) {font-size:2.4em;line-height:1em;margin-top:2%;margin-bottom:2%;}
+#service > form > div:nth-child(16) > span {font-size:1.3em;}
+#service > form > div:nth-child(19) > span {font-size:1.3em;}
+span.page-numbers.current {padding:51px 36px 51px 36px!important;margin-left:0px!important;}
+#results > div:nth-child(5) > span {display:none;}
+/* .range label:last-of-type div {float: right!important;} */
+#crossover-event-car {width:100%;margin-bottom:2%;}
+body > footer > div > div.copyright > p:nth-child(2) {display:block;margin-bottom:4%;}
+.gdpr input[type="text"], input[type="email"] {font-size:1.8em!important;}
+.gdpr h1 {font-size:2.4em!important;margin-top:3%;margin-left:1%;}
+.gdpr h2 {font-size:2em!important;margin-top:3%;margin-left:1%;}
+.gdpr hr {height:5px;margin-right:1%;margin-top:5%;}
+.gdprtext {margin-left:1%;font-size:1.6em!important;margin-top:3%;line-height:1.2em;}
+.gdpr form > span.wpcf7-form-control-wrap.your-name {width:100%;font-size:1.8em;}
+#wpcf7-f119837-p119832-o1 > form > span.wpcf7-form-control-wrap.your-name > input {width:95%;height:80px;padding-left:2%;margin-top:2%;font-size:1.3em;}
+#wpcf7-f119837-p119832-o1 > form > span.wpcf7-form-control-wrap.your-email {width:95%;font-size:1.8em;}
+#wpcf7-f119837-p119832-o1 > form > span.wpcf7-form-control-wrap.your-email > input {width:95%;height:80px;padding-left:2%;margin-top:2%;font-size:1.3em;}
+#wpcf7-f119837-p119832-o1 > form > p:nth-child(6) > input {width:100%;height:100px;margin-top:4%;}
+#wpcf7-f119837-p119832-o1 > form > p:nth-child(6) {font-size:2em;}
+
+#wpcf7-f119839-p119832-o2 > form > span.wpcf7-form-control-wrap.your-name {width:95%;font-size:1.8em;}
+#wpcf7-f119839-p119832-o2 > form > span.wpcf7-form-control-wrap.your-name > input {width:95%;height:80px;padding-left:2%;margin-top:2%;font-size:1.3em;} 
+#wpcf7-f119839-p119832-o2 > form > span.wpcf7-form-control-wrap.your-email {width:95%;font-size:1.8em;}
+#wpcf7-f119839-p119832-o2 > form > span.wpcf7-form-control-wrap.your-email > input {width:95%;height:80px;padding-left:2%;margin-top:2%;font-size:1.3em;}
+#wpcf7-f119839-p119832-o2 > form > p:nth-child(6) > input {width:99%;height:100px;margin-top:4%;}
+#wpcf7-f119839-p119832-o2 > form > p:nth-child(6) {font-size:2em;}
+
+#wpcf7-f119841-p119832-o3 > form > span.wpcf7-form-control-wrap.your-name {width:95%;font-size:1.8em;}
+#wpcf7-f119841-p119832-o3 > form > span.wpcf7-form-control-wrap.your-name > input {width:95%;height:80px;padding-left:2%;margin-top:2%;font-size:1.3em;}
+#wpcf7-f119841-p119832-o3 > form > span.wpcf7-form-control-wrap.your-email {width:95%;font-size:1.8em;}
+#wpcf7-f119841-p119832-o3 > form > span.wpcf7-form-control-wrap.your-email > input {width:95%;height:80px;padding-left:2%;margin-top:2%;font-size:1.3em;}
+#wpcf7-f119841-p119832-o3 > form > p:nth-child(6) > input {width:99%;height:100px;margin-top:4%;}
+#wpcf7-f119841-p119832-o3 > form > p:nth-child(6) {font-size:2em;}
+
+div#scrolltriggered {width:98%!important;height:32%!important;cursor:pointer!important;font-size:2em;}
+#inscroll {font-size:2em;}
+div#scrolltriggered h5 {font-size:3.4em!important;padding: 24px 10px 24px 15px!important;cursor:pointer!important;width:37%!important;}
+div#scrolltriggered p {font-size:3.2em!important;margin 30px 0px!important;line-height:40px!important;cursor:pointer!important;padding-top:2%;padding-bottom:2%;}
+
+#inscroll > form > label:nth-child(1) {font-size:2.2em!important;cursor:pointer!important;}
+#inscroll > form > label:nth-child(5) {font-size:2.2em!important;cursor:pointer!important;}
+
+#inscroll > form > input[type="text"]:nth-child(1) {width: 98%!important;cursor:pointer!important;height: 80px!important;margin-bottom: 2%!important;font-size:3em!important;margin-bottom:2%;}
+#inscroll > form > input[type="text"]:nth-child(3) {width: 98%!important;cursor:pointer!important;height: 80px!important;margin-bottom: 2%!important;font-size:3em!important;}
+#trade-submit {width: 100%!important;height: 80px!important;font-size: 3.2em!important;cursor:pointer!important;}
+#closebox {top:10px!important;width:44px!important;height:44px!important;line-height:28px!important;font-size:3.2em!important;cursor:pointer!important;}
+div#nissan_service.popup h4 {font-size:2em;}
+div#nissan_service.popup {font-size:1.8em;line-height:1.6em;}
+#minical_calendar_0 > li > article > header {height:80px!important;background:#ffffff!important;}
+#minical_calendar_0 {width:76%!important;}
+#minical_calendar_0 > li > article > header > h6 {font-size:1.8em;margin-left:0px!important;margin-top:1%!important;color:#c11e1e!important;}
+#minical_calendar_1 > li > article > header {height:80px!important;background:#ffffff!important;}
+#minical_calendar_1 {width:76%!important;}
+#minical_calendar_1 > li > article > header > h6 {font-size:1.8em;margin-left:0px!important;margin-top:1%!important;color:#c11e1e!important;}
+body > div.fancybox-wrap.fancybox-mobile.fancybox-type-inline.fancybox-opened {width:90%!important;left:5%!important;}
+body > div.fancybox-wrap.fancybox-mobile.fancybox-type-inline.fancybox-opened > div > div > div {width:100%!important;height:100%!important;}
+#nissan_service > form > input[type="text"] {border:2px solid #C11E1E!important;margin-top:1%;margin-bottom:1%;}
+#nissan_service > form > div:nth-child(15) > span {width:100%!important;font-size:2em;float:left!important;padding-left:0px!important;padding-top: 3%;margin-left: 2%;}
+ul.minical li article section table tbody tr td a {height:80px!important;border: 1px solid #c11e1e!important;font-size:1.6em!important;font-weight:500!important;}
+ul.minical li article section table thead tr th {font-size:1.3em!important;color:#c11e1e!important;}
+#nissan_service > form > div:nth-child(15) {border:2px solid #C11E1E!important;width:100%!important;float:left!important;margin-top:5%;margin-bottom:5%;height:80px!important;}
+#nissan_service > form > div:nth-child(17) > span {width:100%!important;font-size:2em;float:left!important;padding-left:0px!important;padding-top: 3%;margin-left: 2%;}
+#nissan_service > form > div:nth-child(17) {border:2px solid #C11E1E!important;width:100%!important;float:left!important;margin-top:5%;margin-bottom:5%;height:80px!important;}
+#nissan_service > form > input[type="submit"]:nth-child(22) {width:100%!important;}
+
+#fbuilder .medium {height:60px;}
+#fbuilder input {height:60px;font-size:2.6em!important;}
+.fixed-price-servicing-desktop {display:none;}
+.fixed-price-servicing-mobile {display:block;}
+.new-mobile-link {display:block;}
+#popmake-118333 {width: 98%!important;top: 74px!important;left: 12px!important;}
+.pum-theme-118326 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close {font-size:3.4em!important;padding:40px!important;background-color:#C11E1E!important;background:#C11E1E!important;}
+.pum-theme-118326 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close input {font-size:3.4em!important;padding:40px!important;background-color:#C11E1E!important;background:#C11E1E!important;}
+.popmake-close {font-size:3.4em!important;padding:40px!important;background-color:#C11E1E!important;background:#C11E1E!important;}
+.pum-theme-118326 .pum-content, .pum-theme-default-theme .pum-content {margin-top:11%!important;}
+.leaf2-title1 p {font-size:1.8em!important;text-align:center;line-height:1.3em;}
+.leaf2-title2 p {font-size:1.8em!important;text-align:center;margin-top:3%;margin-bottom:3%;}
+.leaf2-title2 span {font-size:1.8em!important;text-align:center!important;margin-top:2%;margin-bottom:2%;}
+.leaf2-text1 p {font-size:1.4em!important;text-align:center;font-weight:400;line-height:1.3em;}
+.leaf2-image1 {display:none;}
+.leaf2-image2 img {width:100%!important;}
+#leaf-mobile-price {display:none;}
+#new-leaf-ul {display:none;}
+#new-leaf-ulp {margin-top:10%!important;margin-top:2%!important;}
+#new-leaf-mobile-pcp {display:block;}
+#wpcf7-f117786-p117773-o1 > form > p:nth-child(2) > span > input {width:98%;height:120px;font-size:2.6em!important;padding:4px;border: 2px solid #a71d1d;text-align:center;}
+#wpcf7-f117786-p117773-o1 > form > p:nth-child(3) > span > input {width:98%;height:120px;font-size:2.6em!important;padding:4px;border: 2px solid #a71d1d;text-align:center;}
+#wpcf7-f117786-p117773-o1 > form > p:nth-child(4) > span > input {width:98%;height:120px;font-size:2.6em!important;padding:4px;border: 2px solid #a71d1d;text-align:center;}
+#wpcf7-f117786-p117773-o1 > form > p:nth-child(5) > span > input {width:98%;height:120px;font-size:2.6em!important;padding:4px;border: 2px solid #a71d1d;text-align:center;}
+#wpcf7-f117786-p117773-o1 > form > p:nth-child(5) > input {width:98%;height:140px;font-size:2.8em!important;padding:1%;margin-top:4%;background:#C11E1E;-webkit-appearance: none;}
+#new-micra-desktop {display:none;}
+#new-micra-mobile {display:block;}
+#new-car-link-div {width:86%;border:1px solid #C0C0C0!important;padding:5%;margin-top:2%;margin-left:2%;margin-top:0px;margin-right:2%;margin-bottom:2%;}
+#new-mobile-link {background:#C0C0C0;padding:6%;color:#000000!important;text-align:center;margin-left:auto;margin-right:auto;margin-top:5%;margin-bottom:2%;font-size:2.4em;text-decoration:none;} 
+#new-mobile-link a {color:#000000!important;}
+#new-car-link-a {font-weight:700;color: #808080; font-size:2.4em; padding-top: 2%; margin-top: 5%; margin-bottom: 2%;}
+#new-car-a {font-weight:700;color: #000000; font-size:4.6em; padding-top: 2%; margin-top: 4%; margin-bottom: 2%;}
+#new-car-range {color: #000000; font-size:2.2em; padding-top: 1%; margin-top: 1%; margin-bottom: 2%;}
+#new-car-price {color: #C11E1E; font-size:4.4em; font-weight:700; padding-top: 4%; margin-top: 2px; margin-bottom: 2%;}
+#new-car-page-image {width:100%;padding-left:0px;padding-right:0px;margin-top:28%;margin-bottom:14%;}
+a[href^=tel] { color: inherit; text-decoration: none; }
+.mobile-contact {display:block;}
+#new-mobile img {width:96%!important;display:block!important;float:none!important;margin:2%;}
+#new-mobile-h1 {padding-top:6%;padding-bottom:6%;font-size:3.6em;}
+/* #slide-area > div {margin-left:0px!important;margin-right:0px!important;width:100%!important;} */
+ul.bjqs-controls.v-centered {display:none;}
+li.bjqs-slide {width:958px!important;height:700px!important;}
+div#mobile-contact-link.mobile-contact a {display:block!important;text-align:center;margin-left:auto;margin-right:auto;margin-top:22%;font-size:50px;color:#ffffff;}
+#menu-secondary-menu {font-size:22px!important;position:absolute!important;width:96%;margin-top:3%;}
+.home-widgets .home-top li {width:100%!important;}
+.homepage-row-1 {padding-left:0px!important;width:100%!important;}
+img#homepage-row-1.homepage-row-1 {width:100%!important;height:auto!important;}
+.home-widgets h2 {margin-top: 2%;font-size: 2.6em!important;}
+.home-widgets p {margin: 5% 0% 6% 0%!important;font-size: 2.4em!important;line-height:54px!important;}
+.home-top ul {padding-left:0px!important;width:100%;}
+.home-top li {padding-left:0px!important;width:100%;}
+.wrapper {width:100%!important;margin-top:-14%!important;}
+.car-submit2 {margin-left:-2%!important;}
+.sub-container.mega {display:none;}
+header nav > ul li .sub-container {position:absolute;overflow:inherit!important;clear:both;margin:10px 0px 0px 0px;width:100%;z-index:1000!important;left:-355px!important;top:4px!important;}
+header nav > ul .sub li.mega-hdr li a {padding:9px;font-size:40px!important;line-height:32px!important;font-weight:500;text-shadow:none;}
+h1#polesworth-logo {width:100%;display:block;margin-left:auto;margin-right:auto;padding-left:20%;padding-top:0px!important;}
+header {height:472px!important;background:#c11e1e!important;margin-top:10%;z-index:100;}
+header nav > ul li {margin-left:7px!important;}
+ul#menu-secondary-menu.menu {margin-left:3%!important;margin-right:1%!important;}
+nav {margin-top:7%;width:100%;margin-left:0px;}
+nav li {margin-left:0%;margin-right:0%;}
+nav a {font-size:34px!important;border-color:#ffffff!important;border-radius:3px!Important;border-width:4px!important;border-style:solid!important;padding-top:5%!important;padding-bottom:5%!important;padding-left:2%!important;padding-right:2%!important;}
+menu-item-3076 {height:220px!important;}
+menu-item-3076 {height:460px!important;}
+#menu-secondary-menu a {z-index:10!important;}
+.wrapper h1 img {width:70%;padding-top:3%;padding-bottom:2%;}
+#sub-nav {display:none;}
+.home-button {border-color:#B01E1E!important;border-radius:3px!important;border-width:3px!important;border-style:solid!important;padding-top:3%!important;padding-bottom:3%!important;padding-left:3%!important;padding-right:3%!important;}
+footer {display:block;}
+#martin-image {width:30%!important;height:auto!important;float:left!important;padding-left:0px!important;margin-right:2%!important;}
+#front-page-text p {text-align:left!important;font-size:30px!important;padding-bottom:2%!important;line-height:34px!important;}
+#front-page-text h1 {margin-left:0%;font-size:32px!important;}
+div.third.widget {display:none;!important;}
+li.third.widget {width:100%!important;height:auto!important;margin-left:0%;margin-right:0%;}
+#bottom-row-1 {width:100%!important;height:auto!important;margin-left:0%;margin-right:0%;}
+#bottom-row-1 h3 {font-size:34px;margin-top: 2%;margin-bottom: 2%;}
+#bottom-row-1 p {margin-left: 0%!important;line-height:50px;}
+#bottom-row-1 {width:100%!important;height:auto!important;margin-left:0%;margin-right:0%;}
+#bottom-row-2 {width:100%!important;height:auto!important;margin-left:0%;margin-right:0%;}
+#bottom-row-2 > div > a > img {width:92%!important;margin-left:0px!important;margin-right:0px!important;}
+#bottom-row-2 h3 {text-align:left!important;}
+#bottom-row-2 p {text-align:left!important;margin-left:0px!important;line-height:50px;}
+#bottom-row-3 {width:100%!important;height:auto!important;margin-left:0%;margin-right:0%;}
+#bottom-row-3 p {margin-left:0%!important;line-height:50px;}
+#bottom-row-3 li {font-size:22px!important;margin-top:3%;margin-bottom:3%;}
+.copyright {height:200px!important;text-align:center!important;margin-top:14%;}
+.copyright p {text-align:center!important;float:none!important;font-size:40px!important;margin-top:18px!important;margin-right:0px!important;}
+.copyright a {font-size:40px!important;}
+.copyright nav {display:none;}
+
+.slide-container {display:none;}
+#car-finder-mobile {width:100%;}
+#car-finder-mobile label {display:none;}
+
+#car-finder-mobile div.selector span {font-size:42px!important;padding:18px 0px 0px 0px!important;z-index:6;}
+#car-finder-mobile div.selector select {z-index:6;}
+#car-finder-mobile .range label {clear:none;float:none;font-size:18px;width:50%;}
+#car-finder-mobile .car-finder input[type="submit"] {line-height:120px!important;height:140px!important;margin-top:20px!important;font-size:64px!important;width:94%!important;float:none!important;background-color: #c11e1e!important;background: none;-webkit-appearance: none;margin-left: 0.8%!important;}
+#car-finder-mobile #min {width:200px!important;font-size:48px!important;height:110px!important;margin-left:4px!important;margin-bottom:2%;border:2px solid #c11e1e!important;}
+#car-finder-mobile div.selector select {height:112px!important;}
+#car-finder-mobile #max {float:right;width:200px!important;font-size:48px!important;height:110px!important;margin-bottom:2%;margin-right:40px!important;border:2px solid #c11e1e!important;}
+
+#car-finder-mobile .half {width:100%!important;z-index: 6;}
+#car-finder-mobile .car-finder div.selector {width:94%!important;line-height:88px!important;height:88px!important;font-size: 34px!important;line-height:34px!important;padding-top:42px!important;text-align:center;margin-right:48px!important;z-index: 6;border:2px solid #c11e1e!important;padding-bottom:24px!important;margin-top:10px!important;}
+#car-finder-mobile .range {float:none!important;width:99%!important;margin-left:0px;margin-top:12px;}
+#car-finder-mobile #new-search-2 div.selector {line-height:88px!important;font-size: 34px!important;line-height:34px!important;padding-top:42px!important;text-align:center;margin-right:48px!important;z-index: 6;border:2px solid #c11e1e!important;padding-bottom:24px!important;margin-top:10px!important;}
+#car-finder-mobile .priceslider {max-width:100%!important;width:88%!important;margin-top:24px!important;left:28px;border:24px solid #DDDDDD!important;float:none!important;display:none!important;}
+
+#price-left {margin-top:2%;}
+.price-left-label {float:left!important;margin-right:2%;}
+#price-left-pound {float:left!important;margin-top:1.5%;}
+#price-right {float:right!important;}
+#max {float:right!important;}
+#price-right-pound {margin-top:4.5%;}
+
+
+#car-finder-mobile div.range label {display:inline;}
+
+#slide-area {height:974px!important;}
+#car-finder-mobile .car-finder {height:974px!important;margin-top:0px!important;margin-bottom:0px!important;border:none;box-shadow:0px 0px 0px 0px!important;border-radius:0px!important;-webkit-border-radius:0px!important;-webkit-box-shadow:0px!important;}
+#car-finder-mobile .car-finder label {color:#C11E1E;clear:both;font-weight:700;height:110px!important;line-height:88px!important;margin-top:42px!important;margin-bottom:12px!important;font-size:29px!important;text-transform: uppercase;}
+#car-finder-mobile .car-finder h2 {height:120px!important;line-height:110px!important;font-size:50px!important;margin-right:4%!important;padding-top:2%!important;}
+#car-finder-mobile .car-finder {width:100%;margin:0px 0px 0px 0px;}
+#slide-area div.wrapper {margin:0px 0px 0px 0px;width:100%;}
+
+/*Inner Car Finder */
+
+.pagination span {background: url(/wp-content/uploads/2018/08/font-for-results-mobile.png) 0 -124px!important;background-repeat: no-repeat!important;}
+.intro-text {margin-top:3%;}
+.intro-text h1 {font-size:3em!important;line-height:1em!important;}
+.intro-text p {font-size:2.4em!important;line-height:1em;margin-top:2%;}
+#new-search > table > tbody > tr:nth-child(1) > td:nth-child(1) > label {display:none;font-size:30px!important;margin-left:0%;margin-top:2%;margin-bottom:2%;}
+#new-search > table > tbody > tr:nth-child(1) > td:nth-child(2) > label {display:none;font-size:30px!important;margin-left:0%;margin-top:2%;margin-bottom:2%;}
+#new-search .priceslider {display:none;}
+#new-search input[type="submit"] {}
+#new-search #uniform-make {font-size:22px;width:100%!important;padding-top:6%;height:114px;}
+#new-search #uniform-make span {opacity:0;font-size:22px;}
+#new-search #uniform-model span {opacity:0;font-size:22px;}
+#new-search #uniform-model {font-size:22px;width:100%!important;padding-top:6%;height:114px;}
+#new-search #min {display:none;}
+#new-search .minimum-label {display:none;}
+#new-search .maximum-label {display:none;}
+#new-search #max {display:none;}
+#new-search {display:none;}
+body > section.main > div > div.intro-text > hr {display:none;}
+#filter {width:100%!important;margin-top:0%!important;margin-bottom:2%!important;height:30%!important;border-bottom: 1px solid #c11e1e!important;margin-left:1px;}
+#filter td {width:35%!important;}
+#mobilefilter {display:block;font-size: 2.4em;margin-top: 2%;margin-bottom: 2%;color: #c11e1e;}
+.filter-box ul {width:66%!important;}
+.filter-box li {width: 45%!important;height:80px!important;margin-bottom:6%!important;margin-left:0%!important;}
+.filter-box li label {font-size: 2.4em!important;margin-top: 12%!important;}
+#refine > div > ul > li:nth-child(1) {margin-right:9%!important;}
+#refine > div > ul > li:nth-child(2) {margin-right:0%!important;}
+#refine > div > ul > li:nth-child(3) {margin-right:9%!important;margin-bottom:1%!important;}
+#refine > div > ul > li:nth-child(4) {margin-right:0%!important;margin-bottom:1%!important;}
+.checker {width:80px!important;height:80px!important;border: 1px solid #c11e1e!important;}
+.checker span {zoom:4;overflow:hidden;}
+.filter-box li input {font-size:3.2em!important;margin-top:14%!important;}
+#refine {background:#fff!important;margin-top:2%;border-left:none!important;border-right:none!important;border-bottom:none!important;}
+#refine > div > input.button {width: 25%!important;margin-right: 0%!important;margin-left: 4%!important;margin-top: 14%!important;height: 80px!important;-webkit-border-radius: 0px!important;background: #c11e1e !important;font-size: 1.8em!important;float:left!important;}
+#new-search div.selector {margin-bottom:0px!important;}
+#new-search div.selector span {z-index:6;}
+#new-search div.selector select {z-index:6;position:relative;opacity:10!important;font-size:48px!important;}
+#new-search > table > tbody > tr:nth-child(2) > td:nth-child(3) {display:none;}
+#new-search > table > tbody > tr:nth-child(2) > td:nth-child(4) {display:none;}
+#new-search > table > tbody > tr:nth-child(2) > td:nth-child(5) {display:none;}
+#new-search #make {top: -64px!important;height: 140px;border-width:2px;border-radius: 0px;border-color: #C11E1E;padding-top:2%;padding-bottom:2%;width:90%;font-size:22px;}
+#new-search #model {top: -64px!important;height: 140px;border-width:2px;border-radius: 0px;border-color: #C11E1E;padding-top:2%;padding-bottom:2%;width:90%;font-size:22px;}
+#new-search input[type="submit"] {width: 100%;margin-top: 0%;height: 140px;border-radius: 0px;-webkit-appearance: none;font-size:30px!important;background:#c11e1e!important;}
+#results .selector {width: 100%!important;font-size:22px;margin-right:0px!important;position: inherit!important;height:auto!important;background:#ffffff!important;overflow:inherit!important;}
+#results .selector span {width: 100%!important;opacity:0;font-size:22px;}
+#results h3 {font-size:38px;}
+#results h4 {font-size:58px;margin-top:2%;margin-bottom:1%;line-height:70px;}
+#results-choices {opacity:1;position:relative;height:140px;top:-22px;font-size:48px!important;border-radius: 0px;border-width:2px;border-color: #c11e1e;width: 99%!important;margin-left:1%;}
+.pagination {width:100%!important;max-width:100%;overflow:hidden;}
+.pagination a {font-size:1.8em!important;background:#c11e1e!important;}
+.CurrentPageBorder {margin: 0px!important;width:90px!important;height:120px!important;padding: 20px 10px 20px!important;}
+span.page-numbers.current {margin: 0px!important;background:#c11e1e!important;font-size:2em!important;}
+#results > div:nth-child(3) > div > span {padding: 47px 30px 47px 30px;top: 48px;position: relative;}
+.page-numbers {padding: 47px 35px 47px 35px!important;top: 48px;position: relative;}
+ {padding: 55px 40px 55px 40px!important;}
+#results > div:nth-child(3) > span {display:none;}
+.car-listings img {width:100%!important;max-width:100%!important;height:auto!important;}
+#car-listings > li:nth-child(1) > ul > li {margin-right: 3px!important;font-size:36px!important;line-height:70px;}
+#car-listings > li:nth-child(2) > ul > li {margin-right: 3px!important;font-size:36px!important;line-height:70px;}
+#car-listings > li:nth-child(3) > ul > li {margin-right: 3px!important;font-size:36px!important;line-height:70px;}
+#car-listings > li:nth-child(4) > ul > li {margin-right: 3px!important;font-size:36px!important;line-height:70px;}
+#car-listings > li:nth-child(5) > ul > li {margin-right: 3px!important;font-size:36px!important;line-height:70px;}
+#car-listings > li:nth-child(6) > ul > li {margin-right: 3px!important;font-size:36px!important;line-height:70px;}
+#car-listings > li:nth-child(7) > ul > li {margin-right: 3px!important;font-size:36px!important;line-height:70px;}
+#car-listings > li:nth-child(8) > ul > li {margin-right: 3px!important;font-size:36px!important;line-height:70px;}
+#car-listings > li:nth-child(9) > ul > li {margin-right: 3px!important;font-size:36px!important;line-height:70px;}
+#car-listings > li:nth-child(10) > ul > li {margin-right: 3px!important;font-size:36px!important;line-height:70px;}
+#finance-button {display:none;}
+.car-listings .price-box {width: 100%!important;float:left;margin-bottom: 2%;margin-top: 2%;}
+.car-listings .price-box .price {float:left;font-size:56px!important;margin-top:10%;margin-left:6%;}
+#car-listings .price-box a {float:right!important;width:200px;height:100px!important;float:left;width: 56%;clear: none!important;font-size: 40px;margin-top: 2%;margin-bottom: 2%;padding-top:80px;background:#c11e1e!important;}
+.car-listings .options-box {width: 100%!important;font-size:24px!important;line-height: 54px;}
+#car-listings p.finance-quote {display: block;float: left!important;margin-top: 16%;left: 8%;position: absolute;font-size: 1.8em;}
+#car-listings > li > ul {width:100%!important;font-size:36px!important;line-height:70px;}
+#car-listings > li > li {font-size:36px!important;line-height:70px;}
+#car-listings > li:nth-child(1) {margin-top:2%;border-bottom: 5px solid #c11e1e!important;}
+#car-listings > li:nth-child(2) {margin-top:2%;border-bottom: 5px solid #c11e1e!important;}
+#car-listings > li:nth-child(3) {margin-top:2%;border-bottom: 5px solid #c11e1e!important;}
+#car-listings > li:nth-child(4) {margin-top:2%;border-bottom: 5px solid #c11e1e!important;}
+#car-listings > li:nth-child(5) {margin-top:2%;border-bottom: 5px solid #c11e1e!important;}
+#car-listings > li:nth-child(6) {margin-top:2%;border-bottom: 5px solid #c11e1e!important;}
+#car-listings > li:nth-child(7) {margin-top:2%;border-bottom: 5px solid #c11e1e!important;}
+#car-listings > li:nth-child(8) {margin-top:2%;border-bottom: 5px solid #c11e1e!important;}
+#car-listings > li:nth-child(9) {margin-top:2%;border-bottom: 5px solid #c11e1e!important;}
+#car-listings > li:nth-child(10) {margin-top:2%;border-bottom: 5px solid #c11e1e!important;}
+
+/* Single Car */
+
+.third {width:100%!important;max-width:100%!important;height:735px!important;margin-right:0px!important;float:left!important;}
+.single-car-image {width:100%!important;max-width:100%!important;}
+ul.bjqs {width:100%!important;height:740px!important;}
+#single-car-single-image {width:100%!important;height:100%!important;}
+.makes-div {display:none!important;}
+
+
+
+.finance-calc {width:100%!important;}
+.finance-calc label {font-size:2em;margin-bottom:2%;margin-top:2%;}
+.finance-calc .selector {width:96%!important;height:100px!important;}
+.finance-calc .selector span {font-size:2.2em;padding-top:3%;width:100%!important;height:100px;}
+.finance-calc input[type="submit"] {width:100%;height:120px;font-size:2.8em!important;margin-top:3%;margin-bottom:3%;background:#c11e1e;-webkit-appearance: none;}
+.calc-results {width:100%!important;margin-left:0%!important;margin-right:0%;}
+#calc-results-single > table {width:100%;}
+.calc-results th {text-align:left;border: 0px!important;display: flex;font-size: 3em;line-height: 3em;}
+#calc-results-single > table > tbody {float:left;width:66%;}
+#calc-results-single > table > tbody > tr:nth-child(1) {width:50%;display:grid;font-size:3em;line-height:2.84em;margin-left:4%;float:left!important;}
+#calc-results-single > table > tbody > tr:nth-child(2) {width:33%;display:grid;font-size:3em;line-height:2.84em;margin-left:4%;float:left!important;}
+#calc-results-single > table > tbody > tr:nth-child(3) {width:25%;display:grid;font-size:3em;line-height:2.84em;margin-left:4%;}
+.calc-results td {border:none!important;}
+#calc-results-single > table > thead {float:left!important;}
+.calc-disclaimer {margin-left: 0%!important;line-height: 1.4em!important;padding: 10px 0px 0px 0px;width: 100%!important;font-size: 2em!important;}
+#calc-disclaimer-single > img {width: 100%!important;margin-top: 2%!important;margin-bottom: 2%!important;}
+#finance-calc-single > div:nth-child(2) > select {height:86px!important;}
+#finance-calc-single > div:nth-child(4) > select {height:86px!important;}
+#finance-calc-single > div:nth-child(4) > span {height:86px!important;}
+#finance-calc-single > div:nth-child(6) > select {height:86px!important;}
+#finance-calc-single > div.selector.fixedWidth.hover {font-size:2em!important;}
+#finance-calc-single > div:nth-child(6) > span {height:86px!important;}
+#calc-results-single > table > tbody > tr:nth-child(1) > td:nth-child(11) > strong {font-size:1.8em!important;color:#c11e1e!important;}
+#calc-results-single > table > tbody > tr:nth-child(2) > td:nth-child(11) > strong {font-size:1.8em!important;color:#c11e1e!important;}
+div.calculator {display:block;}
+
+.print-button {font-size:2em;font-weight:700;display:block;}
+.two-thirds {width:100%!important;float:left!important;margin:0px 0px 0px 0px!important;}
+.car-listings h2, .car-single h2 {font-size:2.6em!important;overflow:hidden!important;font-weight: 700!important;line-height: 1em!important;}
+.price-box {float: right!important;text-align: center!important;width:250px!important;}
+#single-car-content #financebutton {width: 177px;padding-top: 31px;border-radius: 0px!important;margin-right: 0%;font-size: 28px;line-height: 30px;margin-top: 5%;}
+.main-details {width: 70%;margin-top: 2%!important;margin-left: 0!important;}
+.main-details li {font-size:28px!important;font-weight:700!important;list-style-type: none!important;}
+.options-box {width:72%!important;font-size: 24px!important;line-height: 35px!important;float: left!important;border-top: 1px solid #DDDDDD!important;padding: 10px 0px!important;}
+#single-car-content #options-box-options-single {width:100%!important;font-size: 26px;line-height: 35px;}
+// #single-car-content #finance-quote-single {display:none!important;}
+#single-car-content #social-link {display:none!important;width:28%;} 
+#single-car-content #social-link iframe {width:120px!important;height:60px!important;}
+.car-listings .price, .car-single .price {font-size: 56px!important;}
+.reduced-triangle {border-width: 120px!important;}
+.reduced-text {top:59px!important;left:7px!important;font-size: 38px!important;line-height: 40px!important;}
+.reduced-text h6 {font-size: 38px!important;line-height: 40px!important;}
+.finance-drop {display:block!important;background: #dddddd!important;color: #C11E1E!important;clear: both!important;display: block!important;font-weight: 700!important;line-height: 40px!important;margin: 0px 0px -10px -20px!important;padding: 40px 20px!important;height: 60px!important;width: 100%!important;}
+#finance-drop-single {display:block!important;font-size: 30px!important;text-align:center!important;}
+.finance-quote-2 {font-size: 17px!important;float: right;color: #c11e1e;font-weight: 700;margin-top: 1px!important;margin-right: 23px!important;margin-bottom: 10px;}
+#print-link > a > img {width:100px!important;}
+body > section.main > div > div.hide-on-mobile > img {width:98%!important;}
+body > section.main > div > div.hide-on-mobile > a > img {width:98%!important;}
+#used-car-shoutout-single > p {font-size: 22px!important;margin-left: 2%!important;margin-right: 2%!important;line-height: 32px!important;margin-bottom:2%!important;}
+.used-car-shoutout {color:#c11e1e!important;margin-left: 2%!important;margin-right: 2%!important;background-color:#fff!important;width:96%!important;}
+#third-single {display:none;}
+#two-thirds-single {margin-left:2%!important;margin-right:2%!important;width:96%!important;}
+#two-thirds-single > h3 {font-size: 30px!important;text-align: center!important;margin-bottom: 2%!important;margin-top: 2%!important;}
+#car-details-single {max-width: 100%!important;width: 100%!important;}
+.car-details li:before {display:none!important;}
+#car-details-single {font-size:36px!important;text-align:center!important;line-height:44px!important;}
+#search-results-single {font-size:30px!important;}
+img#new-arrivals-overlay {display:none;}
+
+/* Single Car Test Drive Form */
+
+.test-drive-inline-form {width:100%!important;}
+.used-car-test-drive {margin-left:2%;margin-right:2%;}
+.used-car-test-drive h3 {margin-top:2%;margin-bottom:2%;font-size: 3em!important;}
+.used-car-test-drive p {font-size: 2.4em!important;font-weight: 500;line-height:38px;}
+test-drive-inline-form p {font-size: 2em!important;font-weight: 500;line-height:32px;}
+#wpcf7-f112222-p111062-o1 > form > div.test-drive-inline-form p {font-size: 5em;font-weight: 500;margin-bottom:2%;}
+#wpcf7-f112222-p111062-o1 > form > div.test-drive-inline-form > p > span {width:100%;margin-top:2%;}
+.test-drive-inline-form input {width: 100%!important;margin-top: 5px;height: 100px!important;}
+#lbp-inline-href-11 > div > img {width:100%;}
+#wpcf7-f112222-p111062-o1 > form > div.test-drive-inline-form > p:nth-child(5) > input {height:100px;}
+
+/* Single Car Finance Form */
+
+#colorbox {top: 2%!important;left: 5%!important;width: 90%!important;height: 100%!important;}
+#cboxWrapper {height: 100%!important;width: 100%!important;}
+#cboxTopCenter {width: 95%!important;}
+#cboxMiddleLeft {height:1600px!important;}
+#cboxMiddleRight {height:1600px!important;}
+#cboxContent {width:95%!important;height:1600px!important;}
+#cboxLoadedContent {width:100%!important;height:1550px!important;}
+#cboxBottomCenter {width:95%!important;}
+.applypopup {width: 90%!important;}
+.applypopup h3 {font-size:46px!important;margin-top:6%!important;margin-bottom:6%!important;}
+.applypopup p.intro {font-size:32px!important;margin-top:5%!important;margin-bottom:5%!important;margin-left:auto!important;margin-right:auto!important;}
+
+.applypopup p {width:100%!important;font-size:38px!important;}
+.applypopup input[type="text"] {width:97%;!important;}
+.applypopup input[type="email"] {width:97%;!important;}
+.applypopup input[type="submit"] {width:83%!important;margin: 60px 1px!important;padding:53px!important;font-size:32px!important;}
+#cboxTitle {font-size:32px!important;margin-bottom:2%!important;}
+
+/* Finance Form Page 2 */
+
+#wpcf7-f113159-p49174-o1 {margin-left:2%!important;margin-right:2%!important;}
+#wpcf7-f113159-p49174-o1 > form > div.applyform > p {font-size:32px!important;margin-top:1%!important;}
+
+#wpcf7-f113159-p49174-o1 > form > div.applyform > div.applyhalf {display: block!important;width: 100%!important;}
+#wpcf7-f113159-p49174-o1 > form > div.applyform > div.applyhalf > div.applyhalf1 {width:100%!important;}
+
+.applyhalf p.subtitle {font-size:44px!important;margin-bottom:2%!important;}
+.applyhalf input {width: 50%!important;height: 50px!important;font-size: 28px!important;display:inline-block!important;float:right!important;}
+.applybody {width: 100%!important;}
+.applybody p.field {width: 100%!important;text-align: left!important;font-size: 40px!important;}
+.applybody input[type="text"] {border-radius: 0px!important;width: 96%!important;height: 100px!important;font-size:3em!important;}
+.applybody input[type="number"] {border-radius: 0px!important;width: 96%!important;height: 100px!important;font-size:3em!important;}
+.applybody input[type="radio"] {margin: -51px 4px 0px 201px!important;float:right!important;font-size:2em!important;}
+
+#wpcf7-f113159-p49174-o1 > form > div.applyform > div.applyhalf > div.applyhalf2 {width:100%!important;}
+span.wpcf7-list-item {display: block!important;font-size: 40px!important;margin-top: 14%!important;margin-left:0px!important;}
+#wpcf7-f113159-p49174-o1 > form > div.applyform > div.applybody > p:nth-child(28) > span > div {width:96%!important;}
+.applybody div.selector select {height:54px!important;}
+#wpcf7-f113159-p49174-o1 > form > div.applyform > div.applybody > p:nth-child(28) > span > div > span {width:100%!important;height:80px!important;border-radius:0px!important;font-size: 28px!important;padding-top: 4%!important;padding-bottom: 0%!important;margin-top: 2%!important;}
+#wpcf7-f113159-p49174-o1 > form > div.applyform > div.applybody > p:nth-child(28) > span > div > select > option {font-size:28px!important;}
+#formsubmit {border-radius: 0px!important;left: 0px!important;padding: 0px!important;height: 120px!important; width: 100%!important;font-size: 34px!important;}
+
+/* Finance Form Page 3 */
+
+#wpcf7-f113329-p113330-o1 {margin-left:2%!important;margin-right:2%!important;}
+#wpcf7-f113329-p113330-o1 > form > div.applyform > p {font-size:32px!important;margin-top:1%!important;}
+.finalhalf {width: 100%!important;}
+.finalhalf p.subtitle {font-size:44px!important;margin-bottom:2%!important;}
+#formsubmit2 {border-radius: 0px!important;left: 0px!important;padding: 0px!important;height: 120px!important; width: 100%!important;font-size: 34px!important;text-align:center!important;margin-top:5%!important;}
+.thankyou {margin-left:2%!important;margin-right:2%!important;margin-top:2%!important;}
+.thankyou-h1 {font-size:48px!important;line-height:50px!important;margin-top:2%!important;margin-bottom:6%!important;}
+.thankyou-p {font-size:40px!important;line-height:44px!important;margin-top:2%!important;margin-bottom:2%!important;}
+.thankyou-links {font-size:40px!important;line-height:40px!important;margin-top:6%!important;margin-bottom:6%!important;}
+.thankyou-end a {font-size:4em!important;line-height:40px!important;}
+.thankyou-contact {font-size:32px!important;width:100%!important;margin-left:auto!important;margin-right:auto!important;margin-top:12%!important;margin-bottom:5%!important;text-align:center;display:block!important;}
+.thankyou-reg {font-size:32px!important;width:100%!important;margin-left:auto!important;margin-right:auto!important;margin-top:5%!important;margin-bottom:5%!important;text-align:center;display:block!important;}
+.thankyou-terms {font-size:32px!important;width:100%!important;margin-left:auto!important;margin-right:auto!important;margin-top:5%!important;margin-bottom:5%!important;text-align:center;display:block!important;}
+.main {width:96%;margin-left:2%;margin-right:2%;margin-top:14%!important;}
+
+/* Fixed Page Styling */
+
+#car-finance-h1 {font-size:3.4em;margin-top:5%!important;text-align:center;margin-bottom:2%;}
+#car-finance-p {display:none!important;font-size:30px;margin-top:2%!important;}
+#car-finance-p span {display:inline-block!important;width:50%!important;float:left;font-size:30px;margin-top:4%!important;margin-bottom:4%!important;}
+.car-finance-gcf {font-size:2.4em!important;line-height:2em!important;margin-top:5%!important;margin-bottom:1%!important;}
+#car-finance-p > p > span:nth-child(2) {display:none!important;}
+#car-finance-p > p > span:nth-child(4) {display:none!important;}
+#car-finance-p > p > span:nth-child(6) {display:none!important;}
+#car-finance-p > p > span:nth-child(8) {display:none!important;}
+#car-finance-p > p > a:nth-child(9) > span {width:100%!important;float:none!important;}
+.wpcol-two-third {width: 100%!important;}
+#car-finance-image {width:100%!important;height:auto!important;}
+body > section.main > div > div.wpcol-two-third > p {font-size:2.8em!important;line-height:1.2em;text-align:center;}
+#onlymobile {display:block;}
+#financebutton {border-radius: 0px!important;width: 100%!important;font-size: 32px!important;font-weight: 700!important;text-align: center!important;padding-top: 50px!important;padding-bottom: 50px!important;margin-top:4%!important;margin-bottom:4%!important;}
+body > section.main > div > div.wpcol-one-third.wpcol-last {width:100%!important;}
+body > section.main > div > div.wpcol-one-third.wpcol-last > p:nth-child(1) > img {display:none!important;}
+body > section.main > div > div.wpcol-one-third.wpcol-last > p:nth-child(2) > img {display:none!important;}
+body > section.main > div > p:nth-child(7) {display:none!important;}
+#finance-p {color:#000!important;text-align:center!important;margin-top:3%!important;margin-bottom:3%!important;}
+div.wpcol-one-half span {font-size:24px!important;}
+div.wpcol-one-half li {font-size:24px!important;line-height:30px!important}
+#garage-p {display:none!important;}
+#garage-services-div #garage-services-image {width:40%!important;height:auto!important;}
+#garage-services-div #garage-services-h1 {font-size:5em!important;margin-top:4%;margin-bottom:4%;line-height:1.4em;}
+#garage-services-div #garage-services-h3 {font-size:4em!important;margin-top:4%;margin-bottom:4%;}
+#garage-services-div #garage-services-span {font-size:3em!important;margin-top:4%;margin-bottom:4%;line-height:1.4em;}
+#garage-services-div #garage-services-title {font-size:3em!important;margin-top:4%;margin-bottom:4%;line-height:1.2em;}
+#garage-services-div #garage-services-body{font-size:1.6em!important;margin-top:4%;margin-bottom:4%;line-height:1.6em;}
+#garage-services-div #garage-services-frame {width:100%!important;height:500px!important;}
+#garage-services-div #garage-services-contact {width:100%!important;}
+#garage-services-div #garage-services-vosa {font-size:2em!important;margin-top:4%;margin-bottom:6%;line-height:2em;}
+#garage-services-div #garage-services-contact > div > div.wpcol-one-quarter {width:50%!important;float:left;margin-right:0px;}
+#garage-services-div #garage-services-contact > div > div.wpcol-one-third {width:50%!important;float:left;margin-right:0px;margin-top:0px;}
+#garage-services-div #garage-services-bodywork {width:100%;height:auto;font-size:4em;}
+#garage-services-div #garage-services-bodywork > strong {margin-top:2%;margin-bottom:2%;}
+#garage-services-div #garage-services-bodywork img {width:100%;height:auto;}
+#garage-services-div #garage-services-mot-prices {font-size:2em!important;margin-top:4%;margin-bottom:4%;line-height:1.2em;}
+#garage-services-div #garage-services-button {width:100%!important;font-size:4em;font-weight:700;display:block;}
+#mot-button {font-size:4em!important;}
+#minical_calendar_0 header {height:10%!important;color:#000;background:#fff!important;}
+
+.wpcol-one-third {width:100%!important;}
+#mot-button {display:inline-block!important;width:100%!important;margin-top:3%!important;margin-bottom:3%!important;padding-top: 40px!important;padding-bottom: 40px!important;height: auto!important;}
+#nissan-service-button {display:inline-block!important;width:100%!important;margin-top:3%!important;margin-bottom:3%!important;padding-top: 40px!important;padding-bottom: 40px!important;height: auto!important;}
+#service-button {display:inline-block!important;width:100%!important;margin-top:3%!important;margin-bottom:3%!important;padding-top: 40px!important;padding-bottom: 40px!important;height: auto!important;}
+.wpcol-one-third a {font-size:32px!important;}
+.wpcol-one-third {margin-top:3%;}
+body > div.fancybox-overlay.fancybox-overlay-fixed {width: 100%!important;}
+body > div.fancybox-overlay.fancybox-overlay-fixed > div {width: 96%!important;top: 5%!important;left: 2%!important;}
+body > div.fancybox-overlay.fancybox-overlay-fixed > div > div > div > div {width: 100%!important;}
+.popup input {width: 98%!important;height: 80px!important;font-size: 2em!important;}
+#mot > form > div > span {height: 80px!important;font-size: 1.4em!important;width:100%!important;}
+#mot > form > div {width:100%!important;}
+#mot > form > div > select {font-size:1.8em!important;cursor:pointer;height: 80px!important;width:100%!important;}
+#mot > form > div.selector {height: 80px!important;font-size: 1.4em!important;}
+#mot > form > input {font-size:2.8em!important;}
+#mot > form > p:nth-child(14) {font-size: 2.4em!important;line-height:1em;}
+#mot > form > p:nth-child(17) {font-size: 2.4em!important;line-height:1em;}
+/* Contact Page styling */
+
+#contact-page-mobile #contact-page-mobile-h1 {font-size:5em!important;margin-top:4%;margin-bottom:4%;line-height:1.4em;}
+#contact-page-mobile #contact-page-mobile-span {font-size:3em!important;margin-top:4%;margin-bottom:4%;line-height:1.4em;}
+#contact-page-mobile #contact-page-mobile-span-email {font-size:1.8em!important;margin-top:4%;margin-bottom:4%;line-height:1.4em;}
+#contact-page-mobile #contact-page-mobile-span-hours {font-size:1.8em!important;margin-top:4%;margin-bottom:4%;line-height:1.4em;}
+#contact-page-mobile #contact-page-mobile-title {font-size:3em!important;margin-top:4%;margin-bottom:4%;line-height:1.2em;}
+#contact-page-mobile #contact-us-frame {width:100%!important;height:500px!important;}
+#contact-page-mobile .wpcol-one-quarter {width:50%!important;float:left;margin-top:0px!important;margin-right:0px!important;}
+#contact-page-mobile .wpcol-one-third {width:50%!important;float:left;margin-top:0px!important;margin-right:0px!important;}
+#contact-page-mobile .compliance {margin-right: 0px!important;margin-left: 0px!important;padding: 0px!important;margin-top: 6%!important;width:98%!important;}
+}
+
+div.alignleft.calc-results b {display:none;}
+div.alignleft.calc-results (text) {display:none;}
+
+#fbuilder input[type="number"] {text-align:center;}
+#fbuilder input[type="text"] {text-align:center;}
+#fbuilder .top_aligned .fields label {font-weight:700;}
+#fbuilder input {border: 1px solid #B71E1E!important;}
+
+div#field_1-0 {width:30%;text-align:center;float:left;margin-left:5%;}
+div#field_1-1 {width:30%;text-align:center;float:left;}
+div#field_1-2 {width:30%;text-align:center;float:left;margin-right:5%;}
+div#field_1-3 {width:50%;text-align:center;float:left;margin-bottom:5%;}
+div#field_1-4 {width:50%;text-align:center;float:left;margin-bottom:5%;}
+div#field_1-5 {width:100%;float:none;margin-left:auto;margin-right:auto;text-align:center;}
+div#field_1-6 {display:none;}
+div#field_1-7 {width:100%;margin-left:auto;margin-right:auto;text-align:center;}
+div#field_1-8 {width:100%;margin-left:auto;margin-right:auto;text-align:center;}
+div#field_1-9 {width:100%;margin-left:auto;margin-right:auto;text-align:center;}
+div#field_1-10 {width:100%;margin-left:auto;margin-right:auto;text-align:center;}
+div#field_1-11 {width:100%;margin-left:auto;margin-right:auto;text-align:center;}
+div#field_1-12 {width:100%;margin-left:auto;margin-right:auto;text-align:center;}
+div#field_1-13 {width:100%;margin-left:auto;margin-right:auto;text-align:center;}
+
+/*xmas hours
+.xmas-hours {
+  text-align:center;
+  width:100%;
+  height:5%;
+  margin-bottom:1%;
+  padding-top:1%;
+  padding-bottom:3.0%;
+  background:#B01E1E;
+  color:white;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:22px;
+}
+.xmas-hours a {
+  color:white;
+}
+#slide-area {
+    margin-top: 4.9%;
+}
+*/
+/*Website Fixes July 2016*/
+/*Changes made for website compliance*/
+.compliance {
+  width:600px;
+  margin:auto;
+  padding:10px;
+  text-align:center;
+  clear:both;
+  border:2px solid #c11e1e;
+}
+/*Single Car Page*/
+#financebutton {
+  background-color:#c11e1e;
+  border-radius:5px;
+  color:white;
+  display:inline-block;
+  padding:5px;
+}
+
+/*Finance Form - July 2016*/
+/*This section clears all previous stlying for new element*/
+.applyform, .applyform p, .applyform input, .applyform div.selector, .applyform input[type="submit"] {
+  all:initial;
+  font-family:'Open Sans', sans-serif;
+}
+/*Styles*/
+.applybody {
+  width:960px;
+  margin:auto;
+}
+.finalhalf {
+  width:45%;
+  display: inline-block;
+  vertical-align: top;
+}
+.finalhalf p.field {
+  text-align: left!important;
+  display: inline!important;
+}
+#formsubmit2 {
+  background-color: #c11e1e;
+  border:2px solid #c11e1e;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  padding: 4px;
+  position: relative;
+  bottom: 39px;
+  left: 435px;
+}
+#formsubmit {
+  background-color:#c11e1e;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  left: 140px; 
+  margin-top: 20px;
+  padding: 10px;
+  position: relative;
+}
+.applybody div.selector {
+  display:inline-block;
+  vertical-align:middle;
+  background: none!important;
+}
+.applybody div.selected selected {
+  all: initial;
+}
+.applybody div.selector select {
+  all: initial;
+  color: #444; 
+  cursor: pointer;
+  height:29px; 
+  left: 0;
+  opacity: 0;
+  padding-left: 10px;
+  padding-right: 10px; 
+  position: absolute;
+  top: 0;
+  width: 99%;  
+  font-family:'Open Sans', sans-serif;
+}
+.applybody div.selector:hover {
+  background: none!important;
+  display: inline-block;
+  position: relative;
+}
+.applybody div.selector span {
+  background: none!important;
+  border: 1px solid #444; 
+  border-radius: 10px; 
+  left: 5px;
+  position: relative;
+  width: 200px; 
+  padding:3px 10px 5px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+.applybody input[type="radio"]:checked {
+  background:#c11e1e;
+  border:1px solid #c11e1e;
+}
+.applybody input[type="radio"] {
+  all:initial;
+  cursor:pointer;
+  display:inline-block;
+  height:19px;
+  width:19px;
+  margin:-1px 4px 0 0;
+  vertical-align:middle;
+  -webkit-appearance: none;
+  /* Hides the default checkbox style */
+  height: 1.618em;
+  width: 1.618em;
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+
+  border: 0.382em solid #d7d3d2;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: .15s;
+  border-radius: 2em;
+  background-color: #d7d3d2;
+}
+.applybody textarea {
+  border: none;
+  border-bottom: 1px dashed #888;
+  border-radius: 0 0 10px;
+  width: 200px;
+  padding: 0 10px;
+  resize: none;
+}
+.applybody p.subtitle {
+  color:#444;
+  font-weight:bold;
+}
+.applybody p.field {
+  display: inline-block;
+  width: 220px;
+  text-align:right;
+  margin: 5px 0 0;
+  font-weight:bold;
+  color:#c11e1e;
+}
+.applyform p.subtext {
+  border: 1px solid #c11e1e;
+  color: #c11e1e;
+  font-size: 12px;
+  padding: 5px;
+  display: inline-block;
+  margin: 10px 0 0;
+ 
+}
+.applybody input[type="text"] {
+  border:1px solid #444;
+  border-radius:10px;
+  padding: 3px 10px 5px;
+  width: 200px;
+  margin: 5px;
+}
+.applyhalf {
+  display:inline-flex;
+  width:960px;
+}
+.applyhalf p.subtitle {
+  color: #c11e1e;
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+.applyhalf1 {
+  width: 400px;
+}
+.applyhalf2 {
+  width: 400px;
+}
+.applyhalf1 p, .applyhalf2 p {
+  display:-moz-inline-box;
+  font-weight:bold;
+}
+.applyhalf input {
+  width:270px;
+  padding: 2px 5px;
+}
+
+/*Finance Form - July 2016 - Initial Popup*/
+/*This section clears all previous styling for the new element*/
+.applypopup, .applypopup p, .applypopup input, .applypopup div.selector, .applypopup input[type="submit"] {
+  all: initial;
+  font-family:'Open Sans', sans-serif;
+}
+/*Styles*/
+.applypopup {
+  display: block;
+  margin: auto;
+  width: 540px;
+}
+.applypopup p {
+  float:left;
+  margin:3px 3px 0px 3px;
+  font-weight:300;
+  color:#C11E1E;
+}
+.applypopup input {
+  border:1px solid #444;
+  width: 250px;
+  padding: 5px 0px 5px 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.applypopup p.intro {
+  color:black;
+  font-weight: normal;
+  text-align: center;
+  margin: 15px;
+}
+.applypopup h3 {
+  color: #c11e1e;
+  text-align:center;
+}
+.applypopup input[type="submit"] {
+  border-radius:5px;
+  -webkit-border-radius: 5px;
+  margin: 30px 120px;
+  padding: 5px; 
+  width: 300px;
+  background-color:#B8595A;
+  text-align:center;
+  font-weight:bold;
+  color:white;
+  cursor:pointer;
+}
+.applypopup input[type="submit"]:hover {
+  border:0;
+}
+
+
+/*Finance Form - June 2016*/
+/*********First section is simply to clear all previous styles for form**/
+.financeformjune p, .financeformjune input, .financeformjune div.selector, .financeformjune input[type="submit"], .button {
+  all:initial;
+  font-family:'Open Sans', sans-serif;
+}
+.financeformjune input[type="submit"] {
+  font-size: 18px;
+  font-weight: 700;
+  height: 38px;
+  background: rgba(0,0,0,0) url("/wp-content/uploads/2016/08/sprite.png") repeat-x scroll 0 0;
+  border: 1px solid #80000;
+  border-radius: 3px; 
+  box-shadow: 0 2px 0 #ddddd;
+  color: white;
+  cursor: pointer;
+  padding: 0 20px;
+  text-align: center; 
+  text-shadow: 0 -1px 0 #80000;
+  text-transform: uppercase;
+  width: 90%;
+  position: relative; 
+  left: 4px;
+}
+
+.financeformjune div.selector {
+  background: white;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  cursor: pointer;
+  float: right;
+  height: 34px;
+  line-height: 36px;
+  margin-left: 0;
+  margin-right: 17px;
+  overflow: hidden;
+  position: relative;
+  width: 210px;
+  bottom: 5px;
+
+}
+
+.financeformjune p {
+  background-color: #e4e3e5;
+  display: inherit;
+  margin: 5px; 
+  min-height: 40px;
+  padding: 15px 0px 0px 15px;
+  font-weight: bold;
+}
+.financeformjune input {
+  background-color: white;
+  bottom: 25px;
+  right: 3px; 
+  margin-right: 15px; 
+  padding: 2px 5px 3px;
+  /*position: relative;*/
+  width: 200px;
+  float: right;
+}
+.financeformjune strong {
+  color: red;
+  text-decoration: underline;
+  padding-left: 150px;
+  background-color: #e4e3e5;
+  display: inherit;
+  margin: 5px; 
+  min-height: 40px;
+  padding: 15px 0px 0px 15px;
+  font-weight: bold;
+}
+.financeformjune textarea {
+  bottom: 25px;
+  float: right;
+  margin-right: 15px; 
+  /*position: relative;*/
+  width:200px;
+  padding: 2px 5px 3px;
+  resize: none;
+}
+.financeformjune p.formtextarea, .financeformjune strong.formtextarea {
+  height: 175px;
+}
+.financeformjune1half {
+  width:50%;
+  float:left;
+}
+.financeformjune2half {
+  width:50%;
+  float:right;
+}
+
+/*Sams Homepage Callout Edit*/
+.front-page-callout p {
+	text-align:center;
+	font-weight:400;
+}
+.front-page-callout h2 {
+	text-align:center;
+	color:#a71d1d;
+}
+.front-page-callout a {
+	text-decoration:underline;
+	color:#a71d1d;
+}
+
+
+
+/* Sams XMAS Edit*/.xmas-cta a {	background-color: white;	color: #c73336;	font-size: 150%; 	
+
+font-weight: bold;	}	.xmas-cta a:hover {	text-decoration: none; 	}.xmas-cta {	
+
+background-color: white; 	float: right; 	margin: 10px; 	padding: 10px; 	position: 
+
+relative; 	top: 10px; 	left: 5px;	width: 47%;	text-align: center;	}.xmas-calender {}.xmas-
+
+advent-calendar-text {	float: left;	color: white;	font-size: 120%;	width: 48%;	
+
+}.xmas-advent-calendar-text a {	color: white;	font-size: 130%;	font-weight: bold; 	text-decoration: 
+
+none !important;	}.xmas-advent-calendar-image {	float: right;	width: 50%;	
+
+height: auto;	margin: 5px;	background-color: rgba (0,0,0,0.5);	-webkit-border-radius: 
+
+15px;	border-radius: 15px;	}.xmas-advent-calendar-title {	line-height: 50px;	color: white !
+
+important;	font-family: "titan_oneregular" !important;	font-size: 55px !important;	font-
+
+weight: 200; text-align: center !important;	}/*SAMS Ebh DIT*/
+.tg  {border-collapse:collapse;border-spacing:0;margin:0px auto;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-
+
+width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-
+
+style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-kpgw{font-weight:bold;background-color:#c3203a;color:#ffffff}
+.tg .tg-yo6h{font-weight:bold;background-color:#c3203a;color:#ffffff;vertical-align:top}
+.tg .tg-1rsd{background-color:#35363c;color:#ffffff;text-align:center;vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap 
+
+{overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}
+
+.tg .tg-rfce{font-weight:bold;background-color:#c3203a;color:#ffffff;text-align:center}
+.tg .tg-glq2{background-color:#35363c;color:#ffffff;text-align:center}
+.tg .tg-1rsd{background-color:#35363c;color:#ffffff;text-align:center;vertical-align:top}
+@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap 
+
+{overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}
+
+/*Book a test drive inline forms*/
+.used-car-test-drive h3 {
+	color:#c11e1e;
+	font-size:28px;
+	font-weight: 700;
+	text-transform: uppercase;
+	}
+.used-car-test-drive p {
+	font-size: 20px;
+	font-weight: 500;
+	}
+.test-drive-inline-form {
+	float: left;
+	width: 45%;
+	}
+	.test-drive-inline-form input {
+		width: 85%;
+		margin-top: 5px;
+		}
+.test-drive-inline-image {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #c11e1e;
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 25px;
+	padding:5px;
+	width:50%;
+	height: auto;
+	}
+	.test-drive-inline-caption {
+	float: right;
+	margin-right: 45px;
+
+	}
+	.test-drive-inline-caption p {
+	font-size: 16px;
+	font-weight: 500;
+	}
+
+
+
+
+.used-car-shoutout {
+
+  text-align:center;
+
+  background-color:#BB5757;
+
+  color:white;
+
+  width:99%;
+
+  margin-left:auto;
+
+  margin-right:auto;
+
+  font-weight:bold;
+
+  padding: 1px 0px;
+
+  -webkit-box-shadow: 1px 3px 2px 1px rgba(0,0,0,0.2);
+
+  box-shadow: 1px 3px 2px 1px rgba(0,0,0,0.2);
+
+}
+
+
+
+
+
+/*
+
+Theme Name: Polesworth Garage Ltd
+
+Theme URI: http://www.polesworthgarageltd.com/
+
+Description: Theme for Polesworth Garage's Website
+
+Version: 1.0
+
+Author: Mark Cole
+
+Table Of Contents:
+
+	1. Global Styles
+
+	2. Sub Navigation
+
+	3. Header
+
+	4. Slider
+
+	5. Footer
+
+	6. Car Listings
+
+*/
+
+/********************************** GLOBAL STYLES **********************************/
+
+body {
+
+	background: #FFFFFF;
+
+	color: #333333;
+
+	font-family: 'Open Sans', sans-serif;
+
+	font-size: 16px;
+
+	font-weight: 400;
+
+	line-height: 24px;
+
+}
+
+a {
+
+	color: #c11e1e;
+
+	text-decoration: none;
+
+}
+
+	a:hover {
+
+		border-bottom: 1px solid #c11e1e;
+
+	}
+
+p {
+
+	margin: 12px 0px;
+
+}
+
+b, strong {
+
+	font-weight: 700;
+
+}
+
+i, em {
+
+	font-style: italic;
+
+	font-weight: 400;
+
+}
+
+.underline {
+
+	border-bottom: 1px solid #c11e1e;
+
+	padding: 0px 0px 10px 0px;
+
+	margin: 0px 0px 10px 0px;
+
+}
+
+hr {
+
+	background: #DDDDDD;
+
+	border: none;
+
+	clear: both;
+
+	display: block;
+
+	height: 1px;
+
+	margin: 20px 0px;
+
+}
+
+img {
+
+	display: block;
+
+}
+
+blockquote {
+
+	border-left: 5px solid #DDDDDD;
+
+	color: #999999;
+
+	padding-left: 15px;
+
+}
+
+ul {
+
+	list-style-type: disc;
+
+	margin-left: 15px;
+
+}
+
+ol {
+
+	list-style-type: decimal;
+
+	margin-left: 20px;
+
+}
+
+ol, ul {
+
+	margin-bottom: 12px;
+
+}
+
+.red {
+
+	color: #C11E1E!important;
+
+}
+
+.wrapper {
+
+	margin: 0 auto;
+
+	overflow: hidden;
+
+	width: 960px;
+
+}
+
+.main {
+
+	margin-top: 32px;
+
+}
+
+.half {
+
+	float: left;
+
+	width: 50%;
+
+}
+
+.third {
+
+	float: left;
+
+	margin-right: 30px;
+
+	width: 300px;
+
+}
+
+.third2 {
+
+	float: left;
+
+	margin-right: 30px;
+
+	width: 960px;
+
+}
+
+	.third:nth-of-type(3n) {
+
+		margin-right: 0;
+
+	}
+
+
+
+	.third:nth-of-type(3n+1) {
+
+		clear: left;
+
+	}
+
+.quarter {
+
+	float: left;
+
+	width: 220px;
+
+	margin: 0px 10px;
+
+}
+
+	.quarter:nth-of-type(4n){
+
+		clear: right;
+
+	}
+
+.two-thirds {
+
+	float: left;
+
+	width: 630px;
+
+}
+
+.alignleft {
+
+	float: left;
+
+}
+
+.alignright {
+
+	float: right;
+
+}
+
+h1 {
+
+	font-size: 26px;
+
+	font-weight: 700;
+
+	line-height: 32px;
+
+}
+
+h2 {
+
+	font-size: 24px;
+
+	font-weight: 700;
+
+	line-height: 30px;
+
+}
+
+h3 {
+
+	font-size: 22px;
+
+	font-weight: 700;
+
+	line-height: 28px;
+
+}
+
+h4 {
+
+	color: #C11E1E;
+
+	font-size: 20px;
+
+	font-weight: 700;
+
+	line-height: 26px;
+
+}
+
+h5 {
+
+	font-size: 18px;
+
+	font-weight: 700;
+
+	line-height: 24px;
+
+}
+
+h6 {
+
+	font-size: 16px;
+
+	font-weight: 700;
+
+	line-height: 22px;
+
+}
+
+h7 {
+
+	font-size: 16px;
+
+	font-weight: 550;
+
+	line-height: 22px;
+
+}
+
+input {
+
+	background: #FFFFFF url( '/wp-content/uploads/2016/08/sprite.png' ) 0px -464px repeat-x;
+
+	border: 1px solid #DDDDDD;
+
+	border-radius: 2px;
+
+		-moz-border-radius: 2px;
+
+		-ms-border-radius: 2px;
+
+		-o-border-radius: 2px;
+
+		-webkit-border-radius: 2px;
+
+	color: #333333;
+
+	height: 27px;
+
+}
+
+input[type="submit"], .button {
+
+	background: url( '/wp-content/uploads/2016/08/sprite.png' ) 0px -0px repeat-x;
+
+	border: 1px solid #800000;
+
+	border-radius: 3px;
+
+		-moz-border-radius: 3px;
+
+		-ms-border-radius: 3px;
+
+		-o-border-radius: 3px;
+
+		-webkit-border-radius: 3px;
+
+	box-shadow: 0px 2px 0px #DDDDDD;
+
+		-moz-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-ms-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-o-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+
+	color: #FFFFFF;
+
+	cursor: pointer;
+
+	padding: 0px 20px;
+
+	height: 40px;
+
+	line-height: 40px;
+
+	text-shadow: 0px -1px 0px #800000;
+
+	text-align: center;
+
+	text-transform: uppercase;
+
+}
+
+	input[type="submit"]:hover, .button:hover {
+
+		background-position: 0px -0px;
+
+		border-bottom: none;
+
+		border: 1px solid #570000;
+
+	}
+
+.button {
+
+	display: inline-block;
+
+	font-size: 18px;
+
+	font-weight: 700;
+
+	height: 38px;
+
+	line-height: 20px;
+
+}
+
+input[type="submit2"], .button2 {
+
+	background: url( '/wp-content/uploads/2016/08/sprite.png' ) 0px -230px repeat-x;
+
+	border: 1px solid #800000;
+
+	border-radius: 3px;
+
+		-moz-border-radius: 3px;
+
+		-ms-border-radius: 3px;
+
+		-o-border-radius: 3px;
+
+		-webkit-border-radius: 3px;
+
+	box-shadow: 0px 2px 0px #DDDDDD;
+
+		-moz-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-ms-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-o-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+
+	color: #FFFFFF;
+
+	cursor: pointer;
+
+	padding: 0px 0px;
+
+	height: 40px;
+
+	line-height: 38px;
+
+	text-shadow: 0px -1px 0px #800000;
+
+	text-align: center;
+
+	text-transform: uppercase;
+
+}
+
+	input[type="submit2"]:hover, .button2:hover {
+
+		background-position: 0px -268px;
+
+		border-bottom: none;
+
+		border: 1px solid #570000;
+
+	}
+
+.button2 {
+
+	display: inline-block;
+
+	height: 38px;
+
+	line-height: 38px;
+
+}
+
+.button3 {
+
+	display: inline-block;
+
+	font-size: 16px;
+
+	font-weight: 500;
+
+	height: 38px;
+
+	line-height: 30px;
+
+}
+
+div.selector {
+
+	background: #FFFFFF url( '/wp-content/uploads/2015/02/sprite23.png' ) right -464px no-repeat;
+
+	border: 1px solid #DDDDDD;
+
+	border-radius: 2px;
+
+		-moz-border-radius: 2px;
+
+		-ms-border-radius: 2px;
+
+		-o-border-radius: 2px;
+
+		-webkit-border-radius: 2px;
+
+	cursor: pointer;
+
+	line-height: 36px;
+
+	height: 34px;
+
+	float: right;
+
+	padding: 5px 4px 4px 0px;
+
+	margin-left: 0px;
+
+	margin-right: 10px;
+
+	position: relative;
+
+	// overflow: hidden; 
+
+	width: 350px;
+
+	font-size: 18px;
+
+}
+
+#min, #max{
+
+	width: 70px;
+
+}
+
+div.selector span {
+
+	background: #FFFFFF url( '/wp-content/uploads/2015/02/sprite23.png' ) 0px -422px 0px 0px;
+
+	color: #333333;
+
+	cursor: pointer;
+
+	display: block;
+
+	font-weight: 700;
+
+	height: 45px;
+
+	line-height: 36px;
+
+	overflow: hidden;
+
+	padding-right: 35px;
+
+	padding-left: 30px;
+
+	text-overflow: ellipsis;
+
+	white-space: nowrap;
+
+	width: 260px;
+
+}
+
+	div.selector select {
+
+		background: none;
+
+		padding-right: 10px;
+
+		padding-left: 10px;
+
+		cursor: pointer;
+
+		color: #333333;
+
+		font-weight: 700;
+
+		font-size: 20px;
+
+		height: 29px;
+
+		left: 0px;
+
+		opacity: 0;
+
+			filter: alpha(opacity=0);
+
+			-moz-opacity: 0;
+
+		position: absolute;
+
+		top: 0px;
+
+		width: 99%; 
+
+	}
+
+	div.selector.active {
+
+		background: #FFFFFF;
+
+	}
+
+		div.selector.active span {
+
+			background: #FFFFFF;
+
+		}
+
+	div.selector.hover, div.selector.focus {
+
+		background: #FFFFFF url( '/wp-content/uploads/2015/02/sprite23.png' ) right -509px no-
+
+repeat;
+
+	}
+
+/********************************* SUB NAVIGATION *********************************/
+
+#sub-nav {
+
+	background: #333333;
+
+	height: 30px;
+
+}
+
+
+
+	#sub-nav nav {
+
+		height: 30px;
+
+	}
+
+
+
+		#sub-nav div span {
+
+
+
+		}
+
+
+
+#sub-nav ul {
+
+	height: 30px;
+
+	display: block;
+
+	float: right;
+
+	font-size: 13px;
+
+	font-weight: 500;
+
+	text-transform: uppercase;
+
+	margin-left: 0px;
+
+}
+
+	#sub-nav li {
+
+		display: inline;
+
+		line-height: 30px;
+
+		margin-left: 2px;
+
+	}
+
+		#sub-nav li a {
+
+			border-radius: 5px;
+
+				-moz-border-radius: 5px;
+
+				-ms-border-radius: 5px;
+
+				-o-border-radius: 5px;
+
+				-webkit-border-radius: 5px;
+
+			color: #FFFFFF;
+
+			height: 30px;
+
+			padding: 5px 10px;
+
+			text-decoration: none;
+
+			text-shadow: 0px -1px 0px #222222;
+
+		}
+
+			#sub-nav li:last-child a {
+
+				font-size: 16px;
+
+				padding: 3px 5px;
+
+			}
+
+			#sub-nav li a:hover {
+
+				background: #222222;
+
+				border-bottom: 1px solid #444444;
+
+			}
+
+/************************************* HEADER *************************************/
+
+header {
+
+	background: #c11e1e url( '/wp-content/uploads/2016/08/sprite.png' ) top center;
+
+	height: 100px;
+
+}
+
+	header h1 {
+
+		float: left;
+
+	}
+
+		header h1 a:hover {
+
+			border-bottom: none;
+
+		}
+
+header nav > ul {
+
+	display: block;
+
+	font-size: 16px;
+
+	font-weight: 700;
+
+	float: right;
+
+	text-transform: uppercase;
+
+        margin-bottom: 0px!important;
+
+}
+
+	header nav > ul li {
+
+		display: inline;
+
+		line-height: 100px;
+
+		margin-left: 5px;
+
+	}
+
+		header nav > ul li a {
+
+			border-radius: 5px;
+
+				-moz-border-radius: 5px;
+
+				-ms-border-radius: 5px;
+
+				-o-border-radius: 5px;
+
+				-webkit-border-radius: 5px;
+
+			color: #FFFFFF;
+
+			padding: 5px 10px;
+
+                        font-size: 18px;
+
+			text-decoration: none;
+
+			text-shadow: 0px -1px 0px #800000;
+
+		}
+
+			header li a:hover {
+
+				background: #800000;
+
+			}
+
+		header nav > ul li ul, header nav > ul .sub {
+
+			display: none;
+
+		}
+
+		header nav > ul .sub ul {
+
+			display: block;
+
+		}
+
+		header nav > ul li .sub-container {
+
+			position: absolute;
+
+			overflow: hidden;
+
+			clear: both;
+
+			margin: 101px 0px 0px 0px;
+
+			width: 100%;		
+
+		}
+
+		header nav > ul li .sub {
+
+			background: #ffffff;
+
+			border: 1px solid #DDDDDD;
+
+				-webkit-border-bottom-right-radius: 5px;
+
+				-webkit-border-bottom-left-radius: 5px;
+
+				-moz-border-radius-bottomright: 5px;
+
+				-moz-border-radius-bottomleft: 5px;
+
+			border-bottom-right-radius: 5px;
+
+			border-bottom-left-radius: 5px;
+
+			box-shadow: 0px 2px 0px #DDDDDD;
+
+				-moz-box-shadow: 0px 2px 0px #DDDDDD;
+
+				-ms-box-shadow: 0px 2px 0px #DDDDDD;
+
+				-o-box-shadow: 0px 2px 0px #DDDDDD;
+
+				-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+
+			display: block;
+
+			padding: 10px;
+
+			margin: 0 auto;
+
+			width: 960px;
+
+		}
+
+		header nav > ul li .sub .row {
+
+		 	border-bottom: 1px solid #dddddd;
+
+		 	width: 100%!important;
+
+		 	overflow: hidden;
+
+		 	padding: 10px 0px 0px 0px;
+
+		 	clear: both;
+
+		}	
+
+		 	header nav > ul li .sub .row:last-of-type {
+
+		 		border-bottom: none;
+
+		 	}
+
+		header nav > ul li .sub li {
+
+			list-style: none;
+
+			float: left;
+
+			font-size: 14px;
+
+			font-weight: normal;
+
+			line-height: 14px;
+
+			margin: 10px 20px 10px 0px;
+
+		}
+
+		header nav > ul li .sub li.mega-hdr {
+
+			margin: 0 10px 10px 0;
+
+			float: left;
+
+		}
+
+		header nav > ul li .sub li.mega-hdr.last {
+
+			margin-right: 0;
+
+		}
+
+		header nav > ul li .sub a {
+
+			background: none;
+
+			color: #333;
+
+			padding: 0px;
+
+			display: block;
+
+			float: none;
+
+			font-size: 12px;
+
+		}
+
+		header nav > ul li .sub li.mega-hdr a.mega-hdr-a {
+
+			padding: 5px 15px;
+
+			margin-bottom: 5px;
+
+			font-size: 24px;
+
+			background: #C11E1E;
+
+			text-transform: uppercase;
+
+			font-weight: 700;
+
+			color: #ffffff;
+
+			text-shadow: none;
+
+			line-height: 24px;
+
+		}
+
+		header nav > ul li .sub li.mega-hdr a.mega-hdr-a:hover {
+
+			color: #000;
+
+			border-bottom: none;
+
+		}
+
+		header nav > ul .sub li.mega-hdr li a {
+
+			padding: 9px;
+
+			font-size: 20px;
+
+			line-height: 20px;
+
+			font-weight: 500;
+
+			text-shadow: none;
+
+		}
+
+		header nav > ul .sub li.mega-hdr li a:hover {
+
+			color: #800000;
+
+			border-bottom: none;
+
+		}
+
+		
+
+		header nav > ul .sub ul li {
+
+			padding-right: 0;
+
+		}
+
+	
+
+		header nav > ul li .sub-container.non-mega .sub {
+
+			padding: 10px;
+
+		}
+
+		
+
+		header nav > ul li .sub-container.non-mega li {
+
+			padding: 0;
+
+			margin: 0;
+
+		}
+
+		header nav > ul li .sub-container.non-mega li a {
+
+			padding: 7px 5px 7px 22px;
+
+		}
+
+		header nav > ul li .sub-container.non-mega li a:hover {
+
+			color: #800000;
+
+			background: #FFFFFF;
+
+			border-bottom: none;
+
+		}
+
+/************************************* SLIDER *************************************/
+
+#slide-area {
+
+	background: #DDDDDD;
+
+	height: 425px;
+
+}
+
+.slide-container { 
+
+	margin: 30px 0px 0px 0px;
+
+}
+
+.slider {
+
+	height: 350px;
+
+	list-style-type: none;
+
+	margin: 0px 0px 0px 0px;
+
+	text-align: center;
+
+}
+
+	.slider h2, .slider h3, .slider h4, .slider h5, .slider h6, .slider p {
+
+		color: #FFFFFF;
+
+	}
+
+	.slider .button {
+
+		box-shadow: none;
+
+	}
+
+	.slider li p:first-of-type {
+
+		margin: 0px;
+
+	}
+
+	.slider li {
+
+		background-size: cover;
+
+	}
+
+.pips {
+
+	display: table;
+
+	height: 20px;
+
+	list-style-type: none;
+
+	margin: 0 auto;
+
+}
+
+	.pips li {
+
+		display: block;
+
+		float: left;
+
+		height: 20px;
+
+		margin: 0px 3px;
+
+		width: 20px;
+
+	}
+
+		.pips li a {
+
+			background: url( '/wp-content/uploads/2016/08/sprite.png' ) 0px -330px repeat-
+
+x;
+
+			display: block;
+
+			height: 20px;
+
+			text-indent: -9999px;
+
+			width: 20px;
+
+		}
+
+			.pips li a:hover, .pips li.current a {
+
+				background-position: -20px -330px;
+
+				border-bottom: none;
+
+			}
+
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+
+li.bjqs-slide{position:absolute; display:none;}
+
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+
+ul.bjqs-controls.v-centered li a{ background: rgba(221, 221, 221, 0.5); padding: 5px; position:absolute;}
+
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+
+ol.bjqs-markers.h-centered{text-align: center;}
+
+ol.bjqs-markers li{display:inline;}
+
+ol.bjqs-markers li a{display:inline-block;}
+
+p.bjqs-caption{display:none;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+
+/*********************************** CAR FINDER ***********************************/
+
+#car-range input, #car-range select {
+
+	font-weight: 700;
+
+}
+
+.car-finder {
+
+	background: rgb(255, 255, 255);
+
+	background: #FFFFFF;
+
+	border-radius: 5px;
+
+		-moz-border-radius: 5px;
+
+		-ms-border-radius: 5px;
+
+		-o-border-radius: 5px;
+
+		-webkit-border-radius: 5px;
+
+	box-shadow: 0px 0px 15px #555555;
+
+		-moz-box-shadow: 0px 0px 15px #555555;
+
+		-ms-box-shadow: 0px 0px 15px #555555;
+
+		-o-box-shadow: 0px 0px 15px #555555;
+
+		-webkit-box-shadow: 0px 0px 15px #555555;
+
+	height: 350px;
+
+	margin: 30px 0px;
+
+	padding: 0px 20px;
+
+}
+
+	.car-finder h2 {
+
+		color: #C11E1E;
+
+		display: block;
+
+		font-size: 26px;
+
+		font-weight: 700;
+
+		height: 75px;
+
+		line-height: 75px;
+
+		text-align: center;
+
+		text-transform: uppercase;
+
+	}
+
+	.car-finder label {
+
+		color: #C11E1E;
+
+		clear: both;
+
+		float: left;
+
+		font-weight: 700;
+
+		height: 30px;
+
+		line-height: 30px;
+
+		margin-bottom: 10px;
+
+		text-transform: uppercase;
+
+	}
+
+	.car-finder select {
+
+		float: right;
+
+		height: 30px;
+
+		margin-bottom: 10px;
+
+		width: 350px;
+
+	}
+
+.priceslider {
+
+	background: #FFFFFF url( '/wp-content/uploads/2016/08/sprite.png' ) 0px -129px repeat-x;
+
+	border: 1px solid #DDDDDD;
+
+	clear: both;
+
+	display: block;
+
+	height: 10px;
+
+	margin: 10px auto 15px auto;
+
+	position: relative;
+
+	max-width: 75%;
+
+	width: 330px;
+
+}
+
+	.priceslider a {
+
+		height: 100%;
+
+		position: absolute;
+
+		right: 0;
+
+		z-index: 1;
+
+	}
+
+		.priceslider a div {
+
+			background: url( '/wp-content/uploads/2016/08/sprite.png' ) 0px -149px no-
+
+repeat;
+
+			height: 22px;
+
+			margin: -5px 0px 0px -11px;
+
+			width: 22px;
+
+		}
+
+	.connect a {
+
+		background: #FFFFFF url( '/wp-content/uploads/2016/08/sprite.png' ) 0px -129px repeat-x;
+
+		cursor: pointer;
+
+	}
+
+		.connect a:hover {
+
+			border-bottom: none;
+
+		}
+
+	.connect a:first-child {
+
+		background: #FFFFFF url( '/wp-content/uploads/2016/08/sprite.png' ) 0px -139px repeat-x;
+
+	}
+
+.range {
+
+	display: inline-block; 
+
+	display: block; 
+
+	float: right;
+
+	overflow: hidden;
+
+	width: 378px;
+
+}
+
+	.range label {
+
+		clear: none;
+
+		float: left;
+
+		font-size: 11px;
+
+		width: 50%;
+
+	}
+
+		.range label div {
+
+			float: left;
+
+			margin: 0px 10px;
+
+		}
+
+	.range input {
+
+		float: left;
+
+		padding: 0px 10px;
+
+		text-align: right;
+
+		width: 50px;
+
+	}
+
+	.range label:last-of-type input {
+
+		float: right;
+
+	}
+
+	.range label:last-of-type div {
+
+		float: right;
+
+	}
+
+.car-submit {
+
+	float: right;
+
+	margin: 20px 0px 0px 0px;
+
+	display: block;
+
+}
+
+.car-submit2 {
+
+        background-color: #c11e1e!important;
+
+	float: right;
+
+	width: 100%;
+
+	font-size: 28px;
+
+	font-weight: 700;
+
+	margin: 10px 0px 0px 0px;
+
+	display: block;
+
+}
+
+.car-submit3 {
+
+	float: right;
+
+	font-size: 16px;
+
+	font-weight: 600;
+
+	margin: 0px 0px 5px 5px;
+
+	display: block;
+
+}
+
+.price-submit {
+
+	font-size: 18px;
+
+	width: 70px;
+
+	height: 40px;
+
+}
+
+.checkbox {
+
+	float: left;
+
+	margin: 30px 0px 0px 0px;
+
+}
+
+	.checkbox label {
+
+		float: none;
+
+		font-size: 11px;
+
+		height: 20px;
+
+		line-height: 20px;
+
+		margin: 0px;
+
+	}
+
+	.checkbox input {
+
+		margin: 1px 5px 0px 0px;
+
+		height: auto;
+
+	}
+
+.checker {
+
+	background: #ffffff;
+
+	border: 1px solid #dddddd;
+
+	cursor: pointer;
+
+	display: inline-block;
+
+	float: left;
+
+	height: 20px;
+
+	margin: 0px 10px 0px 0px;
+
+	width: 20px;
+
+}
+
+	.checker input {
+
+		background: none;
+
+		border: none;
+
+		cursor: pointer;
+
+		opacity: 0;
+
+			filter: alpha(opacity=0);
+
+			-moz-opacity: 0;
+
+		display: -moz-inline-box;
+
+		display: inline-block;
+
+		height: 20px;
+
+		width: 20px;
+
+		zoom: 1;
+
+	}
+
+	.checker span {
+
+		display: block;
+
+		height: 20px;
+
+		width: 20px;
+
+	}
+
+.checked {
+
+	background: url( '/wp-content/uploads/2018/08/icons-for-filter.png' ) 0px -306px no-repeat;
+
+}
+
+.pagination {
+
+	margin: 20px 0px 10px 0px;
+
+	width: 680px;
+
+}
+
+	.pagination a, .pagination span {
+
+		background: url( '/wp-content/uploads/2016/08/sprite.png' ) 0px -267px;
+
+		border: 1px solid #800000;
+
+		border-radius: 3px;
+
+			-moz-border-radius: 3px;
+
+			-ms-border-radius: 3px;
+
+			-o-border-radius: 3px;
+
+			-webkit-border-radius: 3px;
+
+		box-shadow: 0px 2px 0px #DDDDDD;
+
+			-moz-box-shadow: 0px 2px 0px #DDDDDD;
+
+			-ms-box-shadow: 0px 2px 0px #DDDDDD;
+
+			-o-box-shadow: 0px 2px 0px #DDDDDD;
+
+			-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+
+		color: #FFFFFF;
+
+		cursor: pointer;
+
+		height: 30px;
+
+		margin-right: 5px;
+
+		margin-left: 5px;
+
+		padding: 5px 12px 5px 12px;
+
+		font-size: 20px;
+
+	}
+
+		.pagination a:hover {
+
+			background-position: 0px -230px;
+
+			border-bottom: none;
+
+			border: 1px solid #570000;
+
+		}
+
+	.pagination span {
+
+		margin-right: 5px;
+
+	}
+
+/************************************* FOOTER *************************************/
+
+footer {
+
+	background: #333333;
+
+	color: #C4C4C4;
+
+	font-size: 12px;
+
+	margin: 50px 0px 0px 0px;
+
+	padding: 15px 0px 0px 0px;
+
+}
+
+	footer ul {
+
+		margin: 0;
+
+	}
+
+.copyright {
+
+	border-top: 1px solid #444444;
+
+	clear: both;
+
+	float: none;
+
+	height: 50px;
+
+	line-height: 50px;
+
+}
+
+	
+
+	.copyright p {
+
+		color: #666666;
+
+		display: block;
+
+		float: right;
+
+		margin: 0;
+
+	}
+
+	.copyright ul {
+
+		display: block;
+
+		float: left;
+
+	}
+
+		.copyright ul li {
+
+			display: inline;
+
+			margin-right: 10px;
+
+		}
+
+			.copyright ul li a {
+
+				color: #666666;
+
+				text-decoration: none;
+
+			}
+
+				.copyright ul li a:hover {
+
+					border-bottom: 1px solid #444444;
+
+					color: #555555;
+
+				}
+
+footer .widget {
+
+	margin-bottom: 15px;
+
+}
+
+	footer .widget a {
+
+		color: #C4C4C4;
+
+		text-decoration: none;
+
+	}
+
+	footer .widget ul {
+
+		list-style-type: none;
+
+		margin: 0;
+
+	}
+
+		footer .widget ul li a {
+
+			border-bottom: 1px solid #444444;
+
+			color: #666666;
+
+			display: block;
+
+			height: 50px;
+
+			line-height: 50px;
+
+		}
+
+			footer .widget ul li a:hover {
+
+				color: #555555;
+
+			}
+
+.home-bottom .widget h3 {
+
+	color: #AD1D1D;
+
+}
+
+/********************************** CAR LISTINGS **********************************/
+
+.car-listings {
+
+	list-style-type: none;
+
+	margin: 0;
+
+}
+
+	.car-listings h2, .car-single h2 {
+
+		font-size: 24px;
+
+	}
+
+	.car-listings h4, .car-single h4 {
+
+		color: #999999;
+
+		font-size: 8px;
+
+		font-weight: 400;
+
+	}
+
+	.car-listings .price, .car-single .price {
+
+		color: #c11e1e;
+
+		font-weight: 700;
+
+		font-size: 28px;
+
+		text-align: center;
+
+		padding: 10px 0px;
+
+	}
+
+	.car-single .price {
+
+	}
+
+	.price-box {
+
+		float: right;
+
+		text-align: center;
+
+		width: 150px;
+
+	}
+
+	.options-box {
+
+		float: left;
+
+		border-top: 1px solid #DDDDDD;
+
+		padding: 10px 0px;
+
+		width: 340px;
+
+	}
+
+	.car-listings li {
+
+		border-bottom: 1px solid #DDDDDD;
+
+		clear: both;
+
+		display: block;
+
+		overflow: hidden;
+
+		padding: 10px 0px;
+
+	}
+
+		.car-listings li a:hover {
+
+			border-bottom: 1px solid #c11e1e;
+
+		}
+
+	.car-listings img {
+
+		height: 150px;
+
+		max-width: 200px;
+
+		float: left;
+
+		border-top: 2px solid #c11e1e;
+
+		border-left: 2px solid #c11e1e;
+
+		border-right: 2px solid #c11e1e;
+
+		border-bottom: 2px solid #c11e1e;
+
+		margin-right: 10px;
+
+	}
+
+	.car-listings .car-details {
+
+		width: 160px;
+
+	}
+
+.icon {
+
+	height: 30px!important;
+
+	float: left;
+
+	width: 30px;
+
+	margin: 0!important;
+
+}
+
+.car-single a {
+
+	border-bottom: none;
+
+}
+
+.car-details {
+
+	list-style-type: none;
+
+	margin: 10px 10px 0px 0px;
+
+	max-width: 180px;
+
+}
+
+	.car-details:nth-of-type(3n) {
+
+		margin-right: 0;
+
+		clear: right;
+
+	}
+
+	.car-details li {
+
+		color: #444;
+
+		border-bottom: none;
+
+		padding: 0px;
+
+	}
+
+		.car-details li:before {
+
+			background: url( '/wp-content/uploads/2016/08/sprite.png' ) 0px -306px no-
+
+repeat;
+
+			content: "";
+
+			display: block;
+
+			float: left;
+
+			height: 20px;
+
+			width: 20px;
+
+			font-size: 10px;
+
+			margin: 3px 10px 0px 0px;
+
+		}
+
+.main-details {
+
+	margin-left: 0;
+
+	
+
+}
+
+	.main-details li {
+
+		float: left;
+
+		padding-left: 0;
+
+		clear: none;
+
+		margin-right: 5px;
+
+		color: #000000;
+
+		font-size: 16px;
+
+		font-weight: 700;
+
+		list-style-type: none;
+
+	}
+
+
+
+	.main-details li::after{
+
+		content: '';
+
+	}
+
+
+
+	.main-details li:last-of-type::after{
+
+		content: '';
+
+	}
+
+	.car-listings .main-details {
+
+		margin-bottom: 5px;
+
+		width: 620px;
+
+	}
+
+	.car-listings .main-details li {
+
+		margin-right: 5px;
+
+		padding: 0px;
+
+		border-bottom: 0px;
+
+	}
+
+	.car-listings .price-box {
+
+		width: auto;
+
+	}
+
+	.car-listings .options-box {
+
+		border: none;
+
+		padding: 0px;
+
+		width: 620px;
+
+		font-size: 16px;
+
+	}
+
+.enquire-button {
+
+	display: block;
+
+	padding: 10px 10px 10px 10px;
+
+	clear: both;
+
+	margin: 0 auto;
+
+	text-align: center;
+
+	width: 100px;
+
+}
+
+.car-single {}
+
+	.car-single .full {
+
+		width: 300px;
+
+	}
+
+	.single-box:first-of-type .lightbox-cars:after {
+
+		background:#dddddd;
+
+		content: "www.polesworth-garage.com";
+
+		display: block;
+
+		float: right;
+
+		font-size: 12px;
+
+		line-height: 20px;
+
+		height: 20px;
+
+		padding: 0px 10px;
+
+		position: relative;
+
+		top: -20px;
+
+		z-index: 100;
+
+	}
+
+	.car-single .thumbnail {
+
+		float: left;
+
+		margin: 0px 10px 10px 0px;
+
+		width: 90px;
+
+	}
+
+.single-box {
+
+	background: #f5f5f5;
+
+	border: 1px solid #dddddd;
+
+	box-shadow: 0px 2px 0px #DDDDDD;
+
+		-moz-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-ms-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-o-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+
+	display: block;
+
+	
+
+	overflow: hidden;
+
+	padding: 10px;
+
+}
+
+	.single-box .two-thirds {
+
+		float: right;
+
+		width: 605px;
+
+		margin: 0px 0px 10px 0px;
+
+	}
+
+	.single-box .two-thirds-lower {
+
+		float: right;
+
+		width: 605px;
+
+		font-size: 9pt;
+
+		margin: 0px 0px 10px 0px;
+
+	}
+
+#new-search{
+
+	margin: 20px 0px 0px 0px;
+
+	clear: both;
+
+	overflow: hidden;
+
+}
+
+	#new-search td {
+
+		vertical-align: top;
+
+	}
+
+
+
+	#new-search .selector {
+
+		float: left;
+
+		margin-bottom: 10px;
+
+		padding-right: 0px;
+
+		width: 223px;
+
+	}
+
+	#new-search .selector span {
+
+		padding-right: 15px;
+
+		width: 243px;
+
+	}
+
+	#new-search .priceslider {
+
+		width: 200px;
+
+	}
+
+	#new-search .car-submit {
+
+		margin: 0px 0px;
+
+	}
+
+	#new-search .range{
+
+		width: 300px;
+
+	}
+
+		#new-search .range label {
+
+			clear: none;
+
+			display: inline;
+
+		}
+
+	#new-search input[type="submit"] {
+
+		/*width: 100%;*/
+
+	}
+
+	#new-search label {
+
+		clear: both;
+
+		display: block;
+
+		font-weight: 700;
+
+	}
+
+
+
+	#new-search .selector span {
+
+		padding-left: 10px;
+
+		width: 168px;
+
+	}
+
+#refine {
+
+	background: #f5f5f5;
+
+	border-radius: 2px;
+
+		-moz-border-radius: 2px;
+
+		-ms-border-radius: 2px;
+
+		-o-border-radius: 2px;
+
+		-webkit-border-radius: 2px;
+
+	border: 0px solid #ddd;
+
+	padding: 10px 0px;
+
+}
+
+	#refine h4{
+
+		border-bottom: 1px solid #ddd;
+
+		margin: 0px auto 10px auto;
+
+		padding: 0px 0px 10px 0px;
+
+		width: 280px;
+
+	}
+
+#results .selector {
+
+	width: 250px;
+
+}
+
+	#results .selector span {
+
+		width: 200px;
+
+	}
+
+.filter-box {
+
+	border-bottom: 1px solid #ddd;
+
+	clear: both;
+
+	overflow: hidden;
+
+	margin: 0px auto 10px auto;
+
+	padding: 0px 0px 10px 0px;
+
+	width: 100%;
+
+}
+
+	.filter-box:last-child {
+
+		border-bottom: none;
+
+		margin-bottom: 0px;
+
+		padding-bottom: 0px;
+
+	}
+
+	.filter-box ul {
+
+		clear: both;
+
+		margin: 10px 0px 0px 0px;
+
+		overflow: hidden;
+
+                width: 65%;
+
+                float: left;
+	}
+
+	.filter-box li {
+
+		list-style-type: none;
+
+		float: left;
+
+		margin-left:2%;
+
+		width: 23%;
+
+	}
+
+		.filter-box li input, .filter-box li label {
+
+			float: left;
+
+		}
+
+	.filter-box input[type="text"], .filter-box input[type="submit"] {
+
+		margin: 10px 0px 0px 0px;
+
+		width: 278px;
+
+	}
+
+	.filter-box h5 {
+
+		font-size: 14px;
+
+	}
+
+	.filter-box .range {
+
+		display: block; 
+
+		float: right;
+
+		overflow: hidden;
+
+		width: 280px;
+
+	}
+
+		.filter-box .range .priceslider {
+
+			width: 270px;
+
+		}
+
+		.filter-box .range label {
+
+			clear: none;
+
+			float: left;
+
+			font-weight: bold;
+
+			font-size: 11px;
+
+			width: 50%;
+
+		}
+
+			.filter-box .range label div {
+
+				float: left;
+
+				margin: 0px 10px;
+
+			}
+
+		.filter-box .range input {
+
+			float: left;
+
+			padding: 0px 10px;
+
+			margin: 0px;
+
+			text-align: right;
+
+			width: 50px;
+
+		}
+
+		.filter-box .range label:last-of-type input {
+
+			float: right;
+
+		}
+
+		.filter-box .range label:last-of-type div {
+
+			float: right;
+
+		}
+
+#enquire, #car-finance, .popup {
+
+	display: none;
+
+	margin: 10px 10px 10px 10px;
+
+}
+
+	#enquire input, .popup input {
+
+		clear: both;
+
+		float: none;
+
+		margin: 0px 0px 10px 0px;
+
+		width: 200px;
+
+		padding: 0px 10px;
+
+	}
+
+	#enquire input[type="submit"], .popup input[type="submit"]{
+
+		margin: 10px 0px 0px 0px;
+
+		width: 100%;
+
+	}
+
+	#enquire .selector, .popup .selector{
+
+		margin: 0px 0px 10px 0px;
+
+		width: 99%;
+
+	}
+
+		#enquire .selector span, .popup .selector span {
+
+			width: 600px;
+
+		}
+
+
+
+		#car-finance .selector{
+
+		margin: 0px 0px 10px 0px;
+
+		width: 300px;
+
+	}
+
+		#car-finance .selector span {
+
+			width: 300px;
+
+		}
+
+	#enquire label, #car-finance label, .popup label {
+
+		clear: both;
+
+		display: block;
+
+		float: none;
+
+		font-weight: 700;
+
+	}
+
+	#enquire textarea, #car-finance textarea, .popup textarea {
+
+		border: 1px solid #DDDDDD;
+
+		display: block;
+
+		height: 150px;
+
+		width: 200px;
+
+		padding: 10px;
+
+	}
+
+	#enquire h3, #car-finance h3, .popup h3 {
+
+		margin: 0px 0px 10px 0px;
+
+	}
+
+#car-finance .fin-input {
+
+		width: 300px;
+
+		height: 35px;
+
+		font-size: 22px;
+
+}
+
+#car-finance .fin-title {
+
+		font-size: 20px;
+
+		width: 300px;
+
+		font-weight: 700;
+
+		line-height: 28px;
+
+}
+
+#car-finance .fin-title2 {
+
+		font-size: 20px;
+
+		width: 300px;
+
+		font-weight: 700;
+
+		line-height: 28px;
+
+		padding-right: 200px;
+
+}
+
+.finance-drop {
+
+	background: #dddddd;
+
+	color: #C11E1E;
+
+	clear: both;
+
+	display: block;
+
+	font-weight: 700;
+
+	line-height: 40px;
+
+	margin: 0px 0px -10px -20px;
+
+	padding: 0px 20px;
+
+	height: 40px;
+
+	width: 100%;
+
+}
+
+.calculator {
+
+	clear: both;
+
+//	display: none;
+
+	overflow: hidden;
+
+	margin: 10px 0px 0px 0px;
+
+	padding: 10px;
+
+}
+
+	.finance-calc {
+
+		float: left;
+
+		margin: 0px 0px 0px 0px;
+
+		width: 138px;
+
+	}
+
+		.finance-calc label {
+
+			display: block;
+
+			font-weight: 300;
+
+		}
+
+		.finance-calc input[type="text"] {
+
+			padding: 0px 5px;
+
+			margin: 0px 0px 10px 0px;
+
+			width: 60%;
+
+		}
+
+		.finance-calc select {
+
+			width:100%;
+
+		}
+
+		.finance-calc .selector{
+
+			float: none;
+
+			padding-right: 40px;
+
+			margin: 0px 0px 10px 0px;
+
+			width: 108px;		
+
+		}
+
+		.finance-calc .selector span {
+
+			padding-right: 0px;
+
+			width: 88px;
+
+		}
+
+	.calc-results {
+
+		font-size: 11px;
+
+		margin-left: 30px;
+
+		width: 720px;
+
+		line-height: 10pt;
+
+	}
+
+		.calc-results table {
+
+		}
+
+		.calc-results td {
+
+			border: 1px solid #dddddd;
+
+			padding: 5px;
+
+			text-align: center;
+
+		}
+
+		.calc-results th {
+
+			border: 1px solid #dddddd;
+
+			color: #c11e1e;
+
+			padding: 2px;
+
+			font-weight: 700;
+
+			text-align: center;
+
+			vertical-align: middle;
+
+		}
+
+		.calc-results table {
+
+		}
+
+.calc-disclaimer {
+
+		font-size: 10px;
+
+		margin-left: 30px;
+
+		line-height: 12pt;
+
+		padding: 10px 0px 0px 0px;
+
+		width: 720px;
+
+		}
+
+/********************************** WIDGETS **********************************/
+
+.home-widgets {
+
+	border-bottom: 1px solid #DDDDDD;
+
+	margin: 0px 0px 20px 0px;
+
+	overflow: hidden;
+
+}
+
+	.home-widgets h2 {
+
+		font-size: 20px;
+
+	}
+
+	.home-widgets ul {
+
+		margin-left: 0px;
+
+		list-style-type: none;
+
+		overflow: hidden;
+
+	}
+
+	.home-widgets .home-top li {
+
+		background: #ffffff;
+
+		border: 1px solid #DDDDDD;
+
+		box-shadow: 2px 2px 5px #DDDDDD;
+
+			-moz-box-shadow: 2px 2px 5px #DDDDDD;
+
+			-ms-box-shadow: 2px 2px 5px #DDDDDD;
+
+			-o-box-shadow: 2px 2px 5px #DDDDDD;
+
+			-webkit-box-shadow: 2px 2px 5px #DDDDDD;
+
+		float: left;
+
+		padding: 10px;
+
+		margin-right: 20px;
+
+		width: 203px;
+
+
+	}
+
+		.home-widgets .home-top li:last-of-type {
+
+			margin-right: 0px;
+
+			clear: right;
+
+		}
+
+/********************************** LIGHTBOX **********************************/
+
+.fancybox-wrap,
+
+.fancybox-skin,
+
+.fancybox-outer,
+
+.fancybox-inner,
+
+.fancybox-image,
+
+.fancybox-wrap iframe,
+
+.fancybox-wrap object,
+
+.fancybox-nav,
+
+.fancybox-nav span,
+
+.fancybox-tmp {
+
+	padding: 0;
+
+	margin: 0;
+
+	border: 0;
+
+	outline: none;
+
+	vertical-align: top;
+
+}
+
+.fancybox-wrap {
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	z-index: 8020;
+
+}
+
+.fancybox-skin {
+
+	position: relative;
+
+	background: #f9f9f9;
+
+	color: #444;
+
+	text-shadow: none;
+
+	-webkit-border-radius: 4px;
+
+	   -moz-border-radius: 4px;
+
+	        border-radius: 4px;
+
+}
+
+.fancybox-opened {
+
+	z-index: 8030;
+
+}
+
+.fancybox-opened .fancybox-skin {
+
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+
+}
+
+.fancybox-outer, .fancybox-inner {
+
+	position: relative;
+
+}
+
+.fancybox-inner {
+
+	overflow: hidden;
+
+}
+
+	.fancybox-type-image .fancybox-inner:after {
+
+		background:#dddddd;
+
+		content: "www.polesworth-garage.com";
+
+		display: block;
+
+		float: right;
+
+		font-size: 16px;
+
+		line-height: 40px;
+
+		height: 40px;
+
+		padding: 0px 40px;
+
+		position: relative;
+
+		top: -40px;
+
+		z-index: 100;
+
+	}
+
+.fancybox-type-iframe .fancybox-inner {
+
+	-webkit-overflow-scrolling: touch;
+
+}
+
+.fancybox-error {
+
+	color: #444;
+
+	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+	margin: 0;
+
+	padding: 15px;
+
+	white-space: nowrap;
+
+}
+
+.fancybox-image, .fancybox-iframe {
+
+	display: block;
+
+	width: 100%;
+
+	height: 100%;
+
+}
+
+.fancybox-image {
+
+	max-width: 100%;
+
+	max-height: 100%;
+
+}
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+
+	background-image: url('images/fancybox_sprite.png');
+
+}
+
+#fancybox-loading {
+
+	position: fixed;
+
+	top: 50%;
+
+	left: 50%;
+
+	margin-top: -22px;
+
+	margin-left: -22px;
+
+	background-position: 0 -108px;
+
+	opacity: 0.8;
+
+	cursor: pointer;
+
+	z-index: 8060;
+
+}
+
+#fancybox-loading div {
+
+	width: 44px;
+
+	height: 44px;
+
+	background: url('images/fancybox_loading.gif') center center no-repeat;
+
+}
+
+.fancybox-close {
+
+	position: absolute;
+
+	top: -18px;
+
+	right: -18px;
+
+	width: 36px;
+
+	height: 36px;
+
+	cursor: pointer;
+
+	z-index: 8040;
+
+}
+
+	.fancybox-close:hover {
+
+		border-bottom: none;
+
+	}
+
+.fancybox-nav {
+
+	position: absolute;
+
+	top: 0;
+
+	width: 40%;
+
+	height: 100%;
+
+	cursor: pointer;
+
+	text-decoration: none;
+
+	background: transparent url('images/blank.gif'); /* helps IE */
+
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	z-index: 8040;
+
+}
+
+.fancybox-prev {
+
+	left: 0;
+
+}
+
+.fancybox-next {
+
+	right: 0;
+
+}
+
+.fancybox-nav span {
+
+	position: absolute;
+
+	top: 50%;
+
+	width: 36px;
+
+	height: 34px;
+
+	margin-top: -18px;
+
+	cursor: pointer;
+
+	z-index: 8040;
+
+	visibility: hidden;
+
+}
+
+.fancybox-prev span {
+
+	left: 10px;
+
+	background-position: 0 -36px;
+
+}
+
+.fancybox-next span {
+
+	right: 10px;
+
+	background-position: 0 -72px;
+
+}
+
+.fancybox-nav:hover span {
+
+	visibility: visible;
+
+}
+
+.fancybox-tmp {
+
+	position: absolute;
+
+	top: -99999px;
+
+	left: -99999px;
+
+	visibility: hidden;
+
+	max-width: 99999px;
+
+	max-height: 99999px;
+
+	overflow: visible !important;
+
+}
+
+/* Overlay helper */
+
+.fancybox-lock {
+
+	overflow: hidden;
+
+}
+
+.fancybox-overlay {
+
+	position: absolute;
+
+	top: 0;
+
+	left: 0;
+
+	overflow: hidden;
+
+	display: none;
+
+	z-index: 8010;
+
+	background: url('images/fancybox_overlay.png');
+
+}
+
+.fancybox-overlay-fixed {
+
+	position: fixed;
+
+	bottom: 0;
+
+	right: 0;
+
+}
+
+.fancybox-lock .fancybox-overlay {
+
+	overflow: auto;
+
+	overflow-y: scroll;
+
+}
+
+/* Title helper */
+
+.fancybox-title {
+
+	visibility: hidden;
+
+	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+	position: relative;
+
+	text-shadow: none;
+
+	z-index: 8050;
+
+}
+
+.fancybox-opened .fancybox-title {
+
+	visibility: visible;
+
+}
+
+.fancybox-title-float-wrap {
+
+	position: absolute;
+
+	bottom: 0;
+
+	right: 50%;
+
+	margin-bottom: -35px;
+
+	z-index: 8050;
+
+	text-align: center;
+
+}
+
+.fancybox-title-float-wrap .child {
+
+	display: inline-block;
+
+	margin-right: -100%;
+
+	padding: 2px 20px;
+
+	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
+
+	background: rgba(0, 0, 0, 0.8);
+
+	-webkit-border-radius: 15px;
+
+	   -moz-border-radius: 15px;
+
+	        border-radius: 15px;
+
+	text-shadow: 0 1px 2px #222;
+
+	color: #FFF;
+
+	font-weight: bold;
+
+	line-height: 24px;
+
+	white-space: nowrap;
+
+}
+
+.fancybox-title-outside-wrap {
+
+	position: relative;
+
+	margin-top: 10px;
+
+	color: #fff;
+
+}
+
+.fancybox-title-inside-wrap {
+
+	padding-top: 10px;
+
+}
+
+.fancybox-title-over-wrap {
+
+	position: absolute;
+
+	bottom: 0;
+
+	left: 0;
+
+	color: #fff;
+
+	padding: 10px;
+
+	background: #000;
+
+	background: rgba(0, 0, 0, .8);
+
+}
+
+.star-buys {
+
+	overflow: hidden;
+
+}
+
+	.star-buys li {
+
+		display: none;
+
+	}
+
+		.star-buys li:first-of-type {
+
+			display: block;
+
+		}
+
+	.star-buys img {
+
+		margin: 10px 0px;
+
+		width: 300px;
+
+	}
+
+		.star-buys div:before {
+
+			background:#dddddd;
+
+			content: "www.polesworth-garage.com";
+
+			display: block;
+
+			float: right;
+
+			font-size: 10px;
+
+			line-height: 20px;
+
+			height: 20px;
+
+			padding: 0px 10px;
+
+			position: relative;
+
+			top: -30px;
+
+			z-index: 100;
+
+		}
+
+	.star-buys a, .star-buys div {
+
+		font-size: 12px;
+
+		color: #c11e1e;
+
+		font-weight: 600;
+
+	}
+
+	.star-buys div {
+
+		color: #c11e1e;
+
+		float: none;
+
+		font-size: 18px;
+
+	}
+
+
+
+ul.minical{position:absolute;display:none;color:#3d454b;background:white;border:1px solid 
+
+#bbc5cd;margin:0;padding:0;text-shadow:none;width:16em;-webkit-box-shadow:0 0 12px rgba(0,0,0,0.2);-
+
+moz-box-shadow:0 0 12px rgba(0,0,0,0.2);box-shadow:0 0 12px rgba(0,0,0,0.2);z-index:9327;font-size:1.1em}
+
+ul.minical li{padding:1px 10px 0 10px;margin:0; list-style-type: none;}ul.minical li article{float:left;width:100%}
+
+ul.minical li article header{background:#dde2e6;color:#3d454b;border:1px solid #bbc5cd;padding:2px 
+
+0;position:relative;height:1.2em;margin:0 -9px}ul.minical li article header h6{font-size:.8em;line-
+
+height:1.2em;font-weight:bold;text-align:center;padding:.2em 0;margin:0px 0px 0px 25px;font-
+
+family:"Helvetica Neue",Helvetica,Arial,sans-serif}ul.minical li article header a
+
+{display:block;position:absolute;text-indent:-9327px;top:50%;left:5px;margin-top:-8px;background:url
+
+("images/jquery_minical_icons.png") top left;height:16px;width:16px;font-size:1px}ul.minical li article header 
+
+a.minical_next{left:auto;right:5px;background-position:bottom left}ul.minical li article section{margin-
+
+bottom:10px}ul.minical li article section table{width:100%;color:inherit;font-size:inherit;border-
+
+collapse:collapse}ul.minical li article section table thead tr th{padding:5px 0 0 0;font-size:.7em;font-
+
+weight:bold;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#3d454b}ul.minical li article section 
+
+table tbody tr td{padding:1px;text-align:right;font-size:.9em;font-family:"Helvetica Neue",Helvetica,Arial,sans-
+
+serif}ul.minical li article section table tbody tr td a{display:block;border:1px solid 
+
+#dde2e6;color:#3d454b;padding:.1em .3em;text-decoration:none}ul.minical li article section table tbody tr 
+
+td.minical_highlighted a{border-color:#6d93b3;color:#3d454b}ul.minical li article section table tbody tr 
+
+td.minical_selected a{border-color:#517a9c;color:#3d454b}ul.minical li article section table tbody tr 
+
+td.minical_past_month a,ul.minical li article section table tbody tr td.minical_future_month a{color:#b1b5b7}
+
+ul.minical li article section table tbody tr td.minical_today a{border-
+
+color:#517a9c;background:#517a9c;color:white}
+
+
+
+#euro_cookie {
+
+	background: #333333;
+
+	color: #ffffff;
+
+	position: fixed;
+
+	bottom: 0;
+
+	width: 100%;
+
+	text-align: center;
+
+}
+
+	#euro_cookie p {
+
+		font-size: 12px;
+
+		margin: 5px 0px;
+
+	}
+
+
+
+	#euro_cookie a {
+
+		height: 30px;
+
+		line-height: 30px;
+
+		font-size: 12px;
+
+		box-shadow: none;
+
+	}
+
+
+
+.gallery {
+
+
+
+}
+
+
+
+	.gallery ul {
+
+		display: block;
+
+		margin: 0px;
+
+		padding: 0px;
+
+		overflow: hidden;
+
+	}
+
+
+
+		.gallery ul li {
+
+			list-style-type: none;
+
+			margin-bottom: 20px;
+
+		}
+
+
+
+			.gallery ul li img {
+
+				margin-bottom: 10px;
+
+				width: 300px;
+
+			}
+
+
+
+.error-cars {
+
+	list-style-type: none;
+
+	margin: 20px 0px 0px 0px;
+
+	padding: 0px;
+
+}
+
+
+
+	.error-cars h3 {
+
+		font-size: 14px;
+
+	}
+
+
+
+	.error-cars .main-details li {
+
+		font-size: 11px;
+
+		line-height: 12px;
+
+	}
+
+input[type="fsubmit"], .finance-button {
+
+	background: url( '/wp-content/uploads/2016/08/sprite.png' ) 0px -230px repeat-x;
+
+	border: 1px solid #800000;
+
+	border-radius: 3px;
+
+		-moz-border-radius: 3px;
+
+		-ms-border-radius: 3px;
+
+		-o-border-radius: 3px;
+
+		-webkit-border-radius: 3px;
+
+	box-shadow: 0px 2px 0px #DDDDDD;
+
+		-moz-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-ms-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-o-box-shadow: 0px 2px 0px #DDDDDD;
+
+		-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+
+	color: #FFFFFF;
+
+	cursor: pointer;
+
+	padding: 0px 20px;
+
+	height: 52px;
+
+	line-height: 44px;
+
+	text-shadow: 0px -1px 0px #800000;
+
+	text-align: center;
+
+	text-transform: uppercase;
+
+}
+
+	input[type="fsubmit"]:hover, .finance-button:hover {
+
+		background-position: 0px -230px;
+
+		border-bottom: none;
+
+		border: 1px solid #570000;
+
+	}
+
+.finance-button {
+
+	display: inline-block;
+
+	padding: 0px 10px;
+
+	height: 38px;
+
+	line-height: 17px;
+
+}
+
+
+
+.finance-quote {
+
+	font-size: 12px;
+
+	float: right;
+
+	color: #c11e1e;
+
+	font-weight: 700;
+
+	margin-top: -20px;
+
+	margin-bottom: 10px;
+
+}
+
+.finance-quote-2 {
+
+	font-size: 12px;
+
+	float: right;
+
+	color: #c11e1e;
+
+	font-weight: 700;
+
+	margin-top: -20px;
+
+	margin-right: 18px;
+
+	margin-bottom: 10px;
+
+}
+
+
+
+.reduced-container {
+
+	position: absolute;
+
+	z-index: 500;
+
+}
+
+
+
+.reduced-triangle {
+
+	border-color:#c11e1e transparent transparent #c11e1e;
+
+    border-style: solid; 
+
+    border-width: 50px; 
+
+    width: 0px; /* real width is 100px; */
+
+    height: 0px; /* same as width */
+
+    line-height: 0px;
+
+}
+
+
+
+.reduced-text {
+
+	color: #fff;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    position: absolute;
+
+    top: 30px; /* 50 - something related to line heigth */
+
+    left: -30px; /* 50 - 142/2 - something related to line height */
+
+    transform: rotate(-45deg);
+
+    -ms-transform: rotate(-45deg);
+
+    -moz-transform: rotate(-45deg);
+
+    -o-transform: rotate(-45deg);
+
+    -webkit-transform: rotate(-45deg);
+
+    width: 142px; /* base width -> (100^2 + 100^2)^1/2 */
+
+    text-align: center;
+
+}
+
+
+
+.CurrentPageBorder .current {
+
+  margin: 4px;
+
+}
+
+
+
+.CurrentPageBorder {
+
+  border: 2px solid #c11e1e;
+
+  display: inline-block;
+
+  margin: 0;
+
+  padding: 11px 0 9px;
+  
+  font-weight: bold;
+
+}

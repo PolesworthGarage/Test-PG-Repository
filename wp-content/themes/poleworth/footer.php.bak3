@@ -1,0 +1,899 @@
+<?php $stylesheet = get_bloginfo( 'stylesheet_directory' ); ?>
+
+<?php global $search_args; ?>
+
+	<footer>
+
+		<div class="wrapper">
+
+		<?php if( !dynamic_sidebar( 'footer-widget-area' ) ) : ?>
+
+			<div class="third widget">
+
+				<h2>Widget Area</h2>
+
+				<p>These columns are controlled by widgets.</p>
+
+				<p>These can be edited in the widgets section of the admin control panel</p>
+
+			</div>
+
+			<div class="third widget">
+
+				<h2>Widget Area</h2>
+
+				<p>These columns are controlled by widgets.</p>
+
+				<p>These can be edited in the widgets section of the admin control panel</p>
+
+			</div>
+
+			<div class="third widget">
+
+				<h2>Widget Area</h2>
+
+				<p>These columns are controlled by widgets.</p>
+
+				<p>These can be edited in the widgets section of the admin control panel</p>
+
+			</div>
+
+		<?php endif; ?>
+
+			<div class="copyright">
+
+				<nav>
+
+					<?php
+
+					wp_nav_menu( 
+
+						array( 
+
+							'container'      	=> '', 
+
+							'container_class'	=> '',
+
+							'container_id'   	=> '',
+
+							'fallback_cb'    	=> 'navigation_main',
+
+							'theme_location' 	=> 'Foot_Navigation',
+
+						) 
+
+					); 
+
+					?>
+
+				</nav>
+
+				<p>&copy; <a href="/" title="Polesworth Garage">Polesworth Garage</a></p>
+
+			</div>
+
+		</div>
+
+	</footer>
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+	<script type="text/javascript" src='/wp-content/plugins/dreamgrow-scroll-triggered-box/jquery.cookie.js?ver=1.3'></script>
+
+	<script src="<?php echo $stylesheet; ?>/javascript/minified.js"></script>
+
+	<script src="<?php echo $stylesheet; ?>/javascript/hoverIntent.min.js"></script>
+
+	<script src="<?php echo $stylesheet; ?>/javascript/menu.min.js"></script>
+
+	<script src="<?php echo $stylesheet; ?>/javascript/slider.min.js"></script>
+
+
+
+	<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		if( $( '#car-slide' ) ) {
+
+			$('#car-slide').bjqs({
+
+				'height' : 225,
+
+				'width' : 300,
+
+				'responsive' : true,
+
+				'showmarkers' : false,
+
+				'randomstart' : false
+
+			});
+
+		}
+		
+		$('.current').each(function(index, element) {
+			$(this).wrap("<div class='CurrentPageBorder'></div>");
+		});
+
+		if( $('#order-results') ){
+			$( '#order-results' ).on( 'change', function(  ){
+				var str = "";
+				$("#order-results select option:selected").each(function () {
+					str += $(this).val() + " ";
+				});
+				if( str != 'order' ) {
+					str = str.split('-')
+					key = str[0]
+					order = str[1]
+					var form = document.getElementById( 'refine' );
+					$('#order-field').val( order );
+					$('#key-field').val( key );
+					form.submit();
+				}
+			})
+		}
+		<?php 
+		
+		if (!function_exists("current_page_url")){
+			function current_page_url() {
+				$pageURL = 'http';
+				if( isset($_SERVER["HTTPS"]) ) {
+					if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+				}
+				$pageURL .= "://";
+				if ($_SERVER["SERVER_PORT"] != "80") {
+					$pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+				} else {
+					$pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+				}
+				return $pageURL;
+			}
+		}
+		
+		if ( stripos((string)parse_url(current_page_url(),PHP_URL_PATH) , "/search/cars") === false ){
+		?>
+		var nAMJ_CurrentPageIndex = -1;
+		
+		function AMJ_ChangePageLinksToFormSubmit(){
+			if (nAMJ_CurrentPageIndex <=0)
+				nAMJ_CurrentPageIndex = 1;
+
+			$( '.page-numbers' ).each(function(index, element) {
+				var sType = $(this).prop('nodeName');
+				if (sType.toLowerCase() == "a"){
+					$(this).removeAttr("href","");
+					$(this).click(function(event){
+						event.preventDefault();
+						var sButtonValue = $(this).text();
+						var nButtonPageIndex = parseInt(sButtonValue);
+						if (sButtonValue.toLowerCase().indexOf("next") >= 0)
+							nButtonPageIndex = nAMJ_CurrentPageIndex + 1;
+						if (sButtonValue.toLowerCase().indexOf("prev") >= 0)
+							nButtonPageIndex = nAMJ_CurrentPageIndex - 1;
+						$("#pagenumberbuttonclick").val(nButtonPageIndex);
+						var form = document.getElementById( 'refine' );
+						form.submit();
+					});
+				}
+			});
+		}
+
+		
+		if( $('.pagination') ){
+			$( '.page-numbers' ).each(function(index, element) {
+				var sType = $(this).prop('nodeName');
+				if (sType.toLowerCase() == "span"){
+					if (nAMJ_CurrentPageIndex == -1){
+						var nSpanNumber = parseInt($(this).text());
+						if (nSpanNumber > 0){
+							nAMJ_CurrentPageIndex = nSpanNumber;
+							AMJ_ChangePageLinksToFormSubmit();
+						}
+					}
+				}
+            });
+		}
+		<?php } ?>
+
+
+		$( '.date-form' ).minical({
+
+			'date_changed': function(  ) {
+
+				var hire_id = $(this).attr('data-hire');
+
+				var from_original = $( '#hire-from-' + hire_id ).val(  ).split( '/' );
+
+				var to_original = $( '#hire-to-' + hire_id ).val(  ).split( '/' );
+
+				var from = new Date( from_original[2], from_original[1], from_original[0] );
+
+				var to = new Date( to_original[2], to_original[1], to_original[0] );
+
+				var timeDiff = Math.abs(from.getTime() - to.getTime());
+
+				var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+				if( !isNaN(diffDays) ) {
+
+					var price = $( '#hire-price-' + hire_id ).attr( 'data-price' );
+
+					var final_price = price * diffDays;
+
+					if( diffDays >= 3 ) {
+
+						final_price = final_price - (final_price/10);
+
+					}
+
+					final_price = final_price.toFixed(2);
+
+					console.log( final_price );
+
+					$( '#hire-price-' + hire_id ).html( final_price );
+
+				}
+
+			}
+
+		});
+
+		$( '.date-form' ).change(  );
+
+		$('.finance-drop').click(function() {
+
+			$('.calculator').slideToggle('slow', function() {
+
+			// Animation complete.
+
+			});
+
+			return false;
+
+		});
+
+
+
+		$( '#cookie_close' ).click( function( e ) {
+
+			window.location.href = "http://www.google.com";
+
+			e.preventDefault(  );
+
+		});
+
+
+
+		$( '#cookie_accept' ).click( function( e ) {
+
+			$.cookie( 'wp_euro_cookie_test', true, { expires: 30 } );
+
+			$( '#euro_cookie' ).fadeOut(  );
+
+			e.preventDefault(  );
+
+		});
+
+
+
+		$( '.model-filter a' ).click( function( e ) {
+
+			e.preventDefault(  );
+
+			var modelid = $(this).attr('data-id');
+
+			var form = document.getElementById( 'refine' );
+
+			$('#model-field').val( modelid );
+
+			form.submit();
+
+		});
+
+		$( '.lightbox-cars' ).fancybox({
+
+			openEffect : 'none',
+
+			closeEffect : 'none'
+
+		});
+
+		$( '.lightbox' ).fancybox({
+
+			openEffect : 'none',
+
+			closeEffect : 'none'
+
+		});
+
+		$( '#enquire-button' ).fancybox({
+
+			maxWidth   	: 500,
+
+			maxHeight  	: 1000,
+
+			fitToView  	: false,
+
+			width      		: '70%',
+
+			height     		: '95%',
+
+			autoSize   	: false,
+
+			closeClick 	: false,
+
+			openEffect 	: 'none',
+
+			closeEffect	: 'none'
+
+		})<?php if( $_POST['enquire'] ) : ?>.trigger('click');<?php endif; ?>
+
+
+
+		$( '#finance-button' ).fancybox({
+
+			maxWidth   	: 800,
+
+			maxHeight  	: 1000,
+
+			fitToView  	: false,
+
+			width      		: '90%',
+
+			height     		: '95%',
+
+			autoSize   	: false,
+
+			closeClick 	: false,
+
+			openEffect 	: 'none',
+
+			closeEffect	: 'none'
+
+		})<?php if( $_POST['enquire'] || $_POST['finance-submit'] ) : ?>.trigger('click');<?php endif; ?>
+
+
+
+		$( '#hire-button' ).fancybox({
+
+			maxWidth   	: 500,
+
+			maxHeight  	: 1000,
+
+			fitToView  	: false,
+
+			width      		: '70%',
+
+			height     		: '95%',
+
+			autoSize   	: false,
+
+			closeClick 	: false,
+
+			openEffect 	: 'none',
+
+			closeEffect	: 'none'
+
+		})<?php if( $_POST['hire-submit'] ) : ?>.trigger('click');<?php endif; ?>;
+
+
+
+		$( '#mot-button' ).fancybox({
+
+			maxWidth   	: 500,
+
+			maxHeight  	: 1000,
+
+			fitToView  	: false,
+
+			width      		: '70%',
+
+			height     		: '95%',
+
+			autoSize   	: false,
+
+			closeClick 	: false,
+
+			openEffect 	: 'none',
+
+			closeEffect	: 'none'
+
+		})<?php if( $_POST['mot-submit'] ) : ?>.trigger('click');<?php endif; ?>;
+
+
+
+		$( '#nissan-service-button' ).fancybox({
+
+			maxWidth   	: 500,
+
+			maxHeight  	: 1000,
+
+			fitToView  	: false,
+
+			width      		: '70%',
+
+			height     		: '95%',
+
+			autoSize   	: false,
+
+			closeClick 	: false,
+
+			openEffect 	: 'none',
+
+			closeEffect	: 'none'
+
+		})<?php if( $_POST['nissan-submit'] ) : ?>.trigger('click');<?php endif; ?>
+
+
+
+		$( '#service-button' ).fancybox({
+
+			maxWidth   	: 500,
+
+			maxHeight  	: 1000,
+
+			fitToView  	: false,
+
+			width      		: '70%',
+
+			height     		: '95%',
+
+			autoSize   	: false,
+
+			closeClick 	: false,
+
+			openEffect 	: 'none',
+
+			closeEffect	: 'none'
+
+		})<?php if( $_POST['service-submit'] ) : ?>.trigger('click');<?php endif; ?>
+
+
+
+		if( $('.calculator' ) ) {
+
+			$('.calculator' ).each(function(  ) {
+
+				var carid = $(this).find('.calc-results').attr('data-id')
+
+				$( this ).find('.finance-calc').ajaxSubmit({url: '<?php echo $stylesheet; ?>/quote.php', type: 'post', target: '.calc-results[data-id=' + carid +']'});
+
+				$( this ).find('.finance-calc').ajaxForm({url: '<?php echo $stylesheet; ?>/quote.php', type: 'post', target: '.calc-results[data-id=' + carid +']'});
+
+			});
+
+			
+
+		}
+
+		$( 'header nav > ul' ).dcMegaMenu({
+
+			rowItems: 1,
+
+			fullWidth: false
+
+		});
+
+		if ( !$.browser.msie  && parseInt($.browser.version, 10) != 7) {
+
+			$( 'select, input[type="checkbox"]').uniform({
+
+				selectAutoWidth: false
+
+			});
+
+		}
+
+
+
+		if( $(".car-search .priceslider") ) {
+			
+			var max = $( '#refine .max' ).val();
+			var min = $( '#refine .min' ).val();
+			
+			if (!$.isNumeric(min))
+				min = 0;
+			if (!$.isNumeric(max))
+				max = 0;
+			
+			if (min > max)
+				min = max - 1;
+			if (min < 0)
+				min = 0;
+			if( max > 0 ) {
+				var startvar = [min, max];
+			} else {
+				var startvar = [min, 100000];
+			}
+
+			$(".car-search .priceslider").noUiSlider({
+
+				range: [0, 100000],
+
+				start: startvar,
+
+				connect: true,
+
+				step: 500,
+
+				margin: 1000,
+
+				handles: 2,
+
+				slide: function(  ) {
+
+				},
+
+				serialization: {
+
+					to: [$("#min"),$("#max")],
+
+					resolution: 1
+
+				}
+
+			});
+
+		}
+
+
+
+		if( $(".filter-box .priceslider") ) {
+
+			var max = $( '#refine .max' ).val();
+			var min = $( '#refine .min' ).val();
+			
+			if (!$.isNumeric(min))
+				min = 0;
+			if (!$.isNumeric(max))
+				max = 0;
+			
+			if (min > max)
+				min = max - 1;
+			if (min < 0)
+				min = 0;
+			if( max > 0 ) {
+				var startvar = [min, max];
+			} else {
+				var startvar = [min, 100000];
+			}
+
+			$(".filter-box .priceslider").noUiSlider({
+
+				range: [0, 100000],
+
+				start: startvar,
+
+				connect: true,
+
+				step: 500,
+
+				margin: 1000,
+
+				handles: 2,
+
+				slide: function(  ) {
+
+				},
+
+				serialization: {
+
+					to: [$("#refine .min"),$("#refine .max")],
+
+					resolution: 1
+
+				}
+
+			});
+
+		}
+
+
+		var fFirstTimeSelectMakeModel = true;
+		var sSelectedModel = "<?php 
+			if (isset($_SESSION['wp_current_search']['model']) )
+				echo (string)$_SESSION['wp_current_search']['model'];
+		?>";
+		$('#make').change(function(  ) {
+			var models = []
+			<?php 
+			$models = get_terms( 'make', array( 'hide_empty' => true) ); 
+			foreach( $models as $model ) :
+			?>
+			models.push({ 'name': '<?php echo strtoupper($model->name); ?>', 'id': '<?php echo $model->term_id; ?>', 'parent_id': '<?php echo $model->parent; ?>' });
+			<?php endforeach; ?>
+			function buildTree( ar, pid ){
+				if( typeof pid == undefined ) {
+					var pid = 0;
+				}
+				var i, op = [];
+				for( i=0; i < ar.length; i++ ) {
+					var item = ar[i];
+					if( item['parent_id'] == pid ) {
+						op[item['id']] = {
+							'name': item['name'],
+							'id': item['id'],
+							'parent_id': item['parent_id']
+						};
+						var children = buildTree( ar, item['id'] );
+						if( children.length > 0 ) {
+							op[item['id']]['children'] = children;
+						}
+					}
+				}
+				return op;
+			}
+			var tree = buildTree( models, 0 );
+			var x = $('#make').val();
+			$( '#model' ).empty();
+			$( '#model' ).append( '<option value="all">All Models</option>');
+			tree[x]['children'].sort(function(a, b) { 
+				if(a.name < b.name) return -1;
+			    if(a.name > b.name) return 1;
+			    return 0;
+			});
+			//alert("sSelectedModel = " + sSelectedModel);
+			for( var i in tree[x]['children'] ) {
+				var sSelectedText = "";
+				//fFirstTimeSelectMakeModel
+				//selected="selected"
+				//alert("tree[x]['children'][i].name = " + tree[x]['children'][i].name);
+				/*if (fFirstTimeSelectMakeModel){
+					if (sSelectedModel == tree[x]['children'][i].name){
+						sSelectedText = 'selected="selected"';
+					}
+				}*/
+				$( '#model' ).append( '<option value="' + tree[x]['children'][i].name + '"' + sSelectedText + '>' + tree[x]['children'][i].name + '</option>' );
+				i++;
+			}
+			if (fFirstTimeSelectMakeModel){
+				$( '#model' ).val(sSelectedModel).change();
+				fFirstTimeSelectMakeModel = false;
+			}
+		});
+		$( "#make" ).trigger( "change" );
+
+
+
+		var slider = document.getElementById( 'slide-area' );
+
+		if( slider ) {
+
+			var slides = $( '.slider li' );
+
+			var container = $( '.slide-container' )[0];
+
+			if( slides.length > 0 ) {
+
+				var list = []
+
+				var pips = document.createElement( 'ul' );
+
+				pips.className = 'pips';
+
+				var imageObj = new Image(  );
+
+				for( i = 0; i < slides.length; i++ ) {
+
+					var dict = {}
+
+					dict.bg = slides[i].getAttribute( 'data-background' );
+
+					dict.node = slides[i];
+
+					imageObj.src = slides[i].getAttribute( 'data-background' );
+
+					slides[i].style.display = 'none';
+
+					list.push( dict );
+
+					var pip = document.createElement( 'li' );
+
+					pip.innerHTML = '<a href="#' + i + '" class="pip">' + i + '</a>';
+
+					pips.appendChild( pip );
+
+				}
+
+				container.appendChild( pips );
+
+				pips = $( container ).children( '.pips' );
+
+				var children = $( pips ).children( 'li' );
+
+				list[0].node.style.display = 'block';
+
+				slider.style.backgroundImage = 'url( ' + list[0].bg + ')';
+
+				slider.style.backgroundSize = 'cover';
+
+				children[0].className = 'current';
+
+				function changeSlide( n, o ) {
+
+					list[o].node.style.display = 'none';
+
+					var oldpip = $( pips ).children( '.current' );
+
+					if( oldpip.length > 0 ) {
+
+						oldpip[0].className = '';
+
+					}
+
+					list[n].node.style.display = 'block';
+
+					slider.style.backgroundImage = 'url( ' + list[n].bg + ')';
+
+					slider.style.backgroundSize = 'cover';
+
+					children[n].className = 'current';
+
+				}
+
+				var current = 0;
+
+				var timer = setInterval( function(  ) { 
+
+					var length = list.length;
+
+					if( current+1 < list.length ) {
+
+						changeSlide( current+1, current );
+
+						current = current+1;
+
+					} else {
+
+						changeSlide( 0, current );
+
+						current = 0;
+
+					}
+
+				}, 5000 );
+
+				$( '.pip' ).click( function( event ) {
+
+					event.preventDefault(  );
+
+					var newSlide = $(this).text(  );
+
+					if( current != newSlide ) {
+
+						changeSlide( newSlide, current );
+
+					}
+
+					current = newSlide;
+
+					clearInterval( timer );
+
+				});
+
+			}
+
+		}
+
+
+
+		/*if( $( '.star-buys' ) ) {
+
+			var slides = $( '.star-buys li' );
+
+			if( slides.length > 0 ) {
+
+				var list = []
+
+				var imageObj = new Image(  );
+
+				for( i = 0; i < slides.length; i++ ) {
+
+					var dict = {}
+
+					dict.node = slides[i];
+
+					slides[i].style.display = 'none';
+
+					list.push( dict );
+
+				}
+
+				list[0].node.style.display = 'block';
+
+				function changeSlide( n, o ) {
+
+					$( list[o].node ).fadeOut(  );
+
+					list[o].node.style.display = 'none';
+
+					$( list[n].node ).fadeIn( );
+
+					
+
+				}
+
+				var current = 0;
+
+				var timer = setInterval( function(  ) { 
+
+					var length = list.length;
+
+					if( current+1 < list.length ) {
+
+						changeSlide( current+1, current );
+
+						current = current+1;
+
+					} else {
+
+						changeSlide( 0, current );
+
+						current = 0;
+
+					}
+
+				}, 5000 );
+
+			}
+
+		}*/
+
+	});
+
+
+
+	</script>
+
+	<?php if( $pagename == 'part-exchange-bargains' ) : ?>
+
+			<div id="scrolltriggered" style="width: 260px; right: 10px; display: block; bottom: 5px;">
+
+				<div id="inscroll">
+
+					<a href="#close" id="closebox">x</a>
+
+					<h5>Find out First!</h5>
+                                        <p>Receive a weekly email listing all vehicles we have in-stock under £2000.</p>
+					<?php echo do_shortcode( '[trade_form]' ); ?>
+
+				</div>
+
+			</div>
+
+			<script type="text/javascript">
+
+				var stb = {
+
+					hascolsed: true,
+
+					cookieLife: 7,
+
+					triggerHeight: 20,
+
+					stbElement: ''
+
+				}; 
+
+
+
+			</script>
+
+			<script type="text/javascript" src='/wp-content/plugins/dreamgrow-scroll-triggered-box/stb_init.js?ver=1.2'></script>
+
+			<script type="text/javascript">
+
+				console.log( stb );
+
+			</script>
+
+		<?php endif; ?>
+
+		<?php wp_footer(  ); ?>
+
+<?php /*endif; */?>
+
+</body>
+
+</html>

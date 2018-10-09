@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<title>PolesWorth Garage Limited</title>
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700" />
+	<link rel="stylesheet" type="text/css" href="reset.css" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<section id="sub-nav" role="navigation">
+		<nav class="wrapper">
+			<ul class="sub-nav">
+				<li><a href="/">Home</a></li>
+				<li><a href="/">New Cars</a></li>
+				<li><a href="/">Service Centre</a></li>
+				<li><a href="/">Special Occasions</a></li>
+				<li><a href="/">Contract &amp; Hire</a></li>
+			</ul>
+		</nav>
+	</section>
+
+	<header>
+		<div class="wrapper">
+			<h1><a href="/"><img src="images/logo.png" alt="Polesworth Garage Ltd" /></a></h1>
+			<nav>
+				<ul class="main-nav" role="navigation">
+					<li><a href="/">Find a Car</a></li>
+					<li><a href="/">Test Drive</a></li>
+					<li><a href="/">Contract &amp; Hire</a></li>
+					<li><a href="/">Motability</a></li>
+					<li><a href="/">Gallery</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="slide-area">
+		<div class="wrapper">
+			<div class="half">
+				<div class="car-finder">
+					<h2>Search Our Range Of Cars</h2>
+					<form method="post" id="car-range">
+						<label for="show">Show</label>
+						<select name="show">
+							<option value="all">All Cars</option>
+							<option value="new">New Cars</option>
+							<option value="old">Old Cars</option>
+						</select>
+
+						<label for="make">Make</label>
+						<select name="make">
+							<option value="all">All Makes</option>
+							<option value="audi">Audi</option>
+							<option value="bmw">BMW</option>
+							<option value="fiat">Fiat</option>
+							<option value="ford">Ford</option>
+							<option value="nissan">Nissan</option>
+						</select>
+
+						<label for="model">Model</label>
+						<select name="model">
+							<option value="all">All Models</option>
+							<option value="m1">M1</option>
+							<option value="m2">M2</option>
+							<option value="m3">M3</option>
+							<option value="m4">M4</option>
+							<option value="m5">M5</option>
+						</select>
+
+						<label for="priceslider">Price</label>
+						<div class="range">
+							<div class="priceslider"></div>
+							<label for="min">
+								<input type="text" id="min" name="min" />
+								<div>Min £</div>
+							</label>
+							<label for="max">
+								<input type="text" id="max" name="max" />
+								<div>Max £</div>
+							</label>
+						</div>
+						<div class="checkbox half">
+							<input type="checkbox" name="images" /> <label for="images">Cars With Photos Only</label>
+						</div>
+						<input type="submit" name="find-cars" class="car-submit" value="Search Cars" />
+					</form>
+				</div>
+			</div>
+
+			<ul class="half slider">
+
+				<li>
+					<h2>Special Offer!</h2>
+					<p>Get a years free insurance with all Nissan Models</p>
+					<a class="button">Learn More</a>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="main" role="main"></section>
+
+	<footer>
+		<div class="wrapper">
+
+			<div class="third">
+				Stuff Here Lalalala
+			</div>
+			<div class="third">
+				Stuff Here Lalalala
+			</div>
+			<div class="third">
+				Stuff Here Lalalala
+			</div>
+
+			<div class="copyright">
+				<nav>
+					<ul>
+						<li><a href="/">Commercial</a></li>
+						<li><a href="/">Links</a></li>
+						<li><a href="/">Careers</a></li>
+						<li><a href="/">Newsletter</a></li>
+						<li><a href="/">Sitemap</a></li>
+					</ul>
+				</nav>
+
+				<p>&copy; Polesworth Garage Ltd</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="javascript/nouislider.min.js"></script>
+	<script src="javascript/uniform.min.js"></script>
+	<script type="text/javascript">
+		$( 'select, input[type="checkbox"]').uniform({
+			selectAutoWidth: false
+		});
+		$(".priceslider").noUiSlider({
+			range: [0, 50000],
+			start: [5000, 45000],
+			connect: true,
+			step: 500,
+			margin: 1000,
+			handles: 2,
+			slide: function(  ) {
+
+			},
+			serialization: {
+				to: [$("#min"),$("#max")],
+				resolution: 1
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,1746 @@
+/*
+Theme Name: Polesworth Garage Ltd
+Theme URI: http://www.polesworthgarageltd.com/
+Description: Theme for Polesworth Garage's Website
+Version: 1.0
+Author: Mark Cole
+Table Of Contents:
+	1. Global Styles
+	2. Sub Navigation
+	3. Header
+	4. Slider
+	5. Footer
+	6. Car Listings
+*/
+/********************************** GLOBAL STYLES **********************************/
+body {
+	background: #FFFFFF;
+	color: #333333;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+}
+a {
+	color: #c11e1e;
+	text-decoration: none;
+}
+	a:hover {
+		border-bottom: 1px solid #c11e1e;
+	}
+p {
+	margin: 12px 0px;
+}
+b, strong {
+	font-weight: 700;
+}
+i, em {
+	font-style: italic;
+	font-weight: 400;
+}
+.underline {
+	border-bottom: 1px solid #c11e1e;
+	padding: 0px 0px 10px 0px;
+	margin: 0px 0px 10px 0px;
+}
+hr {
+	background: #DDDDDD;
+	border: none;
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: 20px 0px;
+}
+img {
+	display: block;
+}
+blockquote {
+	border-left: 5px solid #DDDDDD;
+	color: #999999;
+	padding-left: 15px;
+}
+ul {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+ol {
+	list-style-type: decimal;
+	margin-left: 20px;
+}
+ol, ul {
+	margin-bottom: 12px;
+}
+.red {
+	color: #C11E1E!important;
+}
+.wrapper {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 960px;
+}
+.main {
+	margin-top: 30px;
+}
+.half {
+	float: left;
+	width: 50%;
+}
+.third {
+	float: left;
+	margin-right: 30px;
+	width: 300px;
+}
+.third2 {
+	float: left;
+	margin-right: 30px;
+	width: 960px;
+}
+	.third:nth-of-type(3n) {
+		margin-right: 0;
+	}
+
+	.third:nth-of-type(3n+1) {
+		clear: left;
+	}
+.quarter {
+	float: left;
+	width: 220px;
+	margin: 0px 10px;
+}
+	.quarter:nth-of-type(4n){
+		clear: right;
+	}
+.two-thirds {
+	float: left;
+	width: 630px;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+h1 {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 32px;
+}
+h2 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+}
+h3 {
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 28px;
+}
+h4 {
+	color: #C11E1E;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 26px;
+}
+h5 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+h6 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+}
+input {
+	background: #FFFFFF url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -464px repeat-x;
+	border: 1px solid #DDDDDD;
+	border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-o-border-radius: 2px;
+		-webkit-border-radius: 2px;
+	color: #333333;
+	height: 27px;
+}
+input[type="submit"], .button {
+	background: url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -0px repeat-x;
+	border: 1px solid #800000;
+	border-radius: 3px;
+		-moz-border-radius: 3px;
+		-ms-border-radius: 3px;
+		-o-border-radius: 3px;
+		-webkit-border-radius: 3px;
+	box-shadow: 0px 2px 0px #DDDDDD;
+		-moz-box-shadow: 0px 2px 0px #DDDDDD;
+		-ms-box-shadow: 0px 2px 0px #DDDDDD;
+		-o-box-shadow: 0px 2px 0px #DDDDDD;
+		-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 0px 20px;
+	height: 40px;
+	line-height: 40px;
+	text-shadow: 0px -1px 0px #800000;
+	text-align: center;
+	text-transform: uppercase;
+}
+	input[type="submit"]:hover, .button:hover {
+		background-position: 0px -0px;
+		border-bottom: none;
+		border: 1px solid #570000;
+	}
+.button {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 700;
+	height: 38px;
+	line-height: 20px;
+}
+input[type="submit2"], .button2 {
+	background: url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -230px repeat-x;
+	border: 1px solid #800000;
+	border-radius: 3px;
+		-moz-border-radius: 3px;
+		-ms-border-radius: 3px;
+		-o-border-radius: 3px;
+		-webkit-border-radius: 3px;
+	box-shadow: 0px 2px 0px #DDDDDD;
+		-moz-box-shadow: 0px 2px 0px #DDDDDD;
+		-ms-box-shadow: 0px 2px 0px #DDDDDD;
+		-o-box-shadow: 0px 2px 0px #DDDDDD;
+		-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 0px 0px;
+	height: 40px;
+	line-height: 38px;
+	text-shadow: 0px -1px 0px #800000;
+	text-align: center;
+	text-transform: uppercase;
+}
+	input[type="submit2"]:hover, .button2:hover {
+		background-position: 0px -268px;
+		border-bottom: none;
+		border: 1px solid #570000;
+	}
+.button2 {
+	display: inline-block;
+	height: 38px;
+	line-height: 38px;
+}
+.button3 {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 500;
+	height: 38px;
+	line-height: 30px;
+}
+div.selector {
+	background: #FFFFFF url( 'http://pguat.serps.co.uk/wp-content/uploads/2015/02/sprite23.png' ) right -464px no-repeat;
+	border: 1px solid #DDDDDD;
+	border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-o-border-radius: 2px;
+		-webkit-border-radius: 2px;
+	cursor: pointer;
+	line-height: 36px;
+	height: 34px;
+	float: right;
+	padding: 5px 4px 4px 0px;
+	margin-left: 0px;
+	margin-right: 10px;
+	position: relative;
+	overflow: hidden; 
+	width: 350px;
+	font-size: 18px;
+}
+#min, #max{
+	width: 70px;
+}
+div.selector span {
+	background: #FFFFFF url( 'http://pguat.serps.co.uk/wp-content/uploads/2015/02/sprite23.png' ) 0px -422px 0px 0px;
+	color: #333333;
+	cursor: pointer;
+	display: block;
+	font-weight: 700;
+	height: 45px;
+	line-height: 36px;
+	overflow: hidden;
+	padding-right: 35px;
+	padding-left: 30px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 260px;
+}
+	div.selector select {
+		background: none;
+		padding-right: 10px;
+		padding-left: 10px;
+		cursor: pointer;
+		color: #333333;
+		font-weight: 700;
+		font-size: 20px;
+		height: 29px;
+		left: 0px;
+		opacity: 0;
+			filter: alpha(opacity=0);
+			-moz-opacity: 0;
+		position: absolute;
+		top: 0px;
+		width: 99%; 
+	}
+	div.selector.active {
+		background: #FFFFFF;
+	}
+		div.selector.active span {
+			background: #FFFFFF;
+		}
+	div.selector.hover, div.selector.focus {
+		background: #FFFFFF url( 'http://pguat.serps.co.uk/wp-content/uploads/2015/02/sprite23.png' ) right -509px no-repeat;
+	}
+/********************************* SUB NAVIGATION *********************************/
+#sub-nav {
+	background: #333333;
+	height: 30px;
+}
+
+	#sub-nav nav {
+		height: 30px;
+	}
+
+		#sub-nav div span {
+
+		}
+
+#sub-nav ul {
+	height: 30px;
+	display: block;
+	float: right;
+	font-size: 13px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-left: 0px;
+}
+	#sub-nav li {
+		display: inline;
+		line-height: 30px;
+		margin-left: 2px;
+	}
+		#sub-nav li a {
+			border-radius: 5px;
+				-moz-border-radius: 5px;
+				-ms-border-radius: 5px;
+				-o-border-radius: 5px;
+				-webkit-border-radius: 5px;
+			color: #FFFFFF;
+			height: 30px;
+			padding: 5px 10px;
+			text-decoration: none;
+			text-shadow: 0px -1px 0px #222222;
+		}
+			#sub-nav li:last-child a {
+				font-size: 16px;
+				padding: 3px 5px;
+			}
+			#sub-nav li a:hover {
+				background: #222222;
+				border-bottom: 1px solid #444444;
+			}
+/************************************* HEADER *************************************/
+header {
+	background: #c11e1e url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) top center;
+	height: 100px;
+}
+	header h1 {
+		float: left;
+	}
+		header h1 a:hover {
+			border-bottom: none;
+		}
+header nav > ul {
+	display: block;
+	font-size: 16px;
+	font-weight: 700;
+	float: right;
+	text-transform: uppercase;
+}
+	header nav > ul li {
+		display: inline;
+		line-height: 100px;
+		margin-left: 5px;
+	}
+		header nav > ul li a {
+			border-radius: 5px;
+				-moz-border-radius: 5px;
+				-ms-border-radius: 5px;
+				-o-border-radius: 5px;
+				-webkit-border-radius: 5px;
+			color: #FFFFFF;
+			padding: 5px 10px;
+                        font-size: 20px;
+			text-decoration: none;
+			text-shadow: 0px -1px 0px #800000;
+		}
+			header li a:hover {
+				background: #800000;
+			}
+		header nav > ul li ul, header nav > ul .sub {
+			display: none;
+		}
+		header nav > ul .sub ul {
+			display: block;
+		}
+		header nav > ul li .sub-container {
+			position: absolute;
+			overflow: hidden;
+			clear: both;
+			margin: 101px 0px 0px 0px;
+			width: 100%;		
+		}
+		header nav > ul li .sub {
+			background: #ffffff;
+			border: 1px solid #DDDDDD;
+				-webkit-border-bottom-right-radius: 5px;
+				-webkit-border-bottom-left-radius: 5px;
+				-moz-border-radius-bottomright: 5px;
+				-moz-border-radius-bottomleft: 5px;
+			border-bottom-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			box-shadow: 0px 2px 0px #DDDDDD;
+				-moz-box-shadow: 0px 2px 0px #DDDDDD;
+				-ms-box-shadow: 0px 2px 0px #DDDDDD;
+				-o-box-shadow: 0px 2px 0px #DDDDDD;
+				-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+			display: block;
+			padding: 10px;
+			margin: 0 auto;
+			width: 960px;
+		}
+		header nav > ul li .sub .row {
+		 	border-bottom: 1px solid #dddddd;
+		 	width: 100%!important;
+		 	overflow: hidden;
+		 	padding: 10px 0px 0px 0px;
+		 	clear: both;
+		}	
+		 	header nav > ul li .sub .row:last-of-type {
+		 		border-bottom: none;
+		 	}
+		header nav > ul li .sub li {
+			list-style: none;
+			float: left;
+			font-size: 14px;
+			font-weight: normal;
+			line-height: 14px;
+			margin: 10px 20px 10px 0px;
+		}
+		header nav > ul li .sub li.mega-hdr {
+			margin: 0 10px 10px 0;
+			float: left;
+		}
+		header nav > ul li .sub li.mega-hdr.last {
+			margin-right: 0;
+		}
+		header nav > ul li .sub a {
+			background: none;
+			color: #333;
+			padding: 0px;
+			display: block;
+			float: none;
+			font-size: 12px;
+		}
+		header nav > ul li .sub li.mega-hdr a.mega-hdr-a {
+			padding: 5px 15px;
+			margin-bottom: 5px;
+			font-size: 24px;
+			background: #C11E1E;
+			text-transform: uppercase;
+			font-weight: 700;
+			color: #ffffff;
+			text-shadow: none;
+			line-height: 24px;
+		}
+		header nav > ul li .sub li.mega-hdr a.mega-hdr-a:hover {
+			color: #000;
+			border-bottom: none;
+		}
+		header nav > ul .sub li.mega-hdr li a {
+			padding: 9px;
+			font-size: 20px;
+			line-height: 20px;
+			font-weight: 500;
+			text-shadow: none;
+		}
+		header nav > ul .sub li.mega-hdr li a:hover {
+			color: #800000;
+			border-bottom: none;
+		}
+		
+		header nav > ul .sub ul li {
+			padding-right: 0;
+		}
+	
+		header nav > ul li .sub-container.non-mega .sub {
+			padding: 10px;
+		}
+		
+		header nav > ul li .sub-container.non-mega li {
+			padding: 0;
+			margin: 0;
+		}
+		header nav > ul li .sub-container.non-mega li a {
+			padding: 7px 5px 7px 22px;
+		}
+		header nav > ul li .sub-container.non-mega li a:hover {
+			color: #800000;
+			background: #FFFFFF;
+			border-bottom: none;
+		}
+/************************************* SLIDER *************************************/
+#slide-area {
+	background: #DDDDDD;
+	height: 425px;
+}
+.slide-container { 
+	margin: 30px 0px 0px 0px;
+}
+.slider {
+	height: 350px;
+	list-style-type: none;
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+}
+	.slider h2, .slider h3, .slider h4, .slider h5, .slider h6, .slider p {
+		color: #FFFFFF;
+	}
+	.slider .button {
+		box-shadow: none;
+	}
+	.slider li p:first-of-type {
+		margin: 0px;
+	}
+	.slider li {
+		background-size: cover;
+	}
+.pips {
+	display: table;
+	height: 20px;
+	list-style-type: none;
+	margin: 0 auto;
+}
+	.pips li {
+		display: block;
+		float: left;
+		height: 20px;
+		margin: 0px 3px;
+		width: 20px;
+	}
+		.pips li a {
+			background: url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -330px repeat-x;
+			display: block;
+			height: 20px;
+			text-indent: -9999px;
+			width: 20px;
+		}
+			.pips li a:hover, .pips li.current a {
+				background-position: -20px -330px;
+				border-bottom: none;
+			}
+ul.bjqs{position:relative; list-style:none;padding:0;margin:0;overflow:hidden; display:none;}
+li.bjqs-slide{position:absolute; display:none;}
+ul.bjqs-controls{list-style:none;margin:0;padding:0;z-index:9999;}
+ul.bjqs-controls.v-centered li a{ background: rgba(221, 221, 221, 0.5); padding: 5px; position:absolute;}
+ul.bjqs-controls.v-centered li.bjqs-next a{right:0;}
+ul.bjqs-controls.v-centered li.bjqs-prev a{left:0;}
+ol.bjqs-markers{list-style: none; padding: 0; margin: 0; width:100%;}
+ol.bjqs-markers.h-centered{text-align: center;}
+ol.bjqs-markers li{display:inline;}
+ol.bjqs-markers li a{display:inline-block;}
+p.bjqs-caption{display:none;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
+/*********************************** CAR FINDER ***********************************/
+#car-range input, #car-range select {
+	font-weight: 700;
+}
+.car-finder {
+	background: rgb(255, 255, 255);
+	background: #FFFFFF;
+	border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	box-shadow: 0px 0px 15px #555555;
+		-moz-box-shadow: 0px 0px 15px #555555;
+		-ms-box-shadow: 0px 0px 15px #555555;
+		-o-box-shadow: 0px 0px 15px #555555;
+		-webkit-box-shadow: 0px 0px 15px #555555;
+	height: 350px;
+	margin: 30px 0px;
+	padding: 0px 20px;
+}
+	.car-finder h2 {
+		color: #C11E1E;
+		display: block;
+		font-size: 26px;
+		font-weight: 700;
+		height: 75px;
+		line-height: 75px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.car-finder label {
+		color: #C11E1E;
+		clear: both;
+		float: left;
+		font-weight: 700;
+		height: 30px;
+		line-height: 30px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+	.car-finder select {
+		float: right;
+		height: 30px;
+		margin-bottom: 10px;
+		width: 350px;
+	}
+.priceslider {
+	background: #FFFFFF url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -129px repeat-x;
+	border: 1px solid #DDDDDD;
+	clear: both;
+	display: block;
+	height: 10px;
+	margin: 10px auto 15px auto;
+	position: relative;
+	max-width: 75%;
+	width: 330px;
+}
+	.priceslider a {
+		height: 100%;
+		position: absolute;
+		right: 0;
+		z-index: 1;
+	}
+		.priceslider a div {
+			background: url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -149px no-repeat;
+			height: 22px;
+			margin: -5px 0px 0px -11px;
+			width: 22px;
+		}
+	.connect a {
+		background: #FFFFFF url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -129px repeat-x;
+		cursor: pointer;
+	}
+		.connect a:hover {
+			border-bottom: none;
+		}
+	.connect a:first-child {
+		background: #FFFFFF url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -139px repeat-x;
+	}
+.range {
+	display: inline-block; 
+	display: block; 
+	float: right;
+	overflow: hidden;
+	width: 356px;
+}
+	.range label {
+		clear: none;
+		float: left;
+		font-size: 11px;
+		width: 50%;
+	}
+		.range label div {
+			float: left;
+			margin: 0px 10px;
+		}
+	.range input {
+		float: left;
+		padding: 0px 10px;
+		text-align: right;
+		width: 50px;
+	}
+	.range label:last-of-type input {
+		float: right;
+	}
+	.range label:last-of-type div {
+		float: right;
+	}
+.car-submit {
+	float: right;
+	margin: 20px 0px 0px 0px;
+	display: block;
+}
+.car-submit2 {
+	float: right;
+	width: 100%;
+	font-size: 28px;
+	font-weight: 700;
+	margin: 10px 0px 0px 0px;
+	display: block;
+}
+.car-submit3 {
+	float: right;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0px 0px 5px 5px;
+	display: block;
+}
+.price-submit {
+	font-size: 18px;
+	width: 70px;
+	height: 40px;
+}
+.checkbox {
+	float: left;
+	margin: 30px 0px 0px 0px;
+}
+	.checkbox label {
+		float: none;
+		font-size: 11px;
+		height: 20px;
+		line-height: 20px;
+		margin: 0px;
+	}
+	.checkbox input {
+		margin: 1px 5px 0px 0px;
+		height: auto;
+	}
+.checker {
+	background: #ffffff;
+	border: 1px solid #dddddd;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	height: 20px;
+	margin: 0px 10px 0px 0px;
+	width: 20px;
+}
+	.checker input {
+		background: none;
+		border: none;
+		cursor: pointer;
+		opacity: 0;
+			filter: alpha(opacity=0);
+			-moz-opacity: 0;
+		display: -moz-inline-box;
+		display: inline-block;
+		height: 20px;
+		width: 20px;
+		zoom: 1;
+	}
+	.checker span {
+		display: block;
+		height: 20px;
+		width: 20px;
+	}
+.checked {
+	background: url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -306px no-repeat;
+}
+.pagination {
+	margin: 20px 0px 10px 0px;
+	width: 680px;
+}
+	.pagination a, .pagination span {
+		background: url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -267px;
+		border: 1px solid #800000;
+		border-radius: 3px;
+			-moz-border-radius: 3px;
+			-ms-border-radius: 3px;
+			-o-border-radius: 3px;
+			-webkit-border-radius: 3px;
+		box-shadow: 0px 2px 0px #DDDDDD;
+			-moz-box-shadow: 0px 2px 0px #DDDDDD;
+			-ms-box-shadow: 0px 2px 0px #DDDDDD;
+			-o-box-shadow: 0px 2px 0px #DDDDDD;
+			-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+		color: #FFFFFF;
+		cursor: pointer;
+		height: 30px;
+		margin-right: 5px;
+		margin-left: 5px;
+		padding: 5px 12px 5px 12px;
+		font-size: 20px;
+	}
+		.pagination a:hover {
+			background-position: 0px -230px;
+			border-bottom: none;
+			border: 1px solid #570000;
+		}
+	.pagination span {
+		margin-right: 5px;
+	}
+/************************************* FOOTER *************************************/
+footer {
+	background: #333333;
+	color: #C4C4C4;
+	font-size: 12px;
+	margin: 50px 0px 0px 0px;
+	padding: 15px 0px 0px 0px;
+}
+	footer ul {
+		margin: 0;
+	}
+.copyright {
+	border-top: 1px solid #444444;
+	clear: both;
+	float: none;
+	height: 50px;
+	line-height: 50px;
+}
+	
+	.copyright p {
+		color: #666666;
+		display: block;
+		float: right;
+		margin: 0;
+	}
+	.copyright ul {
+		display: block;
+		float: left;
+	}
+		.copyright ul li {
+			display: inline;
+			margin-right: 10px;
+		}
+			.copyright ul li a {
+				color: #666666;
+				text-decoration: none;
+			}
+				.copyright ul li a:hover {
+					border-bottom: 1px solid #444444;
+					color: #555555;
+				}
+footer .widget {
+	margin-bottom: 15px;
+}
+	footer .widget a {
+		color: #C4C4C4;
+		text-decoration: none;
+	}
+	footer .widget ul {
+		list-style-type: none;
+		margin: 0;
+	}
+		footer .widget ul li a {
+			border-bottom: 1px solid #444444;
+			color: #666666;
+			display: block;
+			height: 50px;
+			line-height: 50px;
+		}
+			footer .widget ul li a:hover {
+				color: #555555;
+			}
+.home-bottom .widget h3 {
+	color: #AD1D1D;
+}
+/********************************** CAR LISTINGS **********************************/
+.car-listings {
+	list-style-type: none;
+	margin: 0;
+}
+	.car-listings h2, .car-single h2 {
+		font-size: 24px;
+	}
+	.car-listings h4, .car-single h4 {
+		color: #999999;
+		font-size: 8px;
+		font-weight: 400;
+	}
+	.car-listings .price, .car-single .price {
+		color: #c11e1e;
+		font-weight: 700;
+		font-size: 32px;
+		text-align: center;
+		padding: 10px 0px;
+	}
+	.car-single .price {
+	}
+	.price-box {
+		float: right;
+		text-align: center;
+		width: 150px;
+	}
+	.options-box {
+		float: left;
+		border-top: 1px solid #DDDDDD;
+		padding: 10px 0px;
+		width: 340px;
+	}
+	.car-listings li {
+		border-bottom: 1px solid #DDDDDD;
+		clear: both;
+		display: block;
+		overflow: hidden;
+		padding: 10px 0px;
+	}
+		.car-listings li a:hover {
+			border-bottom: 1px solid #c11e1e;
+		}
+	.car-listings img {
+		height: 150px;
+		float: left;
+		border-top: 2px solid #c11e1e;
+		border-left: 2px solid #c11e1e;
+		border-right: 2px solid #c11e1e;
+		border-bottom: 2px solid #c11e1e;
+		margin-right: 10px;
+	}
+	.car-listings .car-details {
+		width: 160px;
+	}
+.icon {
+	height: 30px!important;
+	float: left;
+	width: 30px;
+	margin: 0!important;
+}
+.car-single a {
+	border-bottom: none;
+}
+.car-details {
+	list-style-type: none;
+	margin: 10px 10px 0px 0px;
+	max-width: 180px;
+}
+	.car-details:nth-of-type(3n) {
+		margin-right: 0;
+		clear: right;
+	}
+	.car-details li {
+		color: #444;
+		border-bottom: none;
+		padding: 0px;
+	}
+		.car-details li:before {
+			background: url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -306px no-repeat;
+			content: "";
+			display: block;
+			float: left;
+			height: 20px;
+			width: 20px;
+			font-size: 10px;
+			margin: 3px 10px 0px 0px;
+		}
+.main-details {
+	margin-left: 0;
+	
+}
+	.main-details li {
+		float: left;
+		padding-left: 0;
+		clear: none;
+		margin-right: 5px;
+		color: #000000;
+		font-size: 16px;
+		font-weight: 700;
+		list-style-type: none;
+	}
+
+	.main-details li::after{
+		content: '';
+	}
+
+	.main-details li:last-of-type::after{
+		content: '';
+	}
+	.car-listings .main-details {
+		margin-bottom: 5px;
+		width: 620px;
+	}
+	.car-listings .main-details li {
+		margin-right: 5px;
+		padding: 0px;
+		border-bottom: 0px;
+	}
+	.car-listings .price-box {
+		width: auto;
+	}
+	.car-listings .options-box {
+		border: none;
+		padding: 0px;
+		width: 620px;
+		font-size: 16px;
+	}
+.enquire-button {
+	display: block;
+	padding: 10px 10px 10px 10px;
+	clear: both;
+	margin: 0 auto;
+	text-align: center;
+	width: 100px;
+}
+.car-single {}
+	.car-single .full {
+		width: 300px;
+	}
+	.single-box:first-of-type .lightbox-cars:after {
+		background:#dddddd;
+		content: "www.polesworth-garage.com";
+		display: block;
+		float: right;
+		font-size: 12px;
+		line-height: 20px;
+		height: 20px;
+		padding: 0px 10px;
+		position: relative;
+		top: -20px;
+		z-index: 100;
+	}
+	.car-single .thumbnail {
+		float: left;
+		margin: 0px 10px 10px 0px;
+		width: 90px;
+	}
+.single-box {
+	background: #f5f5f5;
+	border: 1px solid #dddddd;
+	box-shadow: 0px 2px 0px #DDDDDD;
+		-moz-box-shadow: 0px 2px 0px #DDDDDD;
+		-ms-box-shadow: 0px 2px 0px #DDDDDD;
+		-o-box-shadow: 0px 2px 0px #DDDDDD;
+		-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+	display: block;
+	
+	overflow: hidden;
+	padding: 10px;
+}
+	.single-box .two-thirds {
+		float: right;
+		width: 605px;
+		margin: 0px 0px 10px 0px;
+	}
+	.single-box .two-thirds-lower {
+		float: right;
+		width: 605px;
+		font-size: 9pt;
+		margin: 0px 0px 10px 0px;
+	}
+#new-search{
+	margin: 20px 0px 0px 0px;
+	clear: both;
+	overflow: hidden;
+}
+	#new-search td {
+		vertical-align: top;
+	}
+
+	#new-search .selector {
+		float: left;
+		margin-bottom: 10px;
+		padding-right: 0px;
+		width: 223px;
+	}
+	#new-search .selector span {
+		padding-right: 15px;
+		width: 243px;
+	}
+	#new-search .priceslider {
+		width: 200px;
+	}
+	#new-search .car-submit {
+		margin: 0px 0px;
+	}
+	#new-search .range{
+		width: 300px;
+	}
+		#new-search .range label {
+			clear: none;
+			display: inline;
+		}
+	#new-search input[type="submit"] {
+		/*width: 100%;*/
+	}
+	#new-search label {
+		clear: both;
+		display: block;
+		font-weight: 700;
+	}
+
+	#new-search .selector span {
+		padding-left: 10px;
+		width: 168px;
+	}
+#refine {
+	background: #f5f5f5;
+	border-radius: 2px;
+		-moz-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-o-border-radius: 2px;
+		-webkit-border-radius: 2px;
+	border: 1px solid #ddd;
+	padding: 10px 0px;
+}
+	#refine h4{
+		border-bottom: 1px solid #ddd;
+		margin: 0px auto 10px auto;
+		padding: 0px 0px 10px 0px;
+		width: 280px;
+	}
+#results .selector {
+	width: 250px;
+}
+	#results .selector span {
+		width: 200px;
+	}
+.filter-box {
+	border-bottom: 1px solid #ddd;
+	clear: both;
+	overflow: hidden;
+	margin: 0px auto 10px auto;
+	padding: 0px 0px 10px 0px;
+	width: 280px;
+}
+	.filter-box:last-child {
+		border-bottom: none;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+	}
+	.filter-box ul {
+		clear: both;
+		margin: 10px 0px 0px 0px;
+		overflow: hidden;
+	}
+	.filter-box li {
+		list-style-type: none;
+		float: left;
+		margin: 0px;
+		width: 50%;
+	}
+		.filter-box li input, .filter-box li label {
+			float: left;
+		}
+	.filter-box input[type="text"], .filter-box input[type="submit"] {
+		margin: 10px 0px 0px 0px;
+		width: 278px;
+	}
+	.filter-box h5 {
+		font-size: 14px;
+	}
+	.filter-box .range {
+		display: block; 
+		float: right;
+		overflow: hidden;
+		width: 280px;
+	}
+		.filter-box .range .priceslider {
+			width: 270px;
+		}
+		.filter-box .range label {
+			clear: none;
+			float: left;
+			font-weight: bold;
+			font-size: 11px;
+			width: 50%;
+		}
+			.filter-box .range label div {
+				float: left;
+				margin: 0px 10px;
+			}
+		.filter-box .range input {
+			float: left;
+			padding: 0px 10px;
+			margin: 0px;
+			text-align: right;
+			width: 50px;
+		}
+		.filter-box .range label:last-of-type input {
+			float: right;
+		}
+		.filter-box .range label:last-of-type div {
+			float: right;
+		}
+#enquire, #car-finance, .popup {
+	display: none;
+	margin: 10px 10px 10px 10px;
+}
+	#enquire input, .popup input {
+		clear: both;
+		float: none;
+		margin: 0px 0px 10px 0px;
+		width: 200px;
+		padding: 0px 10px;
+	}
+	#enquire input[type="submit"], .popup input[type="submit"]{
+		margin: 10px 0px 0px 0px;
+		width: 600px;
+	}
+	#enquire .selector, .popup .selector{
+		margin: 0px 0px 10px 0px;
+		width: 600px;
+	}
+		#enquire .selector span, .popup .selector span {
+			width: 600px;
+		}
+
+		#car-finance .selector{
+		margin: 0px 0px 10px 0px;
+		width: 300px;
+	}
+		#car-finance .selector span {
+			width: 300px;
+		}
+	#enquire label, #car-finance label, .popup label {
+		clear: both;
+		display: block;
+		float: none;
+		font-weight: 700;
+	}
+	#enquire textarea, #car-finance textarea, .popup textarea {
+		border: 1px solid #DDDDDD;
+		display: block;
+		height: 150px;
+		width: 200px;
+		padding: 10px;
+	}
+	#enquire h3, #car-finance h3, .popup h3 {
+		margin: 0px 0px 10px 0px;
+	}
+#car-finance .fin-input {
+		width: 300px;
+		height: 35px;
+		font-size: 22px;
+}
+#car-finance .fin-title {
+		font-size: 20px;
+		width: 300px;
+		font-weight: 700;
+		line-height: 28px;
+}
+#car-finance .fin-title2 {
+		font-size: 20px;
+		width: 300px;
+		font-weight: 700;
+		line-height: 28px;
+		padding-right: 200px;
+}
+.finance-drop {
+	background: #dddddd;
+	color: #C11E1E;
+	clear: both;
+	display: block;
+	font-weight: 700;
+	line-height: 40px;
+	margin: 0px 0px -10px -20px;
+	padding: 0px 20px;
+	height: 40px;
+	width: 100%;
+}
+.calculator {
+	clear: both;
+	display: none;
+	overflow: hidden;
+	margin: 10px 0px 0px 0px;
+	padding: 10px;
+}
+	.finance-calc {
+		float: left;
+		margin: 0px 0px 0px 0px;
+		width: 138px;
+	}
+		.finance-calc label {
+			display: block;
+			font-weight: 300;
+		}
+		.finance-calc input[type="text"] {
+			padding: 0px 5px;
+			margin: 0px 0px 10px 0px;
+			width: 60%;
+		}
+		.finance-calc select {
+			width:100%;
+		}
+		.finance-calc .selector{
+			float: none;
+			padding-right: 40px;
+			margin: 0px 0px 10px 0px;
+			width: 108px;		
+		}
+		.finance-calc .selector span {
+			padding-right: 0px;
+			width: 88px;
+		}
+	.calc-results {
+		font-size: 11px;
+		margin-left: 30px;
+		width: 720px;
+		line-height: 10pt;
+	}
+		.calc-results table {
+		}
+		.calc-results td {
+			border: 1px solid #dddddd;
+			padding: 5px;
+			text-align: center;
+		}
+		.calc-results th {
+			border: 1px solid #dddddd;
+			color: #c11e1e;
+			padding: 2px;
+			font-weight: 700;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.calc-results table {
+		}
+.calc-disclaimer {
+		font-size: 10px;
+		margin-left: 30px;
+		line-height: 12pt;
+		padding: 40px 0px 0px 0px;
+		width: 720px;
+		}
+/********************************** WIDGETS **********************************/
+.home-widgets {
+	border-bottom: 1px solid #DDDDDD;
+	margin: 0px 0px 20px 0px;
+	overflow: hidden;
+}
+	.home-widgets h2 {
+		font-size: 20px;
+	}
+	.home-widgets ul {
+		margin-left: 0px;
+		list-style-type: none;
+		overflow: hidden;
+	}
+	.home-widgets .home-top li {
+		background: #ffffff;
+		border: 1px solid #DDDDDD;
+		box-shadow: 2px 2px 5px #DDDDDD;
+			-moz-box-shadow: 2px 2px 5px #DDDDDD;
+			-ms-box-shadow: 2px 2px 5px #DDDDDD;
+			-o-box-shadow: 2px 2px 5px #DDDDDD;
+			-webkit-box-shadow: 2px 2px 5px #DDDDDD;
+		float: left;
+		padding: 10px;
+		margin-right: 20px;
+		width: 203px;
+	}
+		.home-widgets .home-top li:last-of-type {
+			margin-right: 0px;
+			clear: right;
+		}
+/********************************** LIGHTBOX **********************************/
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	vertical-align: top;
+}
+.fancybox-wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 8020;
+}
+.fancybox-skin {
+	position: relative;
+	background: #f9f9f9;
+	color: #444;
+	text-shadow: none;
+	-webkit-border-radius: 4px;
+	   -moz-border-radius: 4px;
+	        border-radius: 4px;
+}
+.fancybox-opened {
+	z-index: 8030;
+}
+.fancybox-opened .fancybox-skin {
+	-webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	   -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+	        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.fancybox-outer, .fancybox-inner {
+	position: relative;
+}
+.fancybox-inner {
+	overflow: hidden;
+}
+	.fancybox-type-image .fancybox-inner:after {
+		background:#dddddd;
+		content: "www.polesworth-garage.com";
+		display: block;
+		float: right;
+		font-size: 16px;
+		line-height: 40px;
+		height: 40px;
+		padding: 0px 40px;
+		position: relative;
+		top: -40px;
+		z-index: 100;
+	}
+.fancybox-type-iframe .fancybox-inner {
+	-webkit-overflow-scrolling: touch;
+}
+.fancybox-error {
+	color: #444;
+	font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0;
+	padding: 15px;
+	white-space: nowrap;
+}
+.fancybox-image, .fancybox-iframe {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.fancybox-image {
+	max-width: 100%;
+	max-height: 100%;
+}
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+	background-image: url('images/fancybox_sprite.png');
+}
+#fancybox-loading {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -22px;
+	margin-left: -22px;
+	background-position: 0 -108px;
+	opacity: 0.8;
+	cursor: pointer;
+	z-index: 8060;
+}
+#fancybox-loading div {
+	width: 44px;
+	height: 44px;
+	background: url('images/fancybox_loading.gif') center center no-repeat;
+}
+.fancybox-close {
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	width: 36px;
+	height: 36px;
+	cursor: pointer;
+	z-index: 8040;
+}
+	.fancybox-close:hover {
+		border-bottom: none;
+	}
+.fancybox-nav {
+	position: absolute;
+	top: 0;
+	width: 40%;
+	height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	background: transparent url('images/blank.gif'); /* helps IE */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	z-index: 8040;
+}
+.fancybox-prev {
+	left: 0;
+}
+.fancybox-next {
+	right: 0;
+}
+.fancybox-nav span {
+	position: absolute;
+	top: 50%;
+	width: 36px;
+	height: 34px;
+	margin-top: -18px;
+	cursor: pointer;
+	z-index: 8040;
+	visibility: hidden;
+}
+.fancybox-prev span {
+	left: 10px;
+	background-position: 0 -36px;
+}
+.fancybox-next span {
+	right: 10px;
+	background-position: 0 -72px;
+}
+.fancybox-nav:hover span {
+	visibility: visible;
+}
+.fancybox-tmp {
+	position: absolute;
+	top: -99999px;
+	left: -99999px;
+	visibility: hidden;
+	max-width: 99999px;
+	max-height: 99999px;
+	overflow: visible !important;
+}
+/* Overlay helper */
+.fancybox-lock {
+	overflow: hidden;
+}
+.fancybox-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	display: none;
+	z-index: 8010;
+	background: url('images/fancybox_overlay.png');
+}
+.fancybox-overlay-fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+.fancybox-lock .fancybox-overlay {
+	overflow: auto;
+	overflow-y: scroll;
+}
+/* Title helper */
+.fancybox-title {
+	visibility: hidden;
+	font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+	position: relative;
+	text-shadow: none;
+	z-index: 8050;
+}
+.fancybox-opened .fancybox-title {
+	visibility: visible;
+}
+.fancybox-title-float-wrap {
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	margin-bottom: -35px;
+	z-index: 8050;
+	text-align: center;
+}
+.fancybox-title-float-wrap .child {
+	display: inline-block;
+	margin-right: -100%;
+	padding: 2px 20px;
+	background: transparent; /* Fallback for web browsers that doesn't support RGBa */
+	background: rgba(0, 0, 0, 0.8);
+	-webkit-border-radius: 15px;
+	   -moz-border-radius: 15px;
+	        border-radius: 15px;
+	text-shadow: 0 1px 2px #222;
+	color: #FFF;
+	font-weight: bold;
+	line-height: 24px;
+	white-space: nowrap;
+}
+.fancybox-title-outside-wrap {
+	position: relative;
+	margin-top: 10px;
+	color: #fff;
+}
+.fancybox-title-inside-wrap {
+	padding-top: 10px;
+}
+.fancybox-title-over-wrap {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: #fff;
+	padding: 10px;
+	background: #000;
+	background: rgba(0, 0, 0, .8);
+}
+.star-buys {
+	overflow: hidden;
+}
+	.star-buys li {
+		display: none;
+	}
+		.star-buys li:first-of-type {
+			display: block;
+		}
+	.star-buys img {
+		margin: 10px 0px;
+		width: 300px;
+	}
+		.star-buys div:before {
+			background:#dddddd;
+			content: "www.polesworth-garage.com";
+			display: block;
+			float: right;
+			font-size: 10px;
+			line-height: 20px;
+			height: 20px;
+			padding: 0px 10px;
+			position: relative;
+			top: -30px;
+			z-index: 100;
+		}
+	.star-buys a, .star-buys div {
+		font-size: 12px;
+		color: #c11e1e;
+		font-weight: 600;
+	}
+	.star-buys div {
+		color: #c11e1e;
+		float: none;
+		font-size: 18px;
+	}
+#scrolltriggered { display: none; position: fixed; z-index: 1000; bottom: -210px; background-color: #FFF; -webkit-box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.1); box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.1); }
+#scrolltriggered #inscroll { background-color: #FFF; font-size: 12px; padding: 0 15px 10px 15px; color: #000000; font-family: Tahoma, Geneva, sans-serif; text-shadow: 0 1px 0px #dadada; }
+#scrolltriggered #inscroll h5 { font-family: Arial, Helvetica, sans-serif; color: #B71E1E; font-size: 18px; text-shadow: 0 1px 0px #c7c7c7; background-color: #f0f0f0; border-bottom: 1px dashed #B71E1E; display: block; margin: 0 -15px 10px -15px; padding: 10px 10px 5px 15px; }
+#scrolltriggered #inscroll p { font-size: 14px; }
+#scrolltriggered #inscroll ul { font-size: 12px; margin: 10px 0; padding: 0; }
+#scrolltriggered #inscroll ul li { list-style: none; font-size: 12px; background: url("bullet.png") 0 6px no-repeat; padding: 0 0 0 25px; line-height: 17px; }
+#scrolltriggered #inscroll ul.stb_social { overflow: hidden; margin: 10px -7px 0 0; clear: both; }
+#scrolltriggered #inscroll ul.stb_social li { float: left; list-style: none; background: none; padding: 0; height: 30px; margin: 0 7px 0 0; }
+#scrolltriggered #inscroll ul.stb_social li.fb.standard { width: 45px; overflow: hidden; }
+#scrolltriggered #inscroll ul.stb_social li.twitter.regular { width: 80px; }
+#scrolltriggered #inscroll ul.stb_social li.google.medium { width: 60px; }
+#scrolltriggered #inscroll ul.stb_social li.fb.box_count, #scrolltriggered #inscroll ul.stb_social li.google.tall, #scrolltriggered #inscroll ul.stb_social li.twitter.vertical, #scrolltriggered #inscroll ul.stb_social li.linkedin.top, #scrolltriggered #inscroll ul.stb_social li.stumbleupon.s5, #scrolltriggered #inscroll ul.stb_social li.pinterest.vertical { height: 66px !important; }
+#scrolltriggered form { overflow: hidden; margin: 10px 0 0 0; }
+#scrolltriggered form input { line-height: 30px; background-color: #e5e5e5; -webkit-border-radius: 5px; border-radius: 5px; color: #7a7a7a; display: block; float: left; padding: 0 10px; border: solid 1px #c3c5c6; width: 57%; outline: none; height: 30px; }
+#scrolltriggered form input.submit, #scrolltriggered form input[type=submit] { background-color: #be1616 !important; width: 33% !important; height: 32px !important; cursor: pointer; float: right !important; color: #FFF !important; }
+#scrolltriggered form input.submit:hover, #scrolltriggered form input[type=submit]:hover { background-color: #db1010 !important; }
+#scrolltriggered #closebox { z-index: 1001; position: absolute; top: 8px; right: 8px; background-color: #f2efef; width: 20px; height: 20px; color: #424242; font-size: 13px; line-height: 18px; font-family: Tahoma, Geneva, sans-serif; text-align: center; text-decoration: none; -webkit-border-radius: 10px; border-radius: 10px; -webkit-box-shadow: 0px 0px 0px 4px #d3d2d2; box-shadow: 0px 0px 0px 4px #d3d2d2; }
+#scrolltriggered #stbMsgArea { display: none; padding: 10px 0 0; margin: 0; }
+ul.minical{position:absolute;display:none;color:#3d454b;background:white;border:1px solid #bbc5cd;margin:0;padding:0;text-shadow:none;width:16em;-webkit-box-shadow:0 0 12px rgba(0,0,0,0.2);-moz-box-shadow:0 0 12px rgba(0,0,0,0.2);box-shadow:0 0 12px rgba(0,0,0,0.2);z-index:9327;font-size:1.1em}ul.minical li{padding:1px 10px 0 10px;margin:0; list-style-type: none;}ul.minical li article{float:left;width:100%}ul.minical li article header{background:#dde2e6;color:#3d454b;border:1px solid #bbc5cd;padding:2px 0;position:relative;height:1.2em;margin:0 -9px}ul.minical li article header h6{font-size:.8em;line-height:1.2em;font-weight:bold;text-align:center;padding:.2em 0;margin:0px 0px 0px 25px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}ul.minical li article header a{display:block;position:absolute;text-indent:-9327px;top:50%;left:5px;margin-top:-8px;background:url("images/jquery_minical_icons.png") top left;height:16px;width:16px;font-size:1px}ul.minical li article header a.minical_next{left:auto;right:5px;background-position:bottom left}ul.minical li article section{margin-bottom:10px}ul.minical li article section table{width:100%;color:inherit;font-size:inherit;border-collapse:collapse}ul.minical li article section table thead tr th{padding:5px 0 0 0;font-size:.7em;font-weight:bold;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;color:#3d454b}ul.minical li article section table tbody tr td{padding:1px;text-align:right;font-size:.9em;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}ul.minical li article section table tbody tr td a{display:block;border:1px solid #dde2e6;color:#3d454b;padding:.1em .3em;text-decoration:none}ul.minical li article section table tbody tr td.minical_highlighted a{border-color:#6d93b3;color:#3d454b}ul.minical li article section table tbody tr td.minical_selected a{border-color:#517a9c;color:#3d454b}ul.minical li article section table tbody tr td.minical_past_month a,ul.minical li article section table tbody tr td.minical_future_month a{color:#b1b5b7}ul.minical li article section table tbody tr td.minical_today a{border-color:#517a9c;background:#517a9c;color:white}
+
+#euro_cookie {
+	background: #333333;
+	color: #ffffff;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+	#euro_cookie p {
+		font-size: 12px;
+		margin: 5px 0px;
+	}
+
+	#euro_cookie a {
+		height: 30px;
+		line-height: 30px;
+		font-size: 12px;
+		box-shadow: none;
+	}
+
+.gallery {
+
+}
+
+	.gallery ul {
+		display: block;
+		margin: 0px;
+		padding: 0px;
+		overflow: hidden;
+	}
+
+		.gallery ul li {
+			list-style-type: none;
+			margin-bottom: 20px;
+		}
+
+			.gallery ul li img {
+				margin-bottom: 10px;
+				width: 300px;
+			}
+
+.error-cars {
+	list-style-type: none;
+	margin: 20px 0px 0px 0px;
+	padding: 0px;
+}
+
+	.error-cars h3 {
+		font-size: 14px;
+	}
+
+	.error-cars .main-details li {
+		font-size: 11px;
+		line-height: 12px;
+	}
+input[type="fsubmit"], .finance-button {
+	background: url( 'http://www.serps.co.uk/cdn/PG/sprite.png' ) 0px -230px repeat-x;
+	border: 1px solid #800000;
+	border-radius: 3px;
+		-moz-border-radius: 3px;
+		-ms-border-radius: 3px;
+		-o-border-radius: 3px;
+		-webkit-border-radius: 3px;
+	box-shadow: 0px 2px 0px #DDDDDD;
+		-moz-box-shadow: 0px 2px 0px #DDDDDD;
+		-ms-box-shadow: 0px 2px 0px #DDDDDD;
+		-o-box-shadow: 0px 2px 0px #DDDDDD;
+		-webkit-box-shadow: 0px 2px 0px #DDDDDD;
+	color: #FFFFFF;
+	cursor: pointer;
+	padding: 0px 20px;
+	height: 52px;
+	line-height: 44px;
+	text-shadow: 0px -1px 0px #800000;
+	text-align: center;
+	text-transform: uppercase;
+}
+	input[type="fsubmit"]:hover, .finance-button:hover {
+		background-position: 0px -230px;
+		border-bottom: none;
+		border: 1px solid #570000;
+	}
+.finance-button {
+	display: inline-block;
+	padding: 0px 10px;
+	height: 38px;
+	line-height: 17px;
+}
+
+.finance-quote {
+	font-size: 12px;
+	float: right;
+	color: #c11e1e;
+	font-weight: 700;
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+.finance-quote-2 {
+	font-size: 12px;
+	float: right;
+	color: #c11e1e;
+	font-weight: 700;
+	margin-top: -20px;
+	margin-right: 18px;
+	margin-bottom: 10px;
+}
+
+.reduced-container {
+	position: absolute;
+	z-index: 500;
+}
+
+.reduced-triangle {
+	border-color:#c11e1e transparent transparent #c11e1e;
+    border-style: solid; 
+    border-width: 50px; 
+    width: 0px; /* real width is 100px; */
+    height: 0px; /* same as width */
+    line-height: 0px;
+}
+
+.reduced-text {
+	color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 30px; /* 50 - something related to line heigth */
+    left: -30px; /* 50 - 142/2 - something related to line height */
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 142px; /* base width -> (100^2 + 100^2)^1/2 */
+    text-align: center;
+}

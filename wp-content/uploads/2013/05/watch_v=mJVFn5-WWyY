@@ -1,0 +1,1239 @@
+<!DOCTYPE html><html lang="en" data-cast-api-enabled="true"><head><script>var ytcsi = {gt: function(n) {n = (n || '') + 'data_';return ytcsi[n] || (ytcsi[n] = {tick: {},span: {},info: {}});},tick: function(l, t, n) {ytcsi.gt(n).tick[l] = t || +new Date();},span: function(l, s, n) {ytcsi.gt(n).span[l] = (typeof s == 'number') ? s :+new Date() - ytcsi.data_.tick[l];},info: function(k, v, n) {ytcsi.gt(n).info[k] = v;}};(function() {var perf = window['performance'] || window['mozPerformance'] ||window['msPerformance'] || window['webkitPerformance'];ytcsi.tick('_start', perf ? perf['timing']['responseStart'] : null);})();if (document.webkitVisibilityState == 'prerender') {ytcsi.info('prerender', 1);document.addEventListener('webkitvisibilitychange', function() {ytcsi.tick('_start');}, false);}try {ytcsi.pt_ = (window.chrome && chrome.csi().pageT ||window.gtbExternal && gtbExternal.pageT() ||window.external && external.pageT);if (ytcsi.pt_) {ytcsi.info('pt', Math.floor(ytcsi.pt_));}} catch(e) {}</script>    <script>var ytimg = {};ytimg.count = 1;ytimg.preload = function(src) {var img = new Image();var count = ++ytimg.count;ytimg[count] = img;img.onload = img.onerror = function() {delete ytimg[count];};img.src = src;};</script>
+
+  <link id="css-2787072159" class="www-core" rel="stylesheet" href="//s.ytimg.com/yts/cssbin/www-core-vflHyKLf5.css" data-loaded="true">
+<script>if (window.ytcsi) {window.ytcsi.tick("ce", null, '');}</script>  
+      <script>
+    var SnapClassList = ['content-snap-width-1', 'content-snap-width-2',
+                         'content-snap-width-3'];
+    var getMinWidthForGuidePinning = function(expAppbarOpenGuide) {
+      if (expAppbarOpenGuide) {
+        return 1251;
+      }
+      return 1354;
+    };
+    var getSnapClass = function(expAppbarOpenGuide, guidePinned) {
+      var SCROLLBAR_WIDTH = 21;
+      var CONTENT_PADDING = 100;
+      var GUIDE_WIDTH = 230;
+      var SNAP_WIDTH_2 = 1056;
+      var SNAP_WIDTH_3 = 1262;
+      var screenWidth = window.innerWidth ||
+          document.documentElement.clientWidth;
+      var minWidthForPinning = getMinWidthForGuidePinning(expAppbarOpenGuide);
+
+      var spaceForContent = screenWidth - SCROLLBAR_WIDTH - CONTENT_PADDING;
+      if (screenWidth >= minWidthForPinning && guidePinned) {
+        spaceForContent -= GUIDE_WIDTH;
+      }
+
+      if (spaceForContent >= SNAP_WIDTH_3) {
+        return SnapClassList[2];
+      } else if (spaceForContent >= SNAP_WIDTH_2){
+        return SnapClassList[1];
+      } else {
+        return SnapClassList[0];
+      }
+
+    };
+    (function() {
+      var htmlEl = document.getElementsByTagName('html')[0];
+      htmlEl.className = htmlEl.className.concat(' ',
+          getSnapClass(false,
+              false));
+    })();
+  </script>
+
+        <script>
+    ytimg.preload("http:\/\/r14---sn-a5m7lne7.googlevideo.com\/crossdomain.xml");
+    ytimg.preload("http:\/\/r14---sn-a5m7lne7.googlevideo.com\/generate_204");
+  </script>
+
+
+
+  <script>
+try {var ytbuffer = {bufferedClick: null};ytbuffer.handleClick = function(e) {var element = e.target || e.srcElement;while (element.parentElement) {if (element.className.match(/(^| )yt-can-buffer( |$)/)) {ytbuffer.bufferedClick = e;element.className += ' yt-is-buffered';break;}element = element.parentElement;}};if (document.addEventListener) {document.addEventListener('click', ytbuffer.handleClick);} else {document.attachEvent('onclick', ytbuffer.handleClick);}} catch(e) {}  </script>
+<title>Osaka&#39;s New LEAF - YouTube</title><link rel="search" type="application/opensearchdescription+xml" href="http://www.youtube.com/opensearch?locale=en_US" title="YouTube Video Search"><link rel="shortcut icon" href="http://s.ytimg.com/yts/img/favicon-vfldLzJxy.ico" type="image/x-icon">     <link rel="icon" href="//s.ytimg.com/yts/img/favicon_32-vflWoMFGx.png" sizes="32x32"><link rel="canonical" href="http://www.youtube.com/watch?v=mJVFn5-WWyY"><link rel="alternate" media="handheld" href="http://m.youtube.com/watch?v=mJVFn5-WWyY"><link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.youtube.com/watch?v=mJVFn5-WWyY"><link rel="shortlink" href="http://youtu.be/mJVFn5-WWyY">      <meta name="title" content="Osaka&#39;s New LEAF">
+
+      <meta name="description" content="Some 250 Nissan LEAFs will be available free for public and private use in Osaka - with a population of 8.8 million, supplying power to homes during the day ...">
+
+      <meta name="keywords" content="Osaka, Leaf, Nissan, Toshiyuki, Shiga, Prefecture, Government, Leaf to Home, Toru, Hashimoto, Seiji, Nakamura, Kansai">
+
+      <link rel="alternate" type="application/json+oembed" href="http://www.youtube.com/oembed?url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DmJVFn5-WWyY&amp;format=json" title="Osaka&#39;s New LEAF">
+  <link rel="alternate" type="text/xml+oembed" href="http://www.youtube.com/oembed?url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DmJVFn5-WWyY&amp;format=xml" title="Osaka&#39;s New LEAF">
+
+        <meta property="og:site_name" content="YouTube">
+    <meta property="og:url" content="http://www.youtube.com/watch?v=mJVFn5-WWyY">
+    <meta property="og:title" content="Osaka&#39;s New LEAF">
+    <meta property="og:type" content="video">
+    <meta property="og:image" content="http://i1.ytimg.com/vi/mJVFn5-WWyY/maxresdefault.jpg">
+
+      <meta property="og:description" content="Some 250 Nissan LEAFs will be available free for public and private use in Osaka - with a population of 8.8 million, supplying power to homes during the day ...">
+
+        <meta property="og:video" content="http://www.youtube.com/v/mJVFn5-WWyY?version=3&amp;autohide=1">
+      <meta property="og:video:type" content="application/x-shockwave-flash">
+      <meta property="og:video:width" content="1280">
+      <meta property="og:video:height" content="720">
+
+    <meta property="fb:app_id" content="87741124305">
+
+        <meta name="twitter:card" content="player">
+    <meta name="twitter:site" content="@youtube">
+    <meta name="twitter:url" content="http://www.youtube.com/watch?v=mJVFn5-WWyY">
+    <meta name="twitter:title" content="Osaka&#39;s New LEAF">
+    <meta name="twitter:description" content="Some 250 Nissan LEAFs will be available free for public and private use in Osaka - with a population of 8.8 million, supplying power to homes during the day ...">
+    <meta name="twitter:image" content="http://i1.ytimg.com/vi/mJVFn5-WWyY/maxresdefault.jpg">
+    <meta name="twitter:app:name:iphone" content="YouTube">
+    <meta name="twitter:app:id:iphone" content="544007664">
+    <meta name="twitter:app:name:ipad" content="YouTube">
+    <meta name="twitter:app:id:ipad" content="544007664">
+      <meta name="twitter:app:url:iphone" content="vnd.youtube://watch/mJVFn5-WWyY">
+      <meta name="twitter:app:url:ipad" content="vnd.youtube://watch/mJVFn5-WWyY">
+    <meta name="twitter:app:name:googleplay" content="YouTube">
+    <meta name="twitter:app:id:googleplay" content="com.google.android.youtube">
+    <meta name="twitter:app:url:googleplay" content="http://www.youtube.com/watch?v=mJVFn5-WWyY">
+      <meta name="twitter:player" content="https://www.youtube.com/embed/mJVFn5-WWyY">
+      <meta name="twitter:player:width" content="1280">
+      <meta name="twitter:player:height" content="720">
+
+  
+        <link id="css-4134618379" class="www-watch-transcript" rel="stylesheet" href="//s.ytimg.com/yts/cssbin/www-watch-transcript-vflp-Zp3x.css" data-loaded="true">
+
+<script>if (window.ytcsi) {window.ytcsi.tick("cl", null, '');}</script></head>    <body dir="ltr" class="  ltr    exp-appbar-autohide-always   site-center-aligned site-as-giant-card not-exp-appbar-open-guide guide-pinning-enabled   hitchhiker-enabled      guide-enabled guide-collapsed sidebar-expanded   " id="body">
+
+  <div id="body-container"><form name="logoutForm" method="POST" action="/logout"><input type="hidden" name="action_logout" value="1"></form><div id="masthead-positioner">    
+    <div id="yt-masthead-container" class="yt-grid-box yt-base-gutter"><div id="yt-masthead" class="">    <a id="logo-container" href="/" title="YouTube home" class="spf-link"><img id="logo" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="YouTube home"></a>
+<div id="yt-masthead-signin"><button type="button" onclick=";window.location.href=this.getAttribute(&#39;href&#39;);return false;" href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26feature%3Dsign_in_button%26hl%3Den%26next%3D%252Fwatch%253Fv%253DmJVFn5-WWyY&amp;hl=en&amp;passive=true" class=" yt-uix-button yt-uix-button-primary yt-uix-button-size-default"  role="button"><span class="yt-uix-button-content">Sign in </span></button></div><div id="yt-masthead-content"><form id="masthead-search" class="search-form consolidated-form" action="/results" onsubmit="if (_gel(&#39;masthead-search-term&#39;).value == &#39;&#39;) return false;"><button dir="ltr" onclick="if (_gel(&#39;masthead-search-term&#39;).value == &#39;&#39;) return false; _gel(&#39;masthead-search&#39;).submit(); return false;;return true;" tabindex="2" type="submit" class="search-btn-component search-button yt-uix-button yt-uix-button-default yt-uix-button-size-default" id="search-btn"  role="button"><span class="yt-uix-button-content">Search </span></button><div id="masthead-search-terms" class="masthead-search-terms-border" dir="ltr"><label><input id="masthead-search-term" autocomplete="off"  class="search-term yt-uix-form-input-bidi" name="search_query" value="" type="text" tabindex="1" title="Search"></label></div></form></div></div></div>
+    
+      <div id="masthead-appbar-container" class="yt-base-gutter clearfix"><div id="masthead-appbar"><div id="appbar-secondary-container"><a href="//www.youtube.com/upload" class="yt-uix-button  appbar-action-button yt-uix-sessionlink yt-uix-button-appbar yt-uix-button-size-default" data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&amp;feature=mhsb" id="upload-btn"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-appbar-upload" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></span><span class="yt-uix-button-content">Upload </span></a></div><div id="appbar-primary-container"><button type="button" onclick=";return false;" id="appbar-guide-button" class="appbar-guide-toggle appbar-guide-clickable-ancestor yt-uix-button yt-uix-button-appbar yt-uix-button-size-default yt-uix-button-has-icon"  role="button" aria-label="Guide"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-appbar-guide" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></span><span class="yt-uix-button-content">Guide </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button></div><div id="appbar-content" class=""></div></div></div>
+
+<iframe id="masthead-ie-mask"></iframe></div><div id="masthead-positioner-height-offset"></div><div id="page-container"><div id="page" class="  watch   clearfix"><div id="guide" class="yt-scrollbar">      <div id="appbar-guide-menu" class="appbar-menu appbar-guide-menu-visibility appbar-guide-clickable-ancestor">
+    <div id="guide-container">
+      <div class="guide-module-content guide-module-loading">
+          <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+      </div>
+    </div>
+  </div>
+
+</div>  <div id="alerts" class="content-alignment">
+          
+
+
+
+
+
+  </div>
+  <div id="header">
+    
+  </div>
+<div id="player" class="      watch-small  ">
+  <div id="playlist" class="playlist">
+    
+  </div>
+
+  <div id="player-unavailable" class="    hid    player-width player-height    player-unavailable ">
+          <img class="icon meh" src="//s.ytimg.com/yts/img/meh7-vflGevej7.png" alt="">
+  <div class="content">
+    <h1 id="unavailable-message" class="message">
+            This video is unavailable.
+    </h1>
+    <div id="unavailable-submessage" class="submessage">
+    </div>
+  </div>
+
+
+  </div>
+
+    <div id="player-api" class="player-width player-height off-screen-target  player-api"></div>
+
+
+    <script>if (window.ytcsi) {window.ytcsi.tick("bf", null, '');}</script>
+    <script>var ytplayer = ytplayer || {};ytplayer.config = {"params": {"allowscriptaccess": "always", "allowfullscreen": "true", "bgcolor": "#000000"}, "url_v9as2": "http:\/\/s.ytimg.com\/yts\/swfbin\/player-vflgawvlg\/cps.swf", "assets": {"html": "\/html5_player_template", "css": "\/\/s.ytimg.com\/yts\/cssbin\/www-player-vflCC6yfm.css", "js": "\/\/s.ytimg.com\/yts\/jsbin\/html5player-vflbxes4n.js"}, "min_version": "8.0.0", "html5": false, "url_v8": "http:\/\/s.ytimg.com\/yts\/swfbin\/player-vflgawvlg\/cps.swf", "url": "http:\/\/s.ytimg.com\/yts\/swfbin\/player-vflgawvlg\/watch_as3.swf", "args": {"loaderUrl": "http:\/\/www.youtube.com\/watch?v=mJVFn5-WWyY", "length_seconds": 155, "showpopout": 1, "csi_page_type": "watch,watch7", "hl": "en_US", "eventid": "O8zZUseILcLhkgKQhYGYAw", "fexp": "926400,933207,941401,936330,916624,936110,936910,936913,907231,921090", "no_get_video_log": "1", "title": "Osaka's New LEAF", "fmt_list": "22\/1280x720\/9\/0\/115,43\/640x360\/99\/0\/0,18\/640x360\/9\/0\/115,5\/320x240\/7\/0\/0,36\/320x240\/99\/1\/0,17\/176x144\/99\/1\/0", "watermark": ",http:\/\/s.ytimg.com\/yts\/img\/watermark\/youtube_watermark-vflHX6b6E.png,http:\/\/s.ytimg.com\/yts\/img\/watermark\/youtube_hd_watermark-vflAzLcD6.png", "idpj": "-7", "cc3_module": "1", "ttsurl": "http:\/\/www.youtube.com\/api\/timedtext?signature=72873D9D6083B0EAFE5D3B04945D0C4DDCAB6959.2927EC5CCB5D5AEB37D04EB0FB24DBC13EF7C6EF\u0026key=yttt1\u0026hl=en_US\u0026asr_langs=nl%2Ces%2Cru%2Cfr%2Cpt%2Cit%2Cko%2Cde%2Cja%2Cen\u0026caps=asr\u0026v=mJVFn5-WWyY\u0026expire=1390030507\u0026sparams=asr_langs%2Ccaps%2Cv%2Cexpire", "allow_embed": 1, "cr": "US", "timestamp": 1390005307, "sendtmp": "1", "ucid": "UCW47Uio6Y_pC_0No0Reak-g", "cc_asr": 1, "cc_module": "http:\/\/s.ytimg.com\/yts\/swfbin\/player-vflgawvlg\/subtitle_module.swf", "vq": "auto", "account_playback_token": "MndUyNypwoRrcZ5xsFenHBg6eSh8MTM5MDA5MTcwN0AxMzkwMDA1MzA3", "rvs": "length_seconds=494\u0026title=Nissan+at+Le+Mans+24h%3A+Qualifying+Day+2\u0026view_count=49%2C050\u0026id=UWQiHFc7yeI\u0026author=Nissan+Newsroom,length_seconds=205\u0026title=NISSAN+LEAF+NISMO+RC+at+Tokyo+Gate+Bridge+Opening+Ceremony\u0026view_count=12%2C167\u0026id=lvRY5rLwC-I\u0026author=Nissan+Newsroom,length_seconds=192\u0026title=Another+Quality+Story%3A+Switch+to+the+future\u0026view_count=614\u0026id=pMvLrU2eYWk\u0026author=Nissan+Newsroom,length_seconds=1289\u0026title=Nissan+GT-R+at+Nurburgring+24h%3A+Race+day+Highlights\u0026view_count=85%2C738\u0026id=RDy6ItG2YXc\u0026author=Nissan+Newsroom,length_seconds=205\u0026title=A+Bridge+to+the+Future\u0026view_count=1%2C395\u0026id=J9SoVYAQ2Ug\u0026author=Nissan+Newsroom,length_seconds=745\u0026title=Nissan+at+Le+Mans+24h%3A+Qualifying+Day+1\u0026view_count=54%2C747\u0026id=5_WfYiU9tVo\u0026author=Nissan+Newsroom,length_seconds=574\u0026title=REMIX%3A+Nissan+GT-R+at+Nurburgring+24h+Summary\u0026view_count=31%2C992\u0026id=ypI58JXQUBQ\u0026author=Nissan+Newsroom,length_seconds=424\u0026title=Nissan+at+Le+Mans+24h%3A+Race+Day+Warm-up+Session\u0026view_count=17%2C547\u0026id=TAwEXuH9qJ8\u0026author=Nissan+Newsroom,length_seconds=514\u0026title=NISMO+Festival+2011\u0026view_count=23%2C198\u0026id=vpdZsy1U-9U\u0026author=Nissan+Newsroom,length_seconds=177\u0026title=Nissan+Explains+Zero-Emission+Strategy\u0026view_count=1%2C035\u0026id=e2dM6WsE3WE\u0026author=Nissan+Newsroom,length_seconds=1381\u0026title=Nissan+GT-R+at+Nurburgring+24h%3A+Qualify+Sessions\u0026view_count=46%2C380\u0026id=dXya96_q4J4\u0026author=Nissan+Newsroom,length_seconds=471\u0026title=DeltaWing+Accident\u0026view_count=614%2C188\u0026id=xi_AsxRuyus\u0026author=Nissan+Newsroom", "enablecsi": "1", "ldpj": "-15", "c": "WEB", "plid": "AATwM9SarYZL-akv", "cc_font": "Arial Unicode MS, arial, verdana, _sans", "video_id": "mJVFn5-WWyY", "keywords": "Osaka,Leaf,Nissan,Toshiyuki,Shiga,Prefecture,Government,Leaf to Home,Toru,Hashimoto,Seiji,Nakamura,Kansai", "url_encoded_fmt_stream_map": "quality=hd720\u0026fallback_host=tc.v4.cache8.googlevideo.com\u0026type=video%2Fmp4%3B+codecs%3D%22avc1.64001F%2C+mp4a.40.2%22\u0026url=http%3A%2F%2Fr14---sn-a5m7lne7.googlevideo.com%2Fvideoplayback%3Fsource%3Dyoutube%26fexp%3D926400%252C933207%252C941401%252C936330%252C916624%252C936110%252C936910%252C936913%252C907231%252C921090%26key%3Dyt5%26ip%3D198.57.247.163%26ratebypass%3Dyes%26ipbits%3D0%26itag%3D22%26ms%3Dau%26sver%3D3%26expire%3D1390028507%26sparams%3Did%252Cip%252Cipbits%252Citag%252Cratebypass%252Csource%252Cupn%252Cexpire%26mt%3D1390005233%26mv%3Dm%26id%3D9895459f9f965b26%26upn%3DPW2N7I8SZyU\u0026itag=22\u0026sig=1191ED24CC34E4AB3DEACBDEF64F50BDD0CE7188.7B175A366D14FF5F650226B55480E1C6C22FD682,quality=medium\u0026fallback_host=tc.v9.cache1.googlevideo.com\u0026type=video%2Fwebm%3B+codecs%3D%22vp8.0%2C+vorbis%22\u0026url=http%3A%2F%2Fr14---sn-a5m7lne7.googlevideo.com%2Fvideoplayback%3Fsource%3Dyoutube%26fexp%3D926400%252C933207%252C941401%252C936330%252C916624%252C936110%252C936910%252C936913%252C907231%252C921090%26key%3Dyt5%26ip%3D198.57.247.163%26ratebypass%3Dyes%26ipbits%3D0%26itag%3D43%26ms%3Dau%26sver%3D3%26expire%3D1390028507%26sparams%3Did%252Cip%252Cipbits%252Citag%252Cratebypass%252Csource%252Cupn%252Cexpire%26mt%3D1390005233%26mv%3Dm%26id%3D9895459f9f965b26%26upn%3DPW2N7I8SZyU\u0026itag=43\u0026sig=A46E7955AD5BF388C8628318A4F891E3865C3249.4D97693D488C7F46C47FEAB1CAF988D01B5D70EC,quality=medium\u0026fallback_host=tc.v4.cache7.googlevideo.com\u0026type=video%2Fmp4%3B+codecs%3D%22avc1.42001E%2C+mp4a.40.2%22\u0026url=http%3A%2F%2Fr14---sn-a5m7lne7.googlevideo.com%2Fvideoplayback%3Fsource%3Dyoutube%26fexp%3D926400%252C933207%252C941401%252C936330%252C916624%252C936110%252C936910%252C936913%252C907231%252C921090%26key%3Dyt5%26ip%3D198.57.247.163%26ratebypass%3Dyes%26ipbits%3D0%26itag%3D18%26ms%3Dau%26sver%3D3%26expire%3D1390028507%26sparams%3Did%252Cip%252Cipbits%252Citag%252Cratebypass%252Csource%252Cupn%252Cexpire%26mt%3D1390005233%26mv%3Dm%26id%3D9895459f9f965b26%26upn%3DPW2N7I8SZyU\u0026itag=18\u0026sig=86D9397201F37918A215D23CC7FD5F1D4E3E1F84.2C08A421079F7E33198C84900E7A5A3034F58B71,quality=small\u0026fallback_host=tc.v19.cache8.googlevideo.com\u0026type=video%2Fx-flv\u0026url=http%3A%2F%2Fr14---sn-a5m7lne7.googlevideo.com%2Fvideoplayback%3Fsource%3Dyoutube%26fexp%3D926400%252C933207%252C941401%252C936330%252C916624%252C936110%252C936910%252C936913%252C907231%252C921090%26algorithm%3Dthrottle-factor%26burst%3D40%26key%3Dyt5%26ip%3D198.57.247.163%26ipbits%3D0%26itag%3D5%26ms%3Dau%26sver%3D3%26expire%3D1390028507%26sparams%3Dalgorithm%252Cburst%252Cfactor%252Cid%252Cip%252Cipbits%252Citag%252Csource%252Cupn%252Cexpire%26mt%3D1390005233%26mv%3Dm%26id%3D9895459f9f965b26%26upn%3DPW2N7I8SZyU%26factor%3D1.25\u0026itag=5\u0026sig=65B4257254B93FB336C6081E7A9B3C6E014C60BB.44142D254234556DBEEE517EC0F7E330BFC5D831,quality=small\u0026fallback_host=tc.v24.cache6.googlevideo.com\u0026type=video%2F3gpp%3B+codecs%3D%22mp4v.20.3%2C+mp4a.40.2%22\u0026url=http%3A%2F%2Fr14---sn-a5m7lne7.googlevideo.com%2Fvideoplayback%3Fsource%3Dyoutube%26fexp%3D926400%252C933207%252C941401%252C936330%252C916624%252C936110%252C936910%252C936913%252C907231%252C921090%26algorithm%3Dthrottle-factor%26burst%3D40%26key%3Dyt5%26ip%3D198.57.247.163%26ipbits%3D0%26itag%3D36%26ms%3Dau%26sver%3D3%26expire%3D1390028507%26sparams%3Dalgorithm%252Cburst%252Cfactor%252Cid%252Cip%252Cipbits%252Citag%252Csource%252Cupn%252Cexpire%26mt%3D1390005233%26mv%3Dm%26id%3D9895459f9f965b26%26upn%3DPW2N7I8SZyU%26factor%3D1.25\u0026itag=36\u0026sig=83B7E6C6483410B1D448151565E5A71E00E69941.D612B43B1A215581E1FC7B769247813B7AF5C768,quality=small\u0026fallback_host=tc.v2.cache7.googlevideo.com\u0026type=video%2F3gpp%3B+codecs%3D%22mp4v.20.3%2C+mp4a.40.2%22\u0026url=http%3A%2F%2Fr14---sn-a5m7lne7.googlevideo.com%2Fvideoplayback%3Fsource%3Dyoutube%26fexp%3D926400%252C933207%252C941401%252C936330%252C916624%252C936110%252C936910%252C936913%252C907231%252C921090%26algorithm%3Dthrottle-factor%26burst%3D40%26key%3Dyt5%26ip%3D198.57.247.163%26ipbits%3D0%26itag%3D17%26ms%3Dau%26sver%3D3%26expire%3D1390028507%26sparams%3Dalgorithm%252Cburst%252Cfactor%252Cid%252Cip%252Cipbits%252Citag%252Csource%252Cupn%252Cexpire%26mt%3D1390005233%26mv%3Dm%26id%3D9895459f9f965b26%26upn%3DPW2N7I8SZyU%26factor%3D1.25\u0026itag=17\u0026sig=2BD8521969E4DDA10DC20161BB85C3F5E80288F2.7AD38D37F31ACBE7829EAF95CB454A339316052B", "t": "vjVQa1PpcFMtswHe_I_ALWkXUCMaSQw-Ad5737sxhLE=", "enablejsapi": 1, "pltype": "contentugc", "tmi": "1", "ptk": "youtube_none", "referrer": null}, "attrs": {"id": "movie_player"}, "sts": 16084};</script>      <script>
+        (function() {
+          var encoded = [];
+          for (var key in ytplayer.config.args) {
+            encoded.push(encodeURIComponent(key) + '=' + encodeURIComponent(ytplayer.config.args[key]));
+          }
+          var swf = "      \u003cembed type=\"application\/x-shockwave-flash\"     s\u0072c=\"http:\/\/s.ytimg.com\/yts\/swfbin\/player-vflgawvlg\/watch_as3.swf\"     name=\"movie_player\"     id=\"movie_player\"    flashvars=\"__flashvars__\"     allowscriptaccess=\"always\" allowfullscreen=\"true\" bgcolor=\"#000000\"\u003e\n  \u003cnoembed\u003e\u003cdiv class=\"yt-alert yt-alert-default yt-alert-error  yt-alert-player\"\u003e  \u003cdiv class=\"yt-alert-icon\"\u003e\n    \u003cimg s\u0072c=\"http:\/\/s.ytimg.com\/yts\/img\/pixel-vfl3z5WfW.gif\" class=\"icon master-sprite\" alt=\"Alert icon\"\u003e\n  \u003c\/div\u003e\n\u003cdiv class=\"yt-alert-buttons\"\u003e\u003c\/div\u003e\u003cdiv class=\"yt-alert-content\" role=\"alert\"\u003e    \u003cspan class=\"yt-alert-vertical-trick\"\u003e\u003c\/span\u003e\n    \u003cdiv class=\"yt-alert-message\"\u003e\n            You need Adobe Flash Player to watch this video. \u003cbr\u003e \u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003eDownload it from Adobe.\u003c\/a\u003e\n    \u003c\/div\u003e\n\u003c\/div\u003e\u003c\/div\u003e\u003c\/noembed\u003e\n\n";
+          swf = swf.replace('__flashvars__', encoded.join('&'));
+          document.getElementById("player-api").innerHTML = swf;
+          ytplayer.config.loaded = true
+        })();
+      </script>
+
+
+  <div id="playlist-tray" class="playlist-tray">
+    
+  </div>
+
+  <div class="clear"></div>
+</div>
+<div id="content" class="  content-alignment    yt-card ">    <div id="watch7-container" class="" itemscope itemid="" itemtype="http://schema.org/VideoObject">
+        <link itemprop="url" href="http://www.youtube.com/watch?v=mJVFn5-WWyY">
+    <meta itemprop="name" content="Osaka&#39;s New LEAF">
+    <meta itemprop="description" content="Some 250 Nissan LEAFs will be available free for public and private use in Osaka - with a population of 8.8 million, supplying power to homes during the day ...">
+    <meta itemprop="paid" content="False">
+
+      <meta itemprop="channelId" content="UCW47Uio6Y_pC_0No0Reak-g">
+      <meta itemprop="videoId" content="mJVFn5-WWyY">
+
+      <meta itemprop="duration" content="PT2M35S">
+      <meta itemprop="unlisted" content="False">
+
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <link itemprop="url" href="http://www.youtube.com/user/NissanNewsroom">
+        </span>
+        <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <link itemprop="url" href="https://plus.google.com/110390743463647831214">
+        </span>
+
+    <link itemprop="thumbnailUrl" href="http://i1.ytimg.com/vi/mJVFn5-WWyY/maxresdefault.jpg">
+    <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
+      <link itemprop="url" href="http://i1.ytimg.com/vi/mJVFn5-WWyY/maxresdefault.jpg">
+      <meta itemprop="width" content="1280">
+      <meta itemprop="height" content="720">
+    </span>
+
+        <link itemprop="embedURL" href="http://www.youtube.com/v/mJVFn5-WWyY?version=3&amp;autohide=1">
+      <meta itemprop="playerType" content="Flash">
+      <meta itemprop="width" content="1280">
+      <meta itemprop="height" content="720">
+
+      <meta itemprop="isFamilyFriendly" content="True">
+      <meta itemprop="regionsAllowed" content="AD,AE,AF,AG,AI,AL,AM,AO,AQ,AR,AS,AT,AU,AW,AX,AZ,BA,BB,BD,BE,BF,BG,BH,BI,BJ,BL,BM,BN,BO,BQ,BR,BS,BT,BV,BW,BY,BZ,CA,CC,CD,CF,CG,CH,CI,CK,CL,CM,CN,CO,CR,CU,CV,CW,CX,CY,CZ,DE,DJ,DK,DM,DO,DZ,EC,EE,EG,EH,ER,ES,ET,FI,FJ,FK,FM,FO,FR,GA,GB,GD,GE,GF,GG,GH,GI,GL,GM,GN,GP,GQ,GR,GS,GT,GU,GW,GY,HK,HM,HN,HR,HT,HU,ID,IE,IL,IM,IN,IO,IQ,IR,IS,IT,JE,JM,JO,JP,KE,KG,KH,KI,KM,KN,KP,KR,KW,KY,KZ,LA,LB,LC,LI,LK,LR,LS,LT,LU,LV,LY,MA,MC,MD,ME,MF,MG,MH,MK,ML,MM,MN,MO,MP,MQ,MR,MS,MT,MU,MV,MW,MX,MY,MZ,NA,NC,NE,NF,NG,NI,NL,NO,NP,NR,NU,NZ,OM,PA,PE,PF,PG,PH,PK,PL,PM,PN,PR,PS,PT,PW,PY,QA,RE,RO,RS,RU,RW,SA,SB,SC,SD,SE,SG,SH,SI,SJ,SK,SL,SM,SN,SO,SR,SS,ST,SV,SX,SY,SZ,TC,TD,TF,TG,TH,TJ,TK,TL,TM,TN,TO,TR,TT,TV,TW,TZ,UA,UG,UM,US,UY,UZ,VA,VC,VE,VG,VI,VN,VU,WF,WS,YE,YT,ZA,ZM,ZW">
+
+
+    <div id="watch7-main-container">
+      <div id="watch7-main" class="clearfix">
+        <div id="watch7-content" class="watch-content">
+              <div class="yt-uix-button-panel">
+        <div id="watch7-headline" class="clearfix  yt-uix-expander yt-uix-expander-collapsed">
+    <h1 id="watch-headline-title" class="yt">
+      
+
+
+  
+
+
+  <span id="eow-title" class="watch-title  yt-uix-expander-head" dir="ltr" title="Osaka&#39;s New LEAF">
+    Osaka&#39;s New LEAF
+  </span>
+
+    </h1>
+  </div>
+
+      <div id="watch7-user-header" class="spf-link"><a href="/user/NissanNewsroom?feature=watch" class="yt-user-photo " >    <span class="video-thumb  yt-thumb yt-thumb-48 g-hovercard"
+        data-ytid="UCW47Uio6Y_pC_0No0Reak-g"
+      >
+      <span class="yt-thumb-square">
+        <span class="yt-thumb-clip">
+          <img src="https://yt3.ggpht.com/-5Lxha_ySWQg/AAAAAAAAAAI/AAAAAAAAAAA/0rY47wAnelk/s48-c-k-no/photo.jpg" alt="Nissan Newsroom" width="48"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+</a><a href="/user/NissanNewsroom?feature=watch" class="g-hovercard yt-uix-sessionlink yt-user-name " data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&amp;feature=watch" dir="ltr" data-ytid="UCW47Uio6Y_pC_0No0Reak-g" data-name="watch">Nissan Newsroom</a><span class="yt-user-separator">&middot;</span><a class="yt-uix-sessionlink yt-user-videos"             href="/user/NissanNewsroom/videos"             data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&amp;feature=watch">1,594 videos</a><br><span id="watch7-subscription-container"><span class=" yt-uix-button-subscription-container with-preferences" ><button type="button" aria-live="polite" onclick=";return false;" class="yt-uix-subscription-button yt-can-buffer yt-uix-button yt-uix-button-subscribe-branded yt-uix-button-size-default yt-uix-button-has-icon" aria-busy="false" aria-role="button" data-href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26continue_action%3DQUFFLUhqbFI2QlBTWmswZXcyUVQwYWJXTDNBTnY4ckhkUXxBQ3Jtc0tuWXJtQ2VVVnNjTWVDRFVPLWo3bmpPOFhXdmJfc1ZNenNVU0dGZTFIVHlXZFNDMlFNMWhlOWZCT0tnb3ltbUwwcDlSS0UweXBvdXViVXFKSDVRMHdFUlZkYURJUklTZWZVVG5CV3BsdkRlcjQ2LXFnWlU1eVlXOXhYU3JNYktKRFNhcVZOVFFXWnczMWlTakRnZ1REaDVSOHRvampRRV80VXhhTHRMOEpWc0xTWWp0b2MtR1U0dnFKZFdpbTNobUhyYWhuQS0%253D%26feature%3Dsubscribe%26hl%3Den%26next%3D%252Fchannel%252FUCW47Uio6Y_pC_0No0Reak-g&amp;hl=en&amp;passive=true" data-style-type="branded" data-channel-external-id="UCW47Uio6Y_pC_0No0Reak-g" data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&amp;ved=CAQQmys&amp;feature=watch" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-subscribe" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></span><span class="yt-uix-button-content"><span class="subscribe-label" aria-label="Subscribe">Subscribe</span><span class="subscribed-label" aria-label="Unsubscribe">Subscribed</span><span class="unsubscribe-label" aria-label="Unsubscribe">Unsubscribe</span> </span></button><button type="button" onclick=";return false;" class="yt-uix-subscription-preferences-button yt-uix-button yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon yt-uix-button-empty" data-channel-external-id="UCW47Uio6Y_pC_0No0Reak-g" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-subscription-preferences" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></span></button><span class="yt-subscription-button-subscriber-count-branded-horizontal" >23,037</span>  <span class="yt-subscription-button-disabled-mask" title=""></span>
+  
+  <div class="yt-uix-overlay " data-overlay-style="primary"data-overlay-shape="tiny">
+    
+        <div class="yt-dialog hid ">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg">
+        <div class="yt-dialog-fg-content">
+            <div class="yt-dialog-header">
+                <h2 class="yt-dialog-title">
+                        Subscription preferences
+
+
+                </h2>
+            </div>
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+    <div class="yt-spinner-img"></div><div class="yt-dialog-waiting-text">Loading...</div>
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+              <div class="subscription-preferences-overlay-content-container">
+    <div class="subscription-preferences-overlay-loading ">
+        <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+    </div>
+    <div class="subscription-preferences-overlay-content">
+    </div>
+  </div>
+
+          </div>
+          <div class="yt-dialog-working">
+              <div id="yt-dialog-working-overlay">
+  </div>
+  <div id="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+      <div class="yt-spinner-img"></div><div class="yt-dialog-waiting-text">Working...</div>
+    </div>
+  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+
+</span></span><div id="watch7-views-info">      <span class="watch-view-count " >
+    809 views
+  </span>
+
+
+  <div class="video-extras-sparkbars">
+    <div class="video-extras-sparkbar-likes" style="width: 83.3333333333%"></div>
+    <div class="video-extras-sparkbar-dislikes" style="width: 16.6666666667%"></div>
+  </div>
+  <span class="video-extras-likes-dislikes">
+      <img id="watch-stats-like" class="icon-watch-stats-like" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Like">
+  <span class="likes-count">5</span>
+
+    &nbsp;&nbsp;&nbsp;
+      <img id="watch-stats-dislike" class="icon-watch-stats-dislike" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Dislike">
+  <span class="dislikes-count">1</span>
+
+  </span>
+</div></div>
+        <div id="watch7-action-buttons" class="clearfix">
+    <div id="watch7-sentiment-actions">
+      <span id="watch-like-dislike-buttons" class="yt-uix-button-group " data-vote-state="2" data-button-toggle-group="optional"><span class="yt-uix-clickcard"><button type="button" title="" onclick=";return false;" class="yt-uix-clickcard-target yt-uix-button yt-uix-button-text yt-uix-button-size-default yt-uix-button-has-icon yt-uix-tooltip" id="watch-like" data-like-tooltip="I like this" data-position="bottomright" data-force-position="true" data-unlike-tooltip="Unlike" data-button-toggle="true" data-orientation="vertical" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-watch-like" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></span><span class="yt-uix-button-content">Like </span></button>  <div class="watch7-hovercard yt-uix-clickcard-content">
+    <h3 class="watch7-hovercard-header">Sign in to YouTube</h3>
+    <div class="watch7-hovercard-message">
+      Sign in with your Google Account (YouTube, Google+, Gmail, Orkut, Picasa, or Chrome) to like <span class="yt-user-name  g-hovercard" dir="ltr"data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span>'s video.
+
+    </div>
+    <ul class="watch7-hovercard-icon-strip clearfix">
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-youtube-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-gplus-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-gmail-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-picasa-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-chrome-icon"></div>
+      </li>
+    </ul>
+    <div class="watch7-hovercard-account-line">
+      <a href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26feature%3D__FEATURE__%26hl%3Den%26next%3D%252Fwatch%253Fv%253DmJVFn5-WWyY&amp;hl=en&amp;passive=true" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-primary yt-uix-button-size-default" data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw"><span class="yt-uix-button-content">Sign in </span></a>
+    </div>
+  </div>
+</span><span class="yt-uix-clickcard"><button type="button" title="I dislike this" onclick=";return false;" class="yt-uix-clickcard-target yt-uix-button yt-uix-button-text yt-uix-button-size-default yt-uix-button-has-icon yt-uix-tooltip yt-uix-button-empty" id="watch-dislike" data-force-position="true" data-orientation="vertical" data-position="bottomright" data-button-toggle="true" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-watch-dislike" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="I dislike this" title=""></span></button>  <div class="watch7-hovercard yt-uix-clickcard-content">
+    <h3 class="watch7-hovercard-header">Sign in to YouTube</h3>
+    <div class="watch7-hovercard-message">
+      Sign in with your Google Account (YouTube, Google+, Gmail, Orkut, Picasa, or Chrome) to dislike <span class="yt-user-name  g-hovercard" dir="ltr"data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span>'s video.
+
+    </div>
+    <ul class="watch7-hovercard-icon-strip clearfix">
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-youtube-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-gplus-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-gmail-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-picasa-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-chrome-icon"></div>
+      </li>
+    </ul>
+    <div class="watch7-hovercard-account-line">
+      <a href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26feature%3D__FEATURE__%26hl%3Den%26next%3D%252Fwatch%253Fv%253DmJVFn5-WWyY&amp;hl=en&amp;passive=true" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-primary yt-uix-button-size-default" data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw"><span class="yt-uix-button-content">Sign in </span></a>
+    </div>
+  </div>
+</span></span>
+    </div>
+    <div id="watch7-secondary-actions"  class="yt-uix-button-group" data-button-toggle-group="required">
+        <span >
+    <button type="button" title="" onclick=";return false;" class="action-panel-trigger  yt-uix-button-toggled yt-uix-button yt-uix-button-text yt-uix-button-size-default yt-uix-tooltip" data-trigger-for="action-panel-details" data-button-toggle="true" role="button"><span class="yt-uix-button-content">About </span></button>
+  </span>
+
+          <span >
+    <button type="button" title="" onclick=";return false;" class="action-panel-trigger   yt-uix-button yt-uix-button-text yt-uix-button-size-default yt-uix-tooltip" data-trigger-for="action-panel-share" data-button-toggle="true" role="button"><span class="yt-uix-button-content">Share </span></button>
+  </span>
+
+          <span class="yt-uix-clickcard">
+    <button type="button" title="" onclick=";return false;" class="action-panel-trigger   yt-uix-clickcard-target yt-uix-button yt-uix-button-text yt-uix-button-size-default yt-uix-tooltip" data-upsell="playlist" data-trigger-for="action-panel-none" data-position="bottomleft" data-button-toggle="true" data-orientation="vertical" role="button"><span class="yt-uix-button-content">Add to </span></button>
+        <div class="watch7-hovercard yt-uix-clickcard-content">
+    <h3 class="watch7-hovercard-header">Sign in to YouTube</h3>
+    <div class="watch7-hovercard-message">
+      Sign in with your Google Account (YouTube, Google+, Gmail, Orkut, Picasa, or Chrome) to add <span class="yt-user-name  g-hovercard" dir="ltr"data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span>'s video to your playlist.
+
+    </div>
+    <ul class="watch7-hovercard-icon-strip clearfix">
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-youtube-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-gplus-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-gmail-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-picasa-icon"></div>
+      </li>
+      <li class="watch7-hovercard-icon">
+        <div class="watch7-hovercard-chrome-icon"></div>
+      </li>
+    </ul>
+    <div class="watch7-hovercard-account-line">
+      <a href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26feature%3D__FEATURE__%26hl%3Den%26next%3D%252Fwatch%253Fv%253DmJVFn5-WWyY&amp;hl=en&amp;passive=true" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-primary yt-uix-button-size-default" data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw"><span class="yt-uix-button-content">Sign in </span></a>
+    </div>
+  </div>
+
+  </span>
+
+          <span >
+    <button type="button" title="Transcript" onclick=";return false;" class="action-panel-trigger   yt-uix-button yt-uix-button-text yt-uix-button-size-default yt-uix-button-has-icon yt-uix-tooltip yt-uix-button-empty" data-trigger-for="action-panel-transcript" data-button-toggle="true" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-action-panel-transcript" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Transcript" title=""></span></button>
+  </span>
+
+          <span >
+    <button type="button" title="Statistics" onclick=";return false;" class="action-panel-trigger   yt-uix-button yt-uix-button-text yt-uix-button-size-default yt-uix-button-has-icon yt-uix-tooltip yt-uix-button-empty" data-trigger-for="action-panel-stats" data-button-toggle="true" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-action-panel-stats" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Statistics" title=""></span></button>
+  </span>
+
+
+        <span >
+    <button type="button" title="Report" onclick=";return false;" class="action-panel-trigger   yt-uix-button yt-uix-button-text yt-uix-button-size-default yt-uix-button-has-icon yt-uix-tooltip yt-uix-button-empty" data-trigger-for="action-panel-report" data-button-toggle="true" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-action-panel-report" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Report" title=""></span></button>
+  </span>
+
+    </div>
+  </div>
+
+        <div id="watch7-action-panels" class="yt-uix-button-panel">
+      <div id="action-panel-details" class="action-panel-content ">
+    <div id="watch-description" class="yt-uix-expander yt-uix-expander-collapsed yt-uix-button-panel">
+      <div id="watch-description-content" >
+        <div id="watch-description-clip">
+          <p id="watch-uploader-info">
+              <strong>Published on <span id="eow-date" class="watch-video-date" >Jul  3, 2012</span>
+</strong>
+          </p>
+          
+          <div id="watch-description-text">
+            <p id="eow-description" >Some 250 Nissan LEAFs will be available free for public and private use in Osaka - with a population of 8.8 million, supplying power to homes during the day and charging from the grid at night.<br /><br />Osaka&#39;s economic activity is second only to Tokyo and it slowed last year due to changed work schedules and emergency conservation measures taken across Japan in the wake of the March disasters that disrupted national power supply.<br /><br />With renewed fears of brownouts this summer, the LEAF can also be used as a backup power source, and the Osaka city and prefectural offices are taking 50 units.<br /><br />&quot;This year&#39;s demand for energy in Japan, and particularly in the western region of Kansai, is a very difficult situation,&quot; said Seiji Nakamura, general manager at the Osaka prefectural government office.<br /><br />&quot;The central government has created simulations for national energy demand, and as a result in Kansai we&#39;ve been told we need to reduce consumption by at least a 15% to cope with the situation. In this, the Osaka prefectural and city governments are asking for citizens&#39; cooperation and working together to achieve this cut target.&quot;<br /><br />Nissan Chief Operating Officer Toshiyuki Shiga met Tuesday with Osaka governmental officials about the &quot;LEAF-to-Home&quot; power plan.<br /><br />Shiga said that after last year&#39;s energy pinch that conservation has become a national issue.<br /><br />&quot;This year across the country, we are suffering a quite serious power shortage, especially this Kansai area,&quot; said COO Shiga.<br /><br />&quot;So, Nissan has developed the &#39;LEAF to Home&#39; - we can store electricity in the nighttime, and then from the car, we use it in the daytime, especially during peak demand time.&quot;<br /><br />The involvement of Mayor Toru Hashimoto, the leader of the One Osaka political party, is seen as a potential catalyst for further LEAF utilization.<br /><br />Osaka is a first step for Nissan, which intends to offer &quot;LEAF-to-Home&quot; in other locations in Japan if further demand emerges.</p>
+          </div>
+            <div id="watch-description-extras">
+    
+    <ul class="watch-extras-section">
+      <li>
+        <h4 class="title">
+Category
+        </h4>
+        <div class="content">
+              <p id="eow-category"><a class="yt-uix-sessionlink" data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&amp;ved=CAMQxS4" href="/autos">Autos &amp; Vehicles</a></p>
+
+        </div>
+      </li>
+
+
+        <li>
+          <h4 class="title">License</h4>
+          <div class="content">
+              <p id="eow-reuse">
+Standard YouTube License
+  </p>
+
+          </div>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+        <ul id="watch-description-extra-info">
+          
+        </ul>
+      </div>
+
+      <div id="watch-description-toggle" class="yt-uix-expander-head yt-uix-button-panel">
+        <div id="watch-description-expand" class="expand">
+          <button type="button" onclick=";return false;" class="metadata-inline yt-uix-button yt-uix-button-text yt-uix-button-size-default"  role="button"><span class="yt-uix-button-content">Show more </span></button>
+        </div>
+        <div id="watch-description-collapse" class="collapse">
+          <button type="button" onclick=";return false;" class="metadata-inline yt-uix-button yt-uix-button-text yt-uix-button-size-default"  role="button"><span class="yt-uix-button-content">Show less </span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div id="action-panel-share" class="action-panel-content hid">
+      <div id="watch-actions-share-loading">
+    <div class="action-panel-loading">
+        <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+    </div>
+  </div>
+  <div id="watch-actions-share-panel"></div>
+
+  </div>
+
+      <div id="action-panel-addto" class="action-panel-content hid" data-auth-required="true">
+    <div class="action-panel-loading">
+        <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+    </div>
+  </div>
+
+        <div id="action-panel-transcript" class="action-panel-content hid">
+    <div id="watch-actions-transcript-loading">
+      <div class="action-panel-loading">
+          <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+      </div>
+    </div>
+      <div id="watch-actions-transcript" class="watch-actions-panel hid">
+      <div id="caption-line-template" class="hid">
+    <!--
+    <div class="caption-line-time">
+      <div class="caption-line-start">__start__</div>
+    </div>
+    <div class="editable-line-text">
+      <span class="editable-line-text-original">__original__</span>
+      <label class="editable-line-text-current hid">__current__</label>
+      <textarea class="editable-line-text-input hid">__input__</textarea>
+    </div>
+    -->
+  </div>
+
+
+
+    <div id="watch-transcript-container" >
+      <div id="watch-transcript-not-found" class="hid">
+The interactive transcript could not be loaded.
+      </div>
+
+      
+    </div>
+  </div>
+
+  </div>
+
+      <div id="action-panel-stats" class="action-panel-content hid">
+    <div class="action-panel-loading">
+        <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+    </div>
+  </div>
+
+      <div id="action-panel-report" class="action-panel-content hid" data-auth-required="true">
+    <div class="action-panel-loading">
+        <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+    </div>
+  </div>
+
+      <div id="action-panel-login" class="action-panel-content hid">
+    <div class="action-panel-login">
+      <a href="https://accounts.google.com/ServiceLogin?service=youtube&amp;uilel=3&amp;continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26feature%3D__FEATURE__%26hl%3Den%26next%3D%252Fwatch%253Fv%253DmJVFn5-WWyY&amp;hl=en&amp;passive=true" class="yt-uix-button   yt-uix-sessionlink yt-uix-button-default yt-uix-button-size-default" data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw"><span class="yt-uix-button-content">Sign in </span></a>
+    </div>
+  </div>
+
+  <div id="action-panel-ratings-disabled" class="action-panel-content hid">
+      <div id="watch-actions-ratings-disabled" class="watch-actions-panel">
+    <em>Ratings have been disabled for this video.</em>
+  </div>
+
+  </div>
+
+  <div id="action-panel-rental-required" class="action-panel-content hid">
+      <div id="watch-actions-rental-required" class="watch-actions-panel">
+    <strong>Rating is available when the video has been rented.</strong>
+  </div>
+
+  </div>
+
+  <div id="action-panel-error" class="action-panel-content hid">
+    <div class="action-panel-error">
+      This feature is not available right now. Please try again later.
+    </div>
+  </div>
+
+    <div id="watch7-action-panel-footer">
+      <hr class="yt-horizontal-rule ">
+    </div>
+  </div>
+
+  </div>
+
+          <div class="cmt_iframe_holder" data-href="http://www.youtube.com/watch?v=mJVFn5-WWyY" data-viewtype="FILTERED" style="display: none;"></div>
+
+  <div id="watch-discussion">
+            
+  <div class="comments-iframe-container">
+    <div id="comments-test-iframe"></div>
+    <div id="distiller-spinner" class="action-panel-loading">
+        <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+    </div>
+  </div>
+
+
+  </div>
+
+
+        </div>
+        <div id="watch7-sidebar" class="watch-sidebar">
+              <div id="watch7-sidebar-contents" class="watch-sidebar-gutter">
+
+    <div id="watch7-sidebar-discussion"></div>
+
+
+
+            <div class="watch-sidebar-section">
+
+    <div class="watch-sidebar-body">
+      <ul id="watch-related" class="video-list">
+        <li class="video-list-item related-list-item"><a href="/watch?v=UWQiHFc7yeI" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CAcQzRooAA&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/UWQiHFc7yeI/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">8:14</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="UWQiHFc7yeI" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Nissan at Le Mans 24h: Qualifying Day 2">Nissan at Le Mans 24h: Qualifying Day 2</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">49,050 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=lvRY5rLwC-I" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CAgQzRooAQ&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/lvRY5rLwC-I/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">3:25</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="lvRY5rLwC-I" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="NISSAN LEAF NISMO RC at Tokyo Gate Bridge Opening Ceremony">NISSAN LEAF NISMO RC at Tokyo Gate Bridge Opening Ceremony</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">12,167 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=pMvLrU2eYWk" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CAkQzRooAg&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/pMvLrU2eYWk/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">3:12</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="pMvLrU2eYWk" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Another Quality Story: Switch to the future">Another Quality Story: Switch to the future</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">614 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=RDy6ItG2YXc" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CAoQzRooAw&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/RDy6ItG2YXc/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">21:29</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="RDy6ItG2YXc" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Nissan GT-R at Nurburgring 24h: Race day Highlights">Nissan GT-R at Nurburgring 24h: Race day Highlights</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">85,738 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=J9SoVYAQ2Ug" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CAsQzRooBA&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/J9SoVYAQ2Ug/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">3:25</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="J9SoVYAQ2Ug" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="A Bridge to the Future">A Bridge to the Future</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">1,395 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=5_WfYiU9tVo" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CAwQzRooBQ&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/5_WfYiU9tVo/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">12:25</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="5_WfYiU9tVo" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Nissan at Le Mans 24h: Qualifying Day 1">Nissan at Le Mans 24h: Qualifying Day 1</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">54,747 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=ypI58JXQUBQ" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CA0QzRooBg&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/ypI58JXQUBQ/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">9:34</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="ypI58JXQUBQ" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="REMIX: Nissan GT-R at Nurburgring 24h Summary">REMIX: Nissan GT-R at Nurburgring 24h Summary</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">31,992 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=TAwEXuH9qJ8" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CA4QzRooBw&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/TAwEXuH9qJ8/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">7:04</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="TAwEXuH9qJ8" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Nissan at Le Mans 24h: Race Day Warm-up Session">Nissan at Le Mans 24h: Race Day Warm-up Session</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">17,547 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=vpdZsy1U-9U" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CA8QzRooCA&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/vpdZsy1U-9U/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">8:34</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="vpdZsy1U-9U" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="NISMO Festival 2011">NISMO Festival 2011</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">23,198 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=e2dM6WsE3WE" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CBAQzRooCQ&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/e2dM6WsE3WE/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">2:57</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="e2dM6WsE3WE" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Nissan Explains Zero-Emission Strategy">Nissan Explains Zero-Emission Strategy</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">1,035 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=dXya96_q4J4" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CBEQzRooCg&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/dXya96_q4J4/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">23:01</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="dXya96_q4J4" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Nissan GT-R at Nurburgring 24h: Qualify Sessions">Nissan GT-R at Nurburgring 24h: Qualify Sessions</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">46,380 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=xi_AsxRuyus" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CBIQzRooCw&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/xi_AsxRuyus/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">7:51</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="xi_AsxRuyus" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="DeltaWing Accident">DeltaWing Accident</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">614,188 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=_VGu0cfCuTM" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CBMQzRooDA&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/_VGu0cfCuTM/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">3:30</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="_VGu0cfCuTM" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="The Nissan LEAF proves slick in wintry test drives in northern Japan">The Nissan LEAF proves slick in wintry test drives in northern Japan</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">23,518 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=7m9RBlcG7Rw" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CBQQzRooDQ&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/7m9RBlcG7Rw/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">2:15</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="7m9RBlcG7Rw" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="NISSAN DELTAWING">NISSAN DELTAWING</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">174,754 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=Yk63g--8TLY" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CBUQzRooDg&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/Yk63g--8TLY/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">3:26</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="Yk63g--8TLY" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Striking the Right Note: Chief Creative Officer Shiro Nakamura">Striking the Right Note: Chief Creative Officer Shiro Nakamura</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">33,728 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=zTK1CoI3KAI" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CBYQzRooDw&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/zTK1CoI3KAI/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">2:57</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="zTK1CoI3KAI" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Behind the Q1 Numbers: Nissan CVP Joji Tagawa">Behind the Q1 Numbers: Nissan CVP Joji Tagawa</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">220 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=B2FS9gOBzYU" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CBcQzRooEA&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/B2FS9gOBzYU/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">3:11</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="B2FS9gOBzYU" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Another Quality Story: The Beast Tamers">Another Quality Story: The Beast Tamers</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">2,352 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=JCPbcmK2DCk" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CBgQzRooEQ&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/JCPbcmK2DCk/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">2:04</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="JCPbcmK2DCk" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Key to the Highway">Key to the Highway</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">541 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=rvtp-jhKKWY" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CBkQzRooEg&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/rvtp-jhKKWY/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">2:10</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="rvtp-jhKKWY" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Nissan posts $1.5 bln Q1 operating profit, vehicles sales climb">Nissan posts $1.5 bln Q1 operating profit, vehicles sales climb</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">655 views</span></a></li><li class="video-list-item related-list-item"><a href="/watch?v=jZGT2iD47zs" class="related-video  spf-link yt-uix-sessionlink"  data-sessionlink="ei=O8zZUseILcLhkgKQhYGYAw&ved=CBoQzRooEw&feature=relmfu"><span class="ux-thumb-wrap contains-addto ">    <span class="video-thumb  yt-thumb yt-thumb-120"
+      >
+      <span class="yt-thumb-default">
+        <span class="yt-thumb-clip">
+          <img data-thumb="//i1.ytimg.com/vi/jZGT2iD47zs/default.jpg" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" width="120"  >
+          <span class="vertical-align"></span>
+        </span>
+      </span>
+    </span>
+<span class="video-time">1:40</span>
+
+  <button type="button" title="Watch Later" onclick=";return false;" class="addto-button video-actions spf-nolink hide-until-delayloaded addto-watch-later-button-sign-in yt-uix-button yt-uix-button-default yt-uix-button-size-small yt-uix-tooltip" data-video-ids="jZGT2iD47zs" data-button-menu-id="shared-addto-watch-later-login" role="button"><span class="yt-uix-button-content">  <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Watch Later">
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+</span><span dir="ltr" class="title" title="Nissan DeltaWing Faces Wind Tunnel Tests">Nissan DeltaWing Faces Wind Tunnel Tests</span><span class="stat attribution"><span class="g-hovercard"data-ytid="UCW47Uio6Y_pC_0No0Reak-g"data-name="watch-vrec">by <b><span class="g-hovercard" data-ytid="UCW47Uio6Y_pC_0No0Reak-g">Nissan Newsroom</span></b></span></span><span class="stat view-count">29,687 views</span></a></li>
+      </ul>
+    </div>   </div> 
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+      <div style="visibility: hidden; height: 0px; padding: 0px; overflow: hidden;">
+  </div>
+
+  </div>
+
+</div></div></div></div>  <div id="footer-container" class="yt-base-gutter"><div id="footer"><div id="footer-main"><div id="footer-logo"><a href="/" title="YouTube home"><img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="YouTube home"></a></div>  <ul class="pickers yt-uix-button-group" data-button-toggle-group="optional">
+      <li>
+          
+  <button type="button" onclick=";return false;" id="yt-picker-language-button" class=" yt-uix-button yt-uix-button-default yt-uix-button-size-default yt-uix-button-has-icon" data-button-action="yt.www.picker.load" data-button-menu-id="arrow-display" data-button-toggle="true" data-picker-key="language" data-picker-position="footer" role="button"><span class="yt-uix-button-icon-wrapper"><img class="yt-uix-button-icon yt-uix-button-icon-footer-language" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></span><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Language:
+  </span>
+  English
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+
+
+      </li>
+      <li>
+          
+  <button type="button" onclick=";return false;" id="yt-picker-country-button" class=" yt-uix-button yt-uix-button-default yt-uix-button-size-default" data-button-action="yt.www.picker.load" data-button-menu-id="arrow-display" data-button-toggle="true" data-picker-key="country" data-picker-position="footer" role="button"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Country:
+  </span>
+  Worldwide
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+
+
+      </li>
+      <li>
+          
+  <button type="button" onclick=";return false;" id="yt-picker-safetymode-button" class=" yt-uix-button yt-uix-button-default yt-uix-button-size-default" data-button-action="yt.www.picker.load" data-button-menu-id="arrow-display" data-button-toggle="true" data-picker-key="safetymode" data-picker-position="footer" role="button"><span class="yt-uix-button-content">  <span class="yt-picker-button-label">
+Safety:
+  </span>
+Off
+ </span><img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""></button>
+
+
+      </li>
+  </ul>
+  <button type="button" onclick=";return false;" class="yt-uix-button-reverse yt-google-help-link yt-uix-button yt-uix-button-default yt-uix-button-size-default" data-ghelp-anchor="google-help" id="google-help"  role="button"><span class="yt-uix-button-content">  <img class="questionmark" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif">
+  <span>Help</span>
+    <img class="yt-uix-button-arrow" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif">
+ </span></button>
+      <div id="yt-picker-language-footer"
+      class="yt-picker"
+      style="display: none"
+>
+      <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+      <div id="yt-picker-country-footer"
+      class="yt-picker"
+      style="display: none"
+>
+      <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+      <div id="yt-picker-safetymode-footer"
+      class="yt-picker"
+      style="display: none"
+>
+      <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+Loading...
+    </span>
+  </p>
+
+  </div>
+
+</div><div id="footer-links"><ul id="footer-links-primary">  <li><a href="//www.youtube.com/yt/about/">About</a></li>
+  <li><a href="//www.youtube.com/yt/press/">Press &amp; Blogs</a></li>
+  <li><a href="//www.youtube.com/yt/copyright/">Copyright</a></li>
+  <li><a href="//www.youtube.com/yt/creators/">Creators &amp; Partners</a></li>
+  <li><a href="//www.youtube.com/yt/advertise/">Advertising</a></li>
+  <li><a href="//www.youtube.com/yt/dev/">Developers</a></li>
+  <li><a href="https://plus.google.com/+youtube">+YouTube</a></li>
+</ul><ul id="footer-links-secondary">  <li><a href="/t/terms">Terms</a></li>
+  <li><a href="http://www.google.com/intl/en/policies/privacy/">Privacy</a></li>
+  <li><a href="//www.youtube.com/yt/policyandsafety/">
+Policy &amp; Safety
+  </a></li>
+  <li><a href="//support.google.com/youtube/?hl=en-US" onclick="return yt.www.feedback.start(59);" class="reportbug">Send feedback</a></li>
+  <li><a href="/testtube">Try something new!</a></li>
+  <li></li>
+</ul></div></div></div>
+
+
+      <div class="yt-dialog hid " id="feed-privacy-lb">
+    <div class="yt-dialog-base">
+      <span class="yt-dialog-align"></span>
+      <div class="yt-dialog-fg">
+        <div class="yt-dialog-fg-content">
+          <div class="yt-dialog-loading">
+              <div class="yt-dialog-waiting-content">
+    <div class="yt-spinner-img"></div><div class="yt-dialog-waiting-text">Loading...</div>
+  </div>
+
+          </div>
+          <div class="yt-dialog-content">
+              <div id="feed-privacy-dialog">
+  </div>
+
+          </div>
+          <div class="yt-dialog-working">
+              <div id="yt-dialog-working-overlay">
+  </div>
+  <div id="yt-dialog-working-bubble">
+    <div class="yt-dialog-waiting-content">
+      <div class="yt-spinner-img"></div><div class="yt-dialog-waiting-text">Working...</div>
+    </div>
+  </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div id="shared-addto-watch-later-login" class="hid">
+      <a href="https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26feature%3Dplaylist%26hl%3Den%26next%3D%252Fwatch%253Fv%253DmJVFn5-WWyY&hl=en&passive=true" class="sign-in-link">Sign in</a> to add this to Watch Later
+
+    </div>
+
+  <div id="shared-addto-menu" style="display: none;" class="hid sign-in">
+      <div class="addto-menu">
+        <div id="addto-list-panel" class="menu-panel active-panel">
+          <span class="addto-playlist-item yt-uix-button-menu-item yt-uix-tooltip sign-in"
+        data-possible-tooltip=""
+        data-tooltip-show-delay="750"
+
+
+>
+<img class="playlist-status" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="" title=""><a href="https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26feature%3Dplaylist%26hl%3Den%26next%3D%252Fwatch%253Fv%253DmJVFn5-WWyY&hl=en&passive=true" class="sign-in-link">Sign in</a> to add this to Watch Later
+  </span>
+
+
+  </div>
+  <div id="addto-list-saving-panel" class="menu-panel">
+    <div class="addto-loading loading-content">
+        <p class="yt-spinner">
+        <img class="yt-spinner-img" src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif" alt="Loading icon" title="">
+
+    <span class="yt-spinner-message">
+        Loading playlists...
+    </span>
+  </p>
+
+    </div>
+  </div>
+  <div id="addto-list-error-panel" class="menu-panel">
+    <div class="panel-content">
+      <img src="http://s.ytimg.com/yts/img/pixel-vfl3z5WfW.gif">
+      <span class="error-details"></span>
+      <a class="show-menu-link">Back</a>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+<script>if (window.ytcsi) {window.ytcsi.tick("hr", null, '');}</script><script>var ytspf = ytspf || {};ytspf.enabled = true;ytspf.config = {};ytspf.config['navigate-limit'] = 10;ytspf.config['navigate-lifetime'] = 86400000;</script>  <script id="js-4167365706" class="spf" src="//s.ytimg.com/yts/jsbin/spf-vflFBbJe-.js" data-loaded="true"></script>
+  <script id="js-805618685" class="www_base_mod" src="//s.ytimg.com/yts/jsbin/www-vflSMSKtd/www_base_mod.js" data-loaded="true"></script>
+<script>if (window.ytcsi) {window.ytcsi.tick("je", null, '');}</script>      <script>
+    yt.setConfig({
+      'VIDEO_ID': "mJVFn5-WWyY",
+      'THUMB_NON_DELAY_LOAD_COUNT': 0,
+      'THUMB_LOADER_PAUSE_MS': null,
+      'THUMB_LOADER_GROUP_PX': null,
+      'THUMB_LOADER_IGNORE_FOLD': null,
+      'WAIT_TO_DELAYLOAD_FRAME_CSS': false,
+      'PLAYLIST_INTERSTITIAL': false,
+      'IS_UNAVAILABLE_PAGE': false,
+
+      'JS_PAGE_MODULES': {
+        "\/\/s.ytimg.com\/yts\/jsbin\/www-vflSMSKtd\/www_watch_mod.js": [
+            "\/\/s.ytimg.com\/yts\/jsbin\/www-vflSMSKtd\/www_watch_transcript_mod.js",
+            "\/\/s.ytimg.com\/yts\/jsbin\/www-vflSMSKtd\/www_watch_missilecommand_mod.js",
+          ''         ]
+      },
+
+
+      'REPORTVIDEO_JS': "\/\/s.ytimg.com\/yts\/jsbin\/www-reportvideo-vflQ5BRz9.js",
+      'REPORTVIDEO_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-watch-reportvideo-vfla3nC5G.css",
+
+
+
+      'WATCH_MISSILECOMMAND_JS': "\/\/s.ytimg.com\/yts\/jsbin\/www-watch-missilecommand-vflt6P6z7.js",
+      'WATCH_MISSILECOMMAND_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-watch-missile-command-vfl52fZea.css",
+
+      'ENABLE_AUTO_LARGE': true    });
+
+    yt.setAjaxToken('insight_ajax', "mnIT0bWTlYKK0qstoQiVzrjE0RB8MTM5MDA5MTcwN0AxMzkwMDA1MzA3");
+    yt.setAjaxToken('guide_ajax', "hVNJbOpZN0oFDfsh7j8GV1nLLap8MTM5MDA5MTcwN0AxMzkwMDA1MzA3");
+    yt.setAjaxToken('promo_ajax', "jYb2bF5L7FkeXSV1ZNuO0Om4ssB8MTM5MDA5MTcwN0AxMzkwMDA1MzA3");
+
+      yt.setConfig({
+    'EMBED_HTML_TEMPLATE': "\u003ciframe width=\"__width__\" height=\"__height__\" src=\"__url__\" frameborder=\"0\" allowfullscreen\u003e\u003c\/iframe\u003e",
+    'EMBED_HTML_URL': "\/\/www.youtube.com\/embed\/__videoid__"
+  });
+    yt.setMsg('FLASH_UPGRADE', "\u003cdiv class=\"yt-alert yt-alert-default yt-alert-error  yt-alert-player\"\u003e  \u003cdiv class=\"yt-alert-icon\"\u003e\n    \u003cimg s\u0072c=\"http:\/\/s.ytimg.com\/yts\/img\/pixel-vfl3z5WfW.gif\" class=\"icon master-sprite\" alt=\"Alert icon\"\u003e\n  \u003c\/div\u003e\n\u003cdiv class=\"yt-alert-buttons\"\u003e\u003c\/div\u003e\u003cdiv class=\"yt-alert-content\" role=\"alert\"\u003e    \u003cspan class=\"yt-alert-vertical-trick\"\u003e\u003c\/span\u003e\n    \u003cdiv class=\"yt-alert-message\"\u003e\n            You need to upgrade your Adobe Flash Player to watch this video. \u003cbr\u003e \u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003eDownload it from Adobe.\u003c\/a\u003e\n    \u003c\/div\u003e\n\u003c\/div\u003e\u003c\/div\u003e");
+  yt.setMsg('PLAYER_FALLBACK', "The Adobe Flash Player or an HTML5 supported browser is required for video playback. \u003cbr\u003e \u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003eGet the latest Flash Player\u003c\/a\u003e \u003cbr\u003e \u003ca href=\"\/html5\"\u003eLearn more about upgrading to an HTML5 browser\u003c\/a\u003e");
+  yt.setMsg('QUICKTIME_FALLBACK', "The Adobe Flash Player or QuickTime is required for video playback. \u003cbr\u003e \u003ca href=\"http:\/\/get.adobe.com\/flashplayer\/\"\u003eGet the latest Flash Player\u003c\/a\u003e \u003cbr\u003e \u003ca href=\"http:\/\/www.apple.com\/quicktime\/download\/\"\u003eGet the latest version of QuickTime\u003c\/a\u003e");
+
+
+
+    yt.setConfig({
+      'TIMING_WFF': true,
+      'WATCH_GUIDE_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-guide-vflOrERgt.css",
+      'YPC_CAN_RATE_VIDEO': true,
+
+
+
+
+
+
+
+      'HL_LOCALE': "en_US",
+
+      'TTS_URL': "http:\/\/www.youtube.com\/api\/timedtext?signature=72873D9D6083B0EAFE5D3B04945D0C4DDCAB6959.2927EC5CCB5D5AEB37D04EB0FB24DBC13EF7C6EF\u0026key=yttt1\u0026hl=en_US\u0026asr_langs=nl%2Ces%2Cru%2Cfr%2Cpt%2Cit%2Cko%2Cde%2Cja%2Cen\u0026caps=asr\u0026v=mJVFn5-WWyY\u0026expire=1390030507\u0026sparams=asr_langs%2Ccaps%2Cv%2Cexpire",
+      'JS_DELAY_LOAD': 0,
+      'LIST_AUTO_PLAY_VALUE': null,
+      'SHUFFLE_VALUE': null,
+      'RELATED_ADS_DELAY': null,
+      'SKIP_TO_NEXT_VIDEO': false,
+      'SPF_PREFETCH': false,
+      'SPF_PREFETCH_MAX': null,
+      'ALLOW_RATINGS': true,
+      'RESUME_COOKIE_NAME': null,
+      'LIST_END_TIME': null,
+      'CONVERSION_CONFIG_DICT': null,
+      'RESOLUTION_TRACKING_ENABLED': false,
+      'MEMORY_TRACKING_ENABLED': true,
+      'WATCH_LEGAL_TEXT_ENABLE_AUTOSCROLL': true,
+      'SHARE_ON_VIDEO_PAUSE': false,
+      'SHARE_ON_VIDEO_END': true,
+      'SHARE_ON_VIDEO_START': false,
+      'ADS_DATA': {"log_pyv": false, "fetch_ads_in_page": false, "show_companion": false, "show_afv": false, "show_pyv": false, "check_status": false, "show_instream": false, "use_gut": false, "show_afc": false},
+      'PLAYBACK_ID': "AATwM9SarYZL-akv",
+      'IS_ACTIVE_LIVE_VIDEO': false,
+      'IS_DISTILLER': true,
+      'RADIO_ENTRYPOINT_RESUMES_CURRENTLY_PLAYING_VIDEO': false,
+      'WATCH_STATS_RATING_BUTTONS': false,
+      'SHARE_CAPTION': "Uploaded by Nissan Newsroom"
+    });
+
+    yt.setMsg({
+        'HTML5_SUBS_ASR': "automatic captions",
+      'LOADING': "Loading..."    });
+
+
+      yt.setMsg({
+    'UNBLOCK_USER': "Are you sure you want to unblock this user?",
+    'BLOCK_USER': "Are you sure you want to block this user?"
+  });
+  yt.setConfig('BLOCK_USER_AJAX_XSRF', 'session_token=wVo8XsDAyxPyiTySfRXuSe5f8ZR8MTM5MDA5MTcwN0AxMzkwMDA1MzA3');
+
+
+    
+
+
+
+
+
+
+
+    
+
+
+
+      yt.setConfig({
+    'GUIDED_HELP_LOCALE': "en_US",
+    'GUIDED_HELP_ENVIRONMENT': "prod"
+  });
+
+
+      
+  yt.setAjaxToken('comment_voting', "w2DamsoyptvqXqZKcyQB0GQ4Fp98MTM5MDA5MTcwN0AxMzkwMDA1MzA3");
+
+      yt.setConfig('DISTILLER_CONFIG', {"reauth": false, "signin_url": "https:\/\/accounts.google.com\/ServiceLogin?service=youtube\u0026uilel=3\u0026continue=http%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26feature%3Dcomments%26hl%3Den%26next%3D%252Fwatch%253Fv%253DmJVFn5-WWyY\u0026hl=en\u0026passive=true", "query": "http:\/\/www.youtube.com\/watch?v=mJVFn5-WWyY", "video_id": "mJVFn5-WWyY", "page_size": null, "owner_id": "W47Uio6Y_pC_0No0Reak-g", "channel_id": "UCW47Uio6Y_pC_0No0Reak-g", "host_override": "https:\/\/plus.googleapis.com", "privacy_setting": "PUBLIC"});
+
+
+  </script>
+
+
+<script>yt.setConfig({'EVENT_ID': "O8zZUseILcLhkgKQhYGYAw",'PAGE_NAME': "watch",'LOGGED_IN': false,'SESSION_INDEX': null,'DELEGATED_SESSION_ID': null,'GAPI_HOST': "https:\/\/apis.google.com",'GAPI_HINT_PARAMS': "m;\/_\/scs\/abc-static\/_\/js\/k=gapi.gapi.en.5GL3tg_C6Nc.O\/m=__features__\/rt=j\/d=1\/rs=AItRSTPfsfz-ifAZeiHMk7mKfiGQJuhVFw",'GAPI_LOCALE': "en_US",'GOOGLEPLUS_HOST': "https:\/\/plus.google.com",'PAGEFRAME_JS': "\/\/s.ytimg.com\/yts\/jsbin\/www-pageframe-vflad41Qg.js",'JS_COMMON_MODULE': "\/\/s.ytimg.com\/yts\/jsbin\/www-vflSMSKtd\/www_common_mod.js",'PAGE_FRAME_DELAYLOADED_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-pageframedelayloaded-vflqHQsEF.css",'PREFETCH_CSS_RESOURCES' : ["\/\/s.ytimg.com\/yts\/cssbin\/www-player-vflCC6yfm.css",''         ],'PREFETCH_JS_RESOURCES': ["\/\/s.ytimg.com\/yts\/jsbin\/html5player-vflbxes4n.js",''         ],'SAFETY_MODE_PENDING': false,'LOCAL_DATE_TIME_CONFIG': {"formatLongDate": "MMMM d, yyyy h:mm a", "weekdays": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "shortMonths": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"], "formatWeekdayShortTime": "EE h:mm a", "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"], "amPms": ["AM", "PM"], "formatLongDateOnly": "MMMM d, yyyy", "shortWeekdays": ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], "formatShortDate": "MMM d, yyyy"},'PAGE_CL': 59686587,'PAGE_BUILD_TIMESTAMP': "Wed Jan 15 15:16:12 2014 (1389827772)",'UNIVERSAL_HOVERCARDS': true,'FEEDBACK_BUCKET_ID': "Watch",'FEEDBACK_LOCALE_LANGUAGE': "en",'FEEDBACK_LOCALE_EXTRAS': {"is_partner": "", "logged_in": false, "is_branded": "", "guide_subs": "NA", "accept_language": null, "experiments": "926400,933207,941401,936330,916624,936110,909563,927303,927304,936329,906945,912909,927704,920605,912715,937003,919811,935704,931943,936702,911427,922804,931207,929505,901812,932276,919388,919389,938617,938626,936910,936913,909561,924203,939201,936331,934507,912714,907231,921090,921080,906001"}});yt.setConfig('SPF_SEARCH_BOX', true);yt.setMsg({'ADDTO_WATCH_LATER': "Watch Later",'ADDTO_WATCH_LATER_ADDED': "Added",'ADDTO_WATCH_LATER_ERROR': "Error"});yt.setAjaxToken('addto_ajax_logged_out', "qH79eQBxCahQceAh195yO9yAiFV8MTM5MDA5MTcwN0AxMzkwMDA1MzA3");yt.setAjaxToken('watch_fragments_ajax', "akCtkunf9r2JuEFo7puADGZVQVp8MTM5MDA5MTcwN0AxMzkwMDA1MzA3");  yt.setConfig('FEED_PRIVACY_CSS_URL', "\/\/s.ytimg.com\/yts\/cssbin\/www-feedprivacydialog-vflXBcmA2.css");
+  yt.setAjaxToken('feed_privacy_ajax', "aW2acbrYcOM19NoCetuPK4cjzT18MTM5MDA5MTcwN0AxMzkwMDA1MzA3");
+  if (yt.www && yt.www.account && yt.www.account.FeedPrivacyDialog && yt.www.account.FeedPrivacyDialog.init) {
+    yt.pubsub.subscribe('init', yt.www.account.FeedPrivacyDialog.init);
+  } else {
+    yt.setConfig('FEED_PRIVACY_LIGHTBOX_ENABLED', true);
+  }
+yt.setConfig({'SBOX_JS_URL': "\/\/s.ytimg.com\/yts\/jsbin\/www-searchbox-vfl8htrgY.js",'SBOX_SETTINGS': {"EXPERIMENT_ID": -1, "REQUEST_LANGUAGE": "en", "REQUEST_DOMAIN": "us", "PSUGGEST_TOKEN": null, "SESSION_INDEX": null, "HAS_ON_SCREEN_KEYBOARD": false, "USE_HTTPS": false, "DROPDOWN_POSITION": "fixed"},'SBOX_LABELS': {"VIEW_CHANNEL_LABEL": "View channel", "SUGGESTION_DISMISS_LABEL": "Dismiss", "WATCH_NOW_LABEL": "Watch now", "SUGGESTION_DISMISSED_LABEL": "Suggestion dismissed"}});  yt.setConfig({
+    'YPC_LOADER_ENABLED': true,
+    'YPC_LOADER_CONFIGS': "\/ypc_config_ajax",
+    'YPC_LOADER_JS': "\/\/s.ytimg.com\/yts\/jsbin\/www-ypc-vflrSaRU0.js",
+    'YPC_LOADER_CSS': "\/\/s.ytimg.com\/yts\/cssbin\/www-ypc-vflD53MNg.css",
+    'YPC_LOADER_CALLBACKS': ['yt.www.ypc.checkout.init', 'yt.www.ypc.subscription.init']
+  });
+  yt.setConfig('GOOGLE_HELP_CONTEXT', "watch");
+</script>    <script>
+ytcsi.span('st', 110);yt.setConfig({'TIMING_ACTION': "watch,watch7",'TIMING_INFO': {"e": "926400,933207,941401,936330,916624,936110,936910,936913,907231,921090", "yt_li": 0, "yt_lt": "cold", "yt_ad": 0, "ei": "O8zZUseILcLhkgKQhYGYAw", "yt_spf": 0}});    </script>
+<script>yt.setConfig({'XSRF_TOKEN': "5BYNboJS7iGOuTr2gIyRBQHzLpt8MTM5MDA5MTcwN0AxMzkwMDA1MzA3",'XSRF_REDIRECT_TOKEN': "Uw3yq5W5fhhQHL1AbXY8EqYljfh8MTM5MDA5MTcwN0AxMzkwMDA1MzA3",'XSRF_FIELD_NAME': "session_token"});</script><script>yt.setConfig('THUMB_DELAY_LOAD_BUFFER', 0);</script><script>if (window.ytcsi) {window.ytcsi.tick("jl", null, '');}</script>  <div id="debug"></div>
+</body></html>
+

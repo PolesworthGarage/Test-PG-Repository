@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /print/
+Disallow: /news/used-cars/
+Disallow: /news/car/
